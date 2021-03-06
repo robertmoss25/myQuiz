@@ -14,8 +14,7 @@
 		"choice3": "Network Access Control List (ACL), Subnets, Route Table",
 		"choice4": "NAT Gateway, Security Group, Route Table",
 		"answer": 1
-	}
-	,
+	},
     {
 		"question": "Which of the following options allows you to securely administer an EC2 instance located in a private subnet?",
 		"choice1": "NAT Gateway",
