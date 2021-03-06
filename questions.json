@@ -217,7 +217,7 @@
 	},
 	{
 		"question": "When you create a custom VPC, which of the following are created automatically?",
-		"choice1": "Route Table, Network Access Control List (ACL), Security Group"
+		"choice1": "Route Table, Network Access Control List (ACL), Security Group",
 		"choice2": "Internet Gateway, Network Access Control List (ACL), NAT Gateway",
 		"choice3": "Network Access Control List (ACL), Subnets, Route Table",
 		"choice4": "NAT Gateway, Security Group, Route Table",
