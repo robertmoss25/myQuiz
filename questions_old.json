@@ -1,0 +1,106 @@
+[
+    {
+        "question": "Which statement below is one of the 6 advantages of cloud computing?", 
+        "choice1": "Benefit from increased speed and agiligy",
+        "choice2": "Trade variable expense for capital expense",
+        "choice3": "Easily guess capacity",
+        "choice4": "Benefit from minor economies of scale",
+        "answer": 1
+    },
+    {
+        "question": "You suspect that one of the AWS services your company is using has gone down. How can you check on the status of this service?", 
+        "choice1": "AWS Organizations",
+        "choice2": "AWS Trusted Advisor",
+        "choice3": "Amazon Inspector",
+        "choice4": "AWS Personal Health Dashboard",
+        "answer": 4
+	},
+	{
+        "question": "Which statement is true regarding the AWS Global Infrastructure?", 
+        "choice1": "Each AWS region contains multiple availability zones",
+        "choice2": "Availability zones contain Edge locations",
+        "choice3": "Each Availability zone contains multiple regions",
+        "choice4": "Edge Locations contain Regions",
+        "answer": 1
+	},
+	{
+        "question": "In AWS Global Infrastructure, which component has one or more Discrete data centers with redundant power, networking, and connectivity?", 
+        "choice1": "Route 53",
+        "choice2": "Placement group",
+        "choice3": "VPC",
+        "choice4": "Availability zone",
+        "answer": 4
+	},
+	{
+        "question": "A new web applicationis getting more traffic than expected.You decide to add another EC2 Instance to share the load.Which AWS principle does this represent?", 
+        "choice1": "Durability",
+        "choice2": "Vertical Scaling",
+        "choice3": "Elasticity",
+        "choice4": "Horizontal Scaling",
+        "answer": 4
+	},
+	{
+        "question": "You are reviewing the AWS Shared responsability model to present an overview to management on what your company is responsible for in AWS. Which option is a customer responsibility?", 
+        "choice1": "Networking",
+        "choice2": "Edge Locations",
+        "choice3": "Customer Data",
+        "choice4": "Availability Zones",
+        "answer": 3
+	},
+	{
+        "question": "After creating an EC2 Instance to host an application, the traffic to the site far exceeds what was expected. You decide to move to a larger instance type. What AWS principle does this represent?", 
+        "choice1": "Horizonal Scaling",
+        "choice2": "Elasticity",
+        "choice3": "Vertical Scaling",
+        "choice4": "Durability",
+        "answer": 3
+	},
+	{
+        "question": "Your company is moving to the AWS cloud and is reviewing the shared responsibility model. Which item is entirely the responsibility of AWS?", 
+        "choice1": "Physical and environmental control",
+        "choice2": "Patching of the guest OS",
+        "choice3": "Implementing IAM groups",
+        "choice4": "Storing cloud formation templates in another region for disaster recovery",
+        "answer": 1
+	},
+	{
+        "question": "You are gathering information to present to management on a potential move to AWS cloud. Which items are part of the 6 advantages of cloud computing?", 
+        "choice1": "Trade capital expense for variable expense, Increase speed and agility",
+        "choice2": "Trade capital expense for variable expense, Easily predict capacity",
+        "choice3": "Easily predict capacity, Increase speed and agility",
+        "choice4": "Easily predict capacity, Benefit from small economies of scale",
+        "answer": 1
+        },
+	{
+        "question": "Which AWS service can provide Desktop as a Service", 
+        "choice1": "EC2",
+        "choice2": "AWS System Manager",
+        "choice3": "Amazon WorkSpaces",
+        "choice4": "Elastic Beanstalk",
+        "answer": 3
+        },
+	{
+        "question": "Which AWS service can you use to connect your AWS cloud with an on-premises data center?", 
+        "choice1": "Virtual Private Gateway",
+        "choice2": "Internet Gateway",
+        "choice3": "VPC Peering",
+        "choice4": "IAM",
+        "answer": 1
+        },
+	{
+        "question": "You would like to setup a loosely coupled architecture. Which service would allow you to send and receive messages, but most importanly, store messages if they are not consumed immediately?", 
+        "choice1": "AWS SES",
+        "choice2": "AWS CloudWatch",
+        "choice3": "AWS SQS",
+        "choice4": "AWS S3",
+        "answer": 3
+        },
+	{
+        "question": "Which of the following can nyou use as a web-based interface to view processes in AWS?", 
+        "choice1": "AWS CLI",
+        "choice2": "AWS SDK",
+        "choice3": "AWS Management Console",
+        "choice4": "AWS API",
+        "answer": 3
+        }
+]
