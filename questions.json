@@ -1,18 +1,18 @@
 [
 	{
 		"question": "You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually peered with VPCs 'B', 'C', 'D', and 'E', which make up the spokes. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?",
-		"choice1":"VPC 'A'",
-		"choice2":"VPCs 'C', 'D', and 'E'",
-		"choice3":"VPCs 'A' and 'E'",
-		"choice4":"VPCs 'A' and 'C'",
+		"choice1": "VPC 'A'",
+		"choice2": "VPCs 'C', 'D', and 'E'",
+		"choice3": "VPCs 'A' and 'E'",
+		"choice4": "VPCs 'A' and 'C'",
 		"answer": 1
 	},
 	{
 		"question": "When you create a custom VPC, which of the following are created automatically?",
-		"choice1":"Route Table, Network Access Control List (ACL), Security Group"
-		"choice2":"Internet Gateway, Network Access Control List (ACL), NAT Gateway",
-		"choice3":"Network Access Control List (ACL), Subnets, Route Table",
-		"choice4":"NAT Gateway, Security Group, Route Table",
+		"choice1": "Route Table, Network Access Control List (ACL), Security Group"
+		"choice2": "Internet Gateway, Network Access Control List (ACL), NAT Gateway",
+		"choice3": "Network Access Control List (ACL), Subnets, Route Table",
+		"choice4": "NAT Gateway, Security Group, Route Table",
 		"answer": 1
 	}
 ]
