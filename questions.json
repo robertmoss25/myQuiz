@@ -7,14 +7,6 @@
 		"choice4": "VPCs 'A' and 'C'",
 		"answer": 1
 	},
-	{
-		"question": "When you create a custom VPC, which of the following are created automatically?",
-		"choice1": "Route Table, Network Access Control List (ACL), Security Group"
-		"choice2": "Internet Gateway, Network Access Control List (ACL), NAT Gateway",
-		"choice3": "Network Access Control List (ACL), Subnets, Route Table",
-		"choice4": "NAT Gateway, Security Group, Route Table",
-		"answer": 1
-	},
     {
 		"question": "Which of the following options allows you to securely administer an EC2 instance located in a private subnet?",
 		"choice1": "NAT Gateway",
@@ -222,5 +214,13 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 2
+	},
+	{
+		"question": "When you create a custom VPC, which of the following are created automatically?",
+		"choice1": "Route Table, Network Access Control List (ACL), Security Group"
+		"choice2": "Internet Gateway, Network Access Control List (ACL), NAT Gateway",
+		"choice3": "Network Access Control List (ACL), Subnets, Route Table",
+		"choice4": "NAT Gateway, Security Group, Route Table",
+		"answer": 1
 	}
 ]
