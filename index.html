@@ -44,7 +44,7 @@
         for (let index = 0; index < jsonfiles.length; index++) {
             const jsonfile = jsonfiles[index];
             const quiz = QuizName[index];
-            let result = '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=';
+            let result = '<li role="presentation"><a role="menuitem" tabindex="-1" href="./myQuiz/game.html?myGame=';
             result += jsonfile;
             result += '&myTitle=';
             result += quiz;
@@ -65,16 +65,9 @@
                   <span class="caret"></span></button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="dropdownselection">
                     <script>generateDropDown2();</script>
-                  <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_1000feet.json&myTitle=1000 Foot Overview">1000 feet overview</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Databases.json&myTitle=Databases">Databases</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_EC2.json&myTitle=EC2">EC2</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_HAArchitecture.json&myTitle=HAArchitecture">HAArchitecture</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_IAM.json&myTitle=IAM">IAM</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Route53.json&myTitle=Route53">Route53</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_VPC.json&myTitle=VPC">VPC</a></li>-->
                 </ul>
             </div>
-            <a class="btn" href="/highscores.html">High Scores</a>
+            <a class="btn" href="./myQuiz/highscores.html">High Scores</a>
         </div>
     </div>
 
