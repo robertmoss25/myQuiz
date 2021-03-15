@@ -1,0 +1,87 @@
+[
+    {
+        "question": "You have created a new subdomain for your popular website, and you need this subdomain to point to an Elastic Load Balancer using Route53. Which DNS record set type (or DNS extension type) could you create? (Choose 2).",
+        "choice1": "CNAME",
+        "choice2": "MX",
+        "choice3": "A",
+        "choice4": "Alias",
+        "choice5": "AAAA",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "True or False: There is a limit to the number of domain names that you can manage using Route 53.",
+        "choice1": "False. By default, you can support as many domain names on Route 53 as you want.",
+        "choice2": "True and False. With Route 53, there is a default limit of 20 domain names. However, this limit can be increased by contacting AWS support.",
+        "choice3": "True. There is a hard limit of 10 domain names. You cannot go above this number.",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following Route 53 policies allow you to route data to a second resource if the first is unhealthy, and route data to resources that have better performance?",
+        "choice1": "Geoproximity Routing and Geolocation Routing",
+        "choice2": "Geolocation Routing and Latency-based Routing",
+        "choice3": "Failover Routing and Simple Routing",
+        "choice4": "Failover Routing and Latency-based Routing",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You have an enterprise solution that operates Active-Active with facilities in Regions US-West and India. Due to growth in the Asian market you have been directed by the CTO to ensure that only traffic in Asia (between Turkey and Japan) is directed to the India Region. Which of these will deliver that result?",
+        "choice1": "CloudFront - a combination of blacklisting and whitelisting to control which countries go to which site",
+        "choice2": "Route 53 - Weighted routing policy, calculate the proportion of customers in each and weight the policy to ensure that each location gets a fair load.",
+        "choice3": "Route 53 - Geoproximity routing policy",
+        "choice4": "Latency routing policy. This will ensure only customers that are close will go to the India installation.",
+        "choice5": "Route 53 - Geolocation routing policy",
+        "answer": "3,5",
+        "multi": 2
+    },
+    {
+        "question": "You are hosting websites in the eu-west-2 and ap-southeast-2 regions, and would like visitors from United Kingdom to see a different site than those in Australia. Which Routing Policy would help you to accomplish this?",
+        "choice1": "Latency routing policy",
+        "choice2": "Geoproximity routing policy",
+        "choice3": "Geolocation routing policy",
+        "choice4": "Failover routing policy",
+        "answer": "2,3",
+        "multi": 2
+    },
+    {
+        "question": "Route 53 is Amazon's DNS Service.",
+        "choice1": "false",
+        "choice2": "true",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Route 53 is named so because ____.",
+        "choice1": "Beats me: only people in marketing can tell you the reason behind its name.",
+        "choice2": "It was invented in 1953.",
+        "choice3": "The DNS Port is on Port 53 and Route 53 is a DNS Service.",
+        "choice4": "Route 66 was already registered with Microsoft.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "In AWS Route 53, which of the following are true?",
+        "choice1": "A CNAME record assigns an Alias name to an IP address.",
+        "choice2": "Alias Records provide a Route 53–specific extension to DNS functionality",
+        "choice3": "Alias Records can point at any resources in AWS, but only within the same account",
+        "choice4": "Route 53 allows you to create an Alias record at the top node of a DNS namespace (zone apex)",
+        "choice5": "Alias Records can point at any resource with a Canonical Name.",
+        "choice6": "Route 53 allows you to create a CNAME record at the top node of a DNS namespace (zone apex)",
+        "answer": "2,4",
+        "multi": 2
+    },
+    {
+        "question": "Your company hosts 8 web servers all serving the same web content in AWS. They want Route 53 to serve traffic to random web servers. Which routing policy will meet this requirement, and provide the best resiliency?",
+        "choice1": "Simple Routing",
+        "choice2": "Weighted Routing",
+        "choice3": "Latency Routing",
+        "choice4": "Multivalue Routing",
+        "answer": 4,
+        "multi": 0
+    }
+]

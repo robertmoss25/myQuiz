@@ -52,6 +52,12 @@ h3 {
     padding: 2rem;
 }
 
+.questionlist {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 .container > * {
     width: 100%;
 }

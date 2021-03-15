@@ -1,0 +1,260 @@
+[
+	{
+		"question": "A VPN connection consists of which of the following components?",
+		"choice1": "Cross Connect",
+		"choice2": "Direct Connect Gateway",
+		"choice3": "Virtual Private Gateway",
+                "choice4": "Customer Gateway",
+                "answer": "3,4",
+                "multi": 2
+	},
+	{
+		"question": "True or False: A subnet can span multiple Availability Zones.",
+		"choice1": "True",
+		"choice2": "False",
+		"choice3": "Filler",
+		"choice4": "Filler",
+                "answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "Which of the following offers the largest range of internal IP addresses?",
+		"choice1": "/24",
+		"choice2": "/28",
+		"choice3": "/16",
+		"choice4": "/20",
+		"answer": 3,
+                "multi": 0
+	},
+	{
+		"question": "By default, EC2 instances in new subnets in a custom VPC can communicate with each other across Availability Zones.",
+		"choice1": "False",
+		"choice2": "True",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "What is the name given to an isolated unit with its own set of physical infrastructure which is used to provide global accelerator services?",
+		"choice1": "Network Segment",
+		"choice2": "Network Zone",
+		"choice3": "Accelerator Zone",
+		"choice4": "Availability Zone",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "When I create a new security group, all outbound traffic is allowed by default.",
+		"choice1": "True",
+		"choice2": "False",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 1,
+                "multi": 0
+	},
+	{
+		"question": "Which of the following are true for security groups?",
+		"choice1": "Security groups operate at the subnet level",
+		"choice2": "Security groups operate at the instance level",
+		"choice3": "Security groups evaluate all rules before deciding whether to allow traffic",
+                "choice4": "Security groups process rules in number order when deciding whether to allow traffic",
+                "choice5": "Security groups support both 'allow' and 'deny' rules",
+                "choice6": "Security groups support 'allow' rules only.",
+                "answer": "2,3,6",
+                "multi": 3
+	},
+	{
+		"question": "True or False: An Application Load Balancer must be deployed into at least two Availability Zone subnets.",
+		"choice1": "False",
+		"choice2": "True",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "Which of the following statements are NOT true of EC2 instances in a VPC?",
+		"choice1": "You may have only 1 active internet gateway for your instances per VPC.",
+		"choice2": "In Amazon VPC, an instance retains its public IP when stopped and started.",
+		"choice3": "It is possible to have private subnets in a VPC.",
+		"choice4": "In Amazon VPC, an EBS backed instance retains its private IP when stopped and started.",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "In a default VPC, when you launch an EC2 instance and don't specify a subnet, the EC2 instances are assigned 2 IP addresses at launch. What are they?",
+		"choice1": "A Private IP Address & Public IP Address",
+		"choice2": "An Elastic IP Address & Public IP Address",
+		"choice3": "An IPv6 Address and Elastic IP Address",
+		"choice4": "A Public IP Address & Secret IP Address",
+		"answer": 1,
+                "multi": 0
+	},
+	{
+		"question": "True or False: You can accelerate your application by adding a second Internet Gateway to your VPC.",
+		"choice1": "True",
+		"choice2": "False",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "When you create a custom VPC, which of the following are created automatically?",
+		"choice1": "Route Table",
+		"choice2": "Internet Gateway",
+		"choice3": "Subnets",
+                "choice4": "NAT Gateway",
+                "choice5": "Network Access Control List (ACL)",
+                "choice6": "Security Group",
+		"answer": "1,5,6",
+                "multi": 3
+        },
+        {
+		"question": "You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually peered with VPCs 'B', 'C', 'D', and 'E', which make up the spokes. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?",
+		"choice1": "VPC 'A'",
+		"choice2": "VPCs 'C', 'D', and 'E'",
+		"choice3": "VPCs 'A' and 'E'",
+		"choice4": "VPCs 'A' and 'C'",
+		"answer": 1,
+                "multi": 0
+	},
+    {
+		"question": "Which of the following options allows you to securely administer an EC2 instance located in a private subnet?",
+		"choice1": "NAT Gateway",
+		"choice2": "Internet Gateway",
+		"choice3": "NAT Instance",
+		"choice4": "Bastion Host",
+		"answer": 4,
+                "multi": 0
+	},
+    {
+		"question": "To save administration headaches, a consultant advises that you leave all security groups in web-facing subnets open on port 22 to 0.0.0.0/0 CIDR. That way, you can connect wherever you are in the world. Is this a good security design?",
+		"choice1": "Yes",
+		"choice2": "No",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "How many Amazon VPCs are allowed per AWS account per AWS Region? (Before any support requests to increase the number).",
+		"choice1": "5",
+		"choice2": "6",
+		"choice3": "1",
+		"choice4": "2",
+		"answer": 1,
+                "multi": 0
+	},
+	{
+		"question": "How many internet gateways can be attached to a custom VPC?",
+		"choice1": "2",
+		"choice2": "One per Availability Zone",
+		"choice3": "3",
+		"choice4": "1",
+		"answer": 4,
+                "multi": 0
+	},
+	{
+		"question": "Security groups act like a firewall at the instance level, whereas _________ are an additional layer of security that act at the subnet level. (Fill in the blank with the correct answer.)",
+		"choice1": "Network ACLs",
+		"choice2": "Database Security Groups",
+		"choice3": "Route Tables",
+		"choice4": "VPC Security Groups",
+		"answer": 1,
+                "multi": 0
+	},
+	{
+		"question": "Having just created a new VPC and launching an instance into its Public Subnet, you realize that you have forgotten to assign a Public IP to the instance during creation. What is the simplest way to make your instance reachable from the outside world?",
+		"choice1": "Create an Elastic IP and new Network Interface. Associate the Elastic IP to the new Network Interface, and the new Network Interface to your instance.",
+		"choice2": "Nothing – by default all instances deployed into any Public Subnet will automatically receive a Public IP.",
+		"choice3": "Associate the Private IP of your instance to the Public IP of the Internet Gateway",
+		"choice4": "Create an Elastic IP address and associate it with your instance",
+		"answer": 4,
+                "multi": 0
+	},
+	{
+		"question": "What is the advantage of running your AWS VPN connection through your Direct Connect connection over using the ordinary Internet?",
+		"choice1": "Faster performance",
+		"choice2": "No data transfer charges when using Direct Connect",
+		"choice3": "Improved security",
+		"choice4": "Can use Transit Gateway to service multiple accounts/VPCs",
+		"answer": "1,3",
+        "multi": 2
+	},
+	{
+		"question": "What is the purpose of an egress-only internet gateway?",
+		"choice1": "Prevents IPv6 traffic from accessing the internet by utilizing security groups",
+		"choice2": "Allow instances communicating over IPv4 or IPv6 to access the internet",
+		"choice3": "Prevents IPv6 based internet resources to initiate a connection into a VPC",
+		"choice4": "Allows VPC based IPv6 traffic to communicate to the internet",
+		"answer": "3,4",
+                "multi": 2
+	},
+	{
+		"question": "Which of these is NOT a component of the AWS Global Accelerator service?",
+		"choice1": "Listeners",
+		"choice2": "Endpoint Groups",
+		"choice3": "Static IP Address",
+		"choice4": "CloudFront",
+		"answer": 4,
+                "multi": 0
+	},
+	{
+		"question": "Which of the following is true?",
+		"choice1": "Both Security Groups and Network Access Control Lists are stateless.",
+		"choice2": "Both security groups and Network Access Control Lists (NACLs) are stateful.",
+		"choice3": "Security groups are stateful and Network Access Control Lists (NACLs) are stateless.",
+		"choice4": "Security groups are stateless and Network Access Control Lists (NACLs) are stateful.",
+		"answer": 3,
+                "multi": 0
+	},
+	{
+		"question": "At which of the following levels can VPC Flow Logs be created?",
+		"choice1": "Security Group Level",
+		"choice2": "Account Level",
+		"choice3": "Network Interface Level",
+                "choice4": "Network Access Control List Level",
+                "choice5": "VPC Level",
+                "choice6": "Subnet Level",
+                "answer": "3,5,6",
+                "multi": 3
+	},
+	{
+		"question": "Which of the following is a chief advantage of using VPC gateway endpoints to connect your VPC to services such as S3 and DynamoDB?",
+		"choice1": "VPC gateway endpoints offer a faster path through the public internet than with a NAT instance.",
+		"choice2": "VPC gateway endpoints require public IP addresses, offering rapid connectivity from the public internet.",
+		"choice3": "VPC gateway endpoints are dedicated hardware devices that cannot be accessed without the correct IAM credentials.",
+		"choice4": "VPC gateway endpoints ensure traffic between your VPC and the other service does not leave the Amazon network.",
+		"answer": 4,
+                "multi": 0
+	},
+	{
+		"question": "Are you permitted to conduct your own security assessments or penetration tests on your own VPC without alerting AWS first?",
+		"choice1": "Yes. You can perform any security assessment or penetration test without alerting AWS first.",
+		"choice2": "Depends on the type of security assessment or penetration test and the service being assessed. Some assessments can be performed without alerting AWS, some require you to alert.",
+		"choice3": "No. You must always alert AWS before performing any type of security assessment or penetration test.",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "VPC stands for:",
+		"choice1": "Very Private Cloud",
+		"choice2": "Virtual Private Cloud",
+		"choice3": "Very Public Cloud",
+		"choice4": "Virtual Public Cloud",
+		"answer": 2,
+                "multi": 0
+	},
+	{
+		"question": "When peering VPCs, you may peer your VPC only with another VPC in your same AWS account.",
+		"choice1": "True",
+		"choice2": "False",
+		"choice3": "Filler",
+		"choice4": "Filler",
+		"answer": 2,
+                "multi": 0
+	}
+]

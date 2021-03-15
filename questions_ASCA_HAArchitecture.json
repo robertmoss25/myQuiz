@@ -1,0 +1,182 @@
+[
+    {
+        "question": "Following an unplanned outage, you have been called into a planning meeting. You are asked what can be done to reduce the risk of bad deployments and single point of failure for your AWS resources. Which solutions can be used to mitigate the problem? The options do not necessarily need to work together.",
+        "choice1": "Use Route 53 to direct traffic to the multi-region compute services on a round-robin basis.",
+        "choice2": "Use automation to ensure that all updates are always deployed to all autoscaling groups at the same time.",
+        "choice3": "Use several Target groups or auto scaling groups under each Load Balancers.",
+        "choice4": "Use multiple autoscaling groups and boundaries for a staged or 'canary' deployment process.",
+        "choice5": "Use a Classic Load Balancer to spread the load over several availability zones.",
+        "choice6": "Use Route 53 with health checks to distribute load across multiple ELBs.",
+        "choice7": "Use an Application Load Balancer to spread the load over several regions.",
+        "answer": "3,4,5,6",
+        "multi": 4
+    },
+    {
+        "question": "In discussions about Cloud services the words 'Availability', 'Durability', 'Reliability' and 'Resiliency' are often used. Which term is used to refer to the likelihood that a resource is able to recover from damage or disruption?",
+        "choice1": "Availability",
+        "choice2": "Durability",
+        "choice3": "Resiliency",
+        "choice4": "Reliability",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "In S3 the durability of my files is ____.",
+        "choice1": "99 percent",
+        "choice2": "100 percent",
+        "choice3": "99.999999999 percent",
+        "choice4": "99.99 percent",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A product manager walks into your office and advises that the simple single node MySQL RDS instance that has been used for a pilot needs to be upgraded for production. She also advises that they may need to alter the size of the instance once they see how many people use the system during peak periods. The key concern is that there can not be any outages of more than a few seconds during the go-live period. Which of the following might you recommend,",
+        "choice1": "Upgrade the RDS instance to a large size before go-live to avoid the 10-15 minute outage needed to change size later.",
+        "choice2": "Convert the RDS instance to a multi-AZ implementation.",
+        "choice3": "Consider replacing it with Aurora before go live.",
+        "choice4": "Implement Read-Replicas now to allow the instance size to be altered on the fly without any user impact.",
+        "answer": "2,3",
+        "multi": 2
+    },
+    {
+        "question": "If you are told that an EC2 instance is being changed to have more RAM, Is this considered Scaling Up or Scaling Out",
+        "choice1": "Scaling Up",
+        "choice2": "Scaling Out",	
+        "choice3": "Filler",	
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Can I 'force' a failover for any RDS instance that has Multi-AZ configured?",
+        "choice1": "No.",
+        "choice2": "Only for Oracle RDS instances.",
+        "choice3": "Yes.",	
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You work for a major news network in Europe. They have just released a new mobile app that allows users to post their photos of newsworthy events in real-time. Your organization expects this app to grow very quickly, essentially doubling its user base each month. The app uses S3 to store the images, and you are expecting sudden and sizable increases in traffic to S3 when a major news event takes place (as users will be uploading large amounts of content.) You need to keep your storage costs to a minimum, and you are happy to temporarily lose access to up to 0.1% of uploads per year. With these factors in mind, which storage media should you use to keep costs as low as possible?",
+        "choice1":" S3 Standard",
+        "choice2":" S3 - OneZone-Infrequent Access",
+        "choice3":" S3 - Provisioned IOPS",
+        "choice4":" S3 Standard-IA",
+        "choice5":" S3 - Reduced Redundancy Storage (RRS)",
+        "choice6":" Glacier",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the below are not components of Amazon EC2 Auto Scaling?",
+        "choice1": "Groups",
+        "choice2": "Scaling Options",
+        "choice3": "cfn-init",
+        "choice4": "Configuration Templates",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which service works in conjunction with EC2 Autoscaling in order to provide predictive scaling based on daily and weekly trends?",
+        "choice1": "AWS Step Functions",
+        "choice2": "AWS Autoscaling",
+        "choice3": "SNS Queues",
+        "choice4": "Lambda Functions",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "When you have deployed an RDS database into multiple availability zones, can you use the secondary database as an independent read node?",
+        "choice1": "No.",
+        "choice2": "Only in US-West-1.",
+        "choice3": "Yes.",
+        "choice4": "It depends on how you set it up.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You work for a manufacturing company that operate a hybrid infrastructure with systems located both in a local data center and in AWS, connected via AWS Direct Connect. Currently, all on-premise servers are backed up to a local NAS, but your CTO wants you to decide on the best way to store copies of these backups in AWS. He has asked you to propose a solution which will provide access to the files within milliseconds should they be needed, but at the same time minimizes cost. As these files will be copies of backups stored on-premise, availability is not as critical as durability. Choose the best option from the following which meets the brief.",
+        "choice1": "Copy the files from the NAS to an S3 bucket configured as Standard class.",
+        "choice2": "Copy the files to an EC2 instance with a large EBS volume attached.",
+        "choice3": "Copy the files from the NAS to an S3 bucket with the Reduced Redundancy Storage class.",
+        "choice4": "Copy the files from the NAS to an S3 bucket with the Standard-IA class.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "In discussions about Cloud services the words 'Availability', 'Durability', 'Reliability' and 'Resiliency' are often used. Which term is used to refer to the likelihood that you can access a resource or service when you need it?",
+        "choice1": "Reliability",
+        "choice2": "Resiliency",
+        "choice3": "Durability",
+        "choice4": "Availability",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Your company has built an internal scrum tool for running all your scrum ceremonies. Usage is predictably high between 9 - 10AM Mon-Fri and also 1PM - 2PM Thu and Fri. Which feature of autoscaling will easily prepare your system to handle the load?",
+        "choice1": "Manual Scaling",
+        "choice2": "Target tracking Scaling",
+        "choice3": "Scheduled Scaling",
+        "choice4": "Over-provision your instances with more memory and CPU in order to cope with peak demand",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "In discussions about Cloud services the words 'Availability', 'Durability', 'Reliability' and 'Resiliency' are often used. Which term is used to refer to the likelihood that a resource will work as designed?",
+        "choice1": "Reliability",
+        "choice2": "Resiliency",
+        "choice3": "Availability",
+        "choice4": "Durability",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You manage a high-performance site that collects scientific data using a bespoke protocol over TCP port 1414. The data comes in at high speed and is distributed to an autoscaling group of EC2 compute services spread over three AZs. Which type of AWS Load Balancer would best meet this requirement?",
+        "choice1": "Elastic Load Balancers (ELB)",
+        "choice2": "Classic Load Balancers (CLB)",
+        "choice3": "Network Load Balancers (NLB)",
+        "choice4": "Application Load Balancers (ALB)",
+        "choice5": "CloudFront combined with Lambda@Edge",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You need to use an object-based storage solution to store your critical, non-replaceable data in a cost-effective way. This data will be frequently updated and will need some form of version control enabled on it. Which S3 storage solution should you use?",
+        "choice1": "S3 Intelligent-Tiering",
+        "choice2": "S3 Standard-IA",
+        "choice3": "S3 Standard",
+        "choice4": "S3 One Zone-IA",
+        "choice5": "S3 Glacier",
+        "choice6": "S3 - Reduced Redundancy Storage (RRS)",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Placement Groups can either be of the type 'Cluster', 'Spread', or 'Partition'. Choose options from below which are only specific to Spread Placement Groups.",
+        "choice1": "A spread placement group is a logical grouping of instances within a single Availability Zone",
+        "choice2": "A spread placement group supports a maximum of seven running instances per Availability Zone.",
+        "choice3": "Spread placement groups require a name that is unique within your AWS account for the region",
+        "choice4": "An instance can be launched in one placement group at a time and cannot span multiple placement groups.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "In discussions about Cloud services the words 'Availability', 'Durability', 'Reliability' and 'Resiliency' are often used. Which term is used to refer to the likelihood that a resource will continue to exist until you decide to remove it?",
+        "choice1": "Reliability",
+        "choice2": "Durability",
+        "choice3": "Resiliency",
+        "choice4": "Availability",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have a web site with three distinct services (mysite.co/accounts, mysite.co/sales, and mysite.co/support); each hosted by different web server Auto Scaling groups. You need to use advanced routing to send requests to specific web servers, based on configured rules. Which of the following AWS services should you use?",
+        "choice1": "Elastic Load Balancers (ELB)",
+        "choice2": "Network Load Balancers (NLB)",
+        "choice3": "Application Load Balancers (ALB)",
+        "choice4": "Classic Load Balancers (CLB)",
+        "choice5": "S3 Static web sites",
+        "answer": 3,
+        "multi": 0
+    }
+]

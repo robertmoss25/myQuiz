@@ -1,0 +1,210 @@
+[
+    {
+        "question": "Standard Reserved Instances can be moved between regions",
+        "choice1": "False",
+        "choice2": "True",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "To help you manage your Amazon EC2 instances, you can assign your own metadata in the form of ____.",
+        "choice1": "Tags",
+        "choice2": "Wildcards",
+        "choice3": "Certificates",
+        "choice4": "Notes",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Can Spread Placement Groups be deployed across multiple Availability Zones?",
+        "choice1": "Only in Us-East-1.",
+        "choice2": "No.",
+        "choice3": "Yes, but only using the AWS API.",
+        "choice4": "Yes.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Is it possible to perform API actions on an existing Amazon EBS Snapshot?",
+        "choice1": "EBS does not have snapshot functionality.",
+        "choice2": "No",
+        "choice3": "Yes, through the AWS APIs, CLI, and AWS Console.",
+        "choice4": "It depends on the region.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Will an Amazon EBS root volume persist independently from the life of the terminated EC2 instance to which it was previously attached? In other words, if I terminated an EC2 instance, would that EBS root volume persist?",
+        "choice1": "Yes - It will always persist until deleted manually",
+        "choice2": "Yes - But only for certain instance types",
+        "choice3": "No - Unless 'Delete on Termination' is unchecked for the root volume",
+        "choice4": "No - It will always be deleted immediately on termination",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "The use of a cluster placement group is ideal ___",
+        "choice1": "When you need to distribute content on a CDN network.",
+        "choice2": "Your fleet of EC2 Instances requires low latency and high network throughput across multiple availability zones.",
+        "choice3": "When you need to deploy EC2 instances that require high disk IO.",
+        "choice4": "Your fleet of EC2 instances requires high network throughput and low latency within a single availability zone.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "What are the valid underlying hypervisors for EC2?",
+        "choice1":"ESX",
+        "choice2":"Xen",
+        "choice3":"OVM",
+        "choice4":"Hyper-V",
+        "choice5":"Nitro",
+        "answer": "2,5",
+        "multi": 2
+    },
+    {
+        "question": "EBS Snapshots are backed up to S3 in what manner?",
+        "choice1": "Incrementally",
+        "choice2": "EBS snapshots are NOT stored on S3.",
+        "choice3": "Differentially",
+        "choice4": "Exponentially",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "When updating the policy used by an IAM Role attached to an EC2 instance, what needs to happen for the changes to take effect?",
+        "choice1": "Nothing - It will take effect almost immediately",
+        "choice2": "Reattach the IAM Role to the EC2 instance",
+        "choice3": "Reboot the instance to force the change",
+        "choice4": "Wait up to 15 minutes for the change to take effect",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which EC2 feature uses SR-IOV?",
+        "choice1": "Enhanced networking",
+        "choice2": "Bootstrap Scripts (User Data)",
+        "choice3": "CloudWatch Agent",
+        "choice4": "IAM Roles",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "If an Amazon EBS volume is attached as an additional disk (not the root volume), can I detach it without stopping the instance?",
+        "choice1": "No, you will need to stop the instance.",
+        "choice2": "Yes, although it may take some time.",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which service would you use to run a general Windows File Server with minimal overhead?",
+        "choice1": "FSx for Windows",
+        "choice2": "EBS Multi Attach",
+        "choice3": "EFS",
+        "choice4": "S3",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "When can you attach/replace an IAM role on an EC2 instance?",
+        "choice1": "Only during launch and cannot be changed once the instance is launched",
+        "choice2": "To attach an IAM role to an instance that has no role, the instance can be in the stopped or running state. To replace the IAM role on an instance that already has an attached IAM role, the instance must be in the running state.",
+        "choice3": "Anytime, but the instance must be stopped",
+        "choice4": "Anytime, but only if there isn't already an attached IAM Role",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Spread Placement Groups can be deployed across multiple Availability Zones",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Specifically, where in the AWS Global Infrastructure are EC2 instances provisioned?",
+        "choice1": "Globally",
+        "choice2": "In Regions",
+        "choice3": "In Availability Zones",
+        "choice4": "rrect Answer: C",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Can I delete a snapshot of the root device of an EBS volume used by a registered AMI?",
+        "choice1": "Only via the Command-Line.",
+        "choice2": "No.",
+        "choice3": "Yes.",
+        "choice4": "Only using the AWS API.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which AWS CLI command should I use to create a snapshot of an EBS volume?",
+        "choice1": "aws ec2 create-snapshot",
+        "choice2": "aws ec2 fresh-snapshot",
+        "choice3": "aws ec2 new-snapshot",
+        "choice4": "aws ec2 deploy-snapshot",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What type of storage are Amazon's EBS volumes based on?",
+        "choice1": "Database-based",
+        "choice2": "Block-based",
+        "choice3": "Object-based",
+        "choice4": "File-based",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "In order to enable encryption at rest using EC2 and Elastic Block Store, you must ____.",
+        "choice1": "Configure encryption when creating the EBS volume",
+        "choice2": "Configure encryption using the appropriate Operating Systems file system",
+        "choice3": "Mount the EBS volume in to S3 and then encrypt the bucket using a bucket policy.",
+        "choice4": "Configure encryption using X.509 certificates",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "When creating a new security group, all inbound traffic is allowed by default.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "To retrieve instance metadata or user data you will need to use the following IP Address:",
+        "choice1": "http://10.0.0.1",
+        "choice2": "http://169.254.169.254",
+        "choice3": "http://192.168.0.254",
+        "choice4": "http://127.0.0.1",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following provide the lowest cost EBS options?",
+        "choice1": "Throughput Optimized (st1)",
+        "choice2": "Cold (sc1)",
+        "choice3": "General Purpose (gp2)",
+        "choice4": "Provisioned IOPS (io1)",
+        "answer": "1,2",
+        "multi": 2
+    },
+    {
+        "question": "You need to know both the private IP address and public IP address of your EC2 instance. You should ____.",
+        "choice1": "Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/local-ipv4 and http://169.254.169.254/latest/meta-data/public-ipv4.",
+        "choice2": "Retrieve the instance User Data from http://169.254.169.254/latest/user-data/.",
+        "choice3": "Run IPCONFIG (Windows) or IFCONFIG (Linux).",
+        "choice4": "Use the following command: AWS EC2 DisplayIP.",
+        "answer": 1,
+        "multi": 0
+    }
+]

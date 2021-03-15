@@ -1,0 +1,110 @@
+[
+    {
+        "question": "In which of the following is CloudFront content cached?",
+        "choice1": "Data Center",
+        "choice2": "Region",
+        "choice3": "Availability Zone",
+        "choice4": "Edge Location",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following are a part of AWS’ Network and Content Delivery services?",
+        "choice1": "EC2",
+        "choice2": "Cloudfront",
+        "choice3": "VPC",
+        "choice4": "RDS",
+        "answer": "2,3",
+        "multi": 0
+    },
+    {
+        "question": "What does an AWS Region consist of?",
+        "choice1": "A collection of databases that can only be accessed from a specific geographic region.",
+        "choice2": "Each AWS Region consists of multiple, isolated, and physically separate Availability Zones within a geographic area.",
+        "choice3": "A console that gives you a quick, global picture of your cloud computing environment.",
+        "choice4": "A collection of data centers that is spread evenly around a specific continent.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the below are factors that have helped make public cloud so powerful?",
+        "choice1": "The ease of trying new solutions.",
+        "choice2": "No special skills required",
+        "choice3": "Generally little upfront payment (Mostly pay as you go).",
+        "choice4": "Traditional methods that are used for on-premise infrastructure always work just as well in cloud",
+        "answer": "1,3",
+        "multi": 0
+    },
+    {
+        "question": "Which of the below are database services from AWS?",
+        "choice1": "S3",
+        "choice2": "Amazon RDS",
+        "choice3": "DynamoDB",
+        "choice4": "EC2",
+        "answer": "2,3",
+        "multi": 0
+    },
+    {
+        "question": "Which of the below are AWS compute services?",
+        "choice1": "S3",
+        "choice2": "VPC",
+        "choice3": "Lambda",
+        "choice4": "EC2",
+        "answer": "3,4",
+        "multi": 0
+    },
+    {
+        "question": "What is an AWS region?",
+        "choice1": "A region is a collection of Edge Locations available in specific countries.",
+        "choice2": "A region is an independent data center, located in different countries around the globe.",
+        "choice3": "A region is a subset of AWS technologies. For example, the Compute region consists of EC2, ECS, Lambda, etc.",
+        "choice4": "A region is a geographical area divided into Availability Zones. Each region contains at least two Availability Zones.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "The VPC service is a member of which group of AWS services in the 'All services' view of the AWS Portal?",
+        "choice1": "Database Services",
+        "choice2": "Compute Services",
+        "choice3": "Networking & Content Delivery",
+        "choice4": "Global Infrastructure",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which of the below are storage services in AWS?",
+        "choice1": "S3",
+        "choice2": "EC2",
+        "choice3": "VPC",
+        "choice4": "EFS",
+        "answer": "1,4",
+        "multi": 0
+    },
+    {
+        "question": "Considering the AWS Global Cloud Infrastructure, which of the following is correct in terms of numbers (greater to lesser)?",
+        "choice1": "Number of Availability Zones > Number of Regions > Number of Edge Locations",
+        "choice2": "Number of of Regions > Number of Availability Zones > Number of Edge Locations",
+        "choice3": "Number of Availability Zones > Number of Edge Locations > Number of Regions",
+        "choice4": "Number of Edge Locations > Number of Availability Zones > Number of Regions",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which statement best describes Availability Zones?",
+        "choice1": "A Content Distribution Network used to distribute content to users.",
+        "choice2": "Distinct locations from within an AWS region that are engineered to be isolated from failures.",
+        "choice3": "Two zones containing compute resources that are designed to automatically maintain synchronized copies of each other's data.",
+        "choice4": "Restricted areas designed specifically for the creation of Virtual Private Clouds.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "What is an Amazon VPC?",
+        "choice1": "Virtual Private Compute",
+        "choice2": "Virtual Public Compute",
+        "choice3": "Virtual Private Cloud",
+        "choice4": "Virtual Public Cloud",
+        "answer": 3,
+        "multi": 0
+    }
+]

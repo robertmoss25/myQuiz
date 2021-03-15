@@ -5,14 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Quiz</title>
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
 </head>
+<script type="text/javascript">
+    $(window).load(function(){
+     $(function(){
+         $(".dropdown-menu").on("click", "li", function(event){
+             console.log("You clicked the drop downs", event)
+         })
+     })
+    });
+    function starttheQuiz(sel) {
+        let path = "/game.html?myGame=" + sel.options[sel.selectedIndex].value + "&myTitle=" + sel.options[sel.selectedIndex].text;
+        console.log(path);
+        window.location = path;
+    }
+    function selectedItem(sel) {
+        console.log(sel);
+    }
+
+    function generateDropDown() {
+        const dropdownselection = document.getElementById('dropdownselection'); 
+        dropdownselection.innerHTML = '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_1000feet.json&myTitle=1000 Foot Overview">1000 feet overview</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Databases.json&myTitle=Databases">Databases</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_EC2.json&myTitle=EC2">EC2</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_HAArchitecture.json&myTitle=HAArchitecture">HAArchitecture</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_IAM.json&myTitle=IAM">IAM</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Route53.json&myTitle=Route53">Route53</a></li>';
+        dropdownselection.innerHTML += '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_VPC.json&myTitle=VPC">VPC</a></li>';
+    }
+
+    function generateDropDown2() {
+        let jsonfiles = ['questions_ASCA_1000feet.json', 'questions_ASCA_Databases.json','questions_ASCA_EC2.json', 'questions_ASCA_HAArchitecture.json', 'questions_ASCA_IAM.json', 'questions_ASCA_Route53.json', 'questions_ASCA_VPC.json'];
+        let QuizName = ['1000 Feet Overview', 'Databases', 'EC2','HA Architecture', 'IAM', 'Route53', 'VPC'];
+        const dropdownselection = document.getElementById('dropdownselection'); 
+        for (let index = 0; index < jsonfiles.length; index++) {
+            const jsonfile = jsonfiles[index];
+            const quiz = QuizName[index];
+            let result = '<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=';
+            result += jsonfile;
+            result += '&myTitle=';
+            result += quiz;
+            result += '">';
+            result += quiz;
+            result += '</a></li>';
+            dropdownselection.innerHTML += result;
+            console.log(result);
+        }
+    }
+</script>
 <body>
     <div class="container">
         <div id="home" class="flex-center flex-column">
             <h1>Quick Quiz</h1>
-            <a class="btn" href="./game.html">Play</a>
-            <a class="btn" href="./highscores.html">High Scores</a>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="dropdownselection">
+                    <script>generateDropDown2();</script>
+                  <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_1000feet.json&myTitle=1000 Foot Overview">1000 feet overview</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Databases.json&myTitle=Databases">Databases</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_EC2.json&myTitle=EC2">EC2</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_HAArchitecture.json&myTitle=HAArchitecture">HAArchitecture</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_IAM.json&myTitle=IAM">IAM</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_Route53.json&myTitle=Route53">Route53</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/game.html?myGame=questions_ASCA_VPC.json&myTitle=VPC">VPC</a></li>-->
+                </ul>
+            </div>
+            <a class="btn" href="/highscores.html">High Scores</a>
         </div>
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>

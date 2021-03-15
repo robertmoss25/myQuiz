@@ -1,0 +1,237 @@
+[
+    {
+        "question": "RDS Reserved instances are available for multi-AZ deployments.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, what is the maximum size RDS volume you can have by default?",
+        "choice1": "32TB",
+        "choice2": "6TB",
+        "choice3": "16TB",
+        "choice4": "1TB",
+        "choice5": "500GB",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following data formats does Amazon Athena support?",
+        "choice1": "Apache Parquet",
+        "choice2": "Apache ORC",
+        "choice3": "XML",
+        "choice4": "JSON",
+        "answer": "1,2,4",
+        "multi": 3
+    },
+    {
+        "question": "In RDS, what is the maximum value I can set for my backup retention period?",
+        "choice1": "15 Days",
+        "choice2": "30 Days",
+        "choice3": "35 Days",
+        "choice4": "45 Days",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "DB security groups are used with DB instances that are not in a VPC and on the EC2-Classic platform. When you create a DB security group, you need to specify a destination port number.",
+        "choice1":"False",
+        "choice2":"True",
+        "choice3":"Filler",
+        "choice4":"Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following is most suitable for OLAP?",
+        "choice1": "ElastiCache",
+        "choice2": "RDS",
+        "choice3": "DynamoDB",
+        "choice4": "Redshift",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "In RDS, when are changes to the backup window implemented?",
+        "choice1": "You cannot back up in RDS.",
+        "choice2": "After 30 minutes",
+        "choice3": "During the next scheduled maintenance window or immediately",
+        "choice4": "The next day",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large number of IOPS, and you need to increase the number of IOPS available to it. What should you do?",
+        "choice1": "Use CloudFront to cache the database.",
+        "choice2": "Add 2 additional EBS SSD volumes and create a RAID 0 volume to host the database.",
+        "choice3": "Migrate the database to an S3 bucket.",
+        "choice4": "Migrate the database to Glacier.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "What data transfer charge is incurred when replicating data between Availability Zones for your Amazon RDS MySQL in a Multi-AZ deployment?",
+        "choice1": "There is no charge associated with this action.",
+        "choice2": "The charge is half of the standard data transfer charge.",
+        "choice3": "The charge is the same as the standard data transfer charge.",
+        "choice4": "The charge is double the standard data transfer charge.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following is NOT a feature supported by DynamoDB?",
+        "choice1": "Data reads that are either eventually consistent or strongly consistent",
+        "choice2": "The ability to perform operations by using a user-defined primary key",
+        "choice3": "The primary key can be either a single-attribute or a composite partition-sort key",
+        "choice4": "Amazon DynamoDB supports MongoDB workloads.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "AWS's NoSQL product offering is known as ____.",
+        "choice1": "DynamoDB",
+        "choice2": "RDS",
+        "choice3": "MongoDB",
+        "choice4": "MySQL",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What happens to the I/O operations of a single-AZ RDS instance during a database snapshot or backup?",
+        "choice1": "I/O operations will function normally.",
+        "choice2": "I/O operations to the database are sent to a Secondary instance of a Multi-AZ installation (for the duration of the snapshot.)",
+        "choice3": "I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.",
+        "choice4": "Nothing.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "If I wanted to run a database on an EC2 instance, which of the following storage options would Amazon recommend?",
+        "choice1": "S3",
+        "choice2": "RDS",
+        "choice3": "Glacier",
+        "choice4": "EBS",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "With new RDS DB instances, automated backups are enabled by default?",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You can SSH into and control the operating system where your Amazon RDS MySQL instance is running.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which AWS service is ideal for Business Intelligence Tools/Data Warehousing?",
+        "choice1": "Elastic Beanstalk",
+        "choice2": "ElastiCache",
+        "choice3": "DynamoDB",
+        "choice4": "Redshift",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Amazon's ElastiCache uses which two engines?",
+        "choice1": "Redis & Memory",
+        "choice2": "MyISAM & InnoDB",
+        "choice3": "Reddit & Memcrush",
+        "choice4": "Redis & Memcached",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "How many copies of my data does RDS - Aurora store by default?",
+        "choice1": "2",
+        "choice2": "3",
+        "choice3": "1",
+        "choice4": "6",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "MySQL installations default to port number ____.",
+        "choice1": "1433",
+        "choice2": "3389",
+        "choice3": "3306",
+        "choice4": "80",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "If you want your application to check RDS for an error, have it look for an __ node in the response from the Amazon RDS API.",
+        "choice1": "Exit",
+        "choice2": "Error",
+        "choice3": "Incorrect",
+        "choice4": "Abort",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "When creating an RDS instance, you can select the Availability Zone into which you deploy it.",
+        "choice1": "False",
+        "choice2": "True",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which AWS DB platform is most suitable for OLTP workloads?",
+        "choice1":"Redshift",
+        "choice2":"ElastiCache",
+        "choice3":"DynamoDB",
+        "choice4":"RDS",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Under what circumstances would I choose provisioned IOPS over standard storage when creating an RDS instance?",
+        "choice1": "If you use online transaction processing in your production environment.",
+        "choice2": "If you have workloads that are not sensitive to latency/lag.",
+        "choice3": "If this was a test Database.",
+        "choice4": "If your business was trying to save money.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which set of RDS database engines is currently available?",
+        "choice1": "Aurora, MySQL, SQL Server, Cassandra",
+        "choice2": "Amazon Aurora, MySQL, MariaDB, Oracle, SQL Server, and PostgreSQL",
+        "choice3": "MariaDB, SQL Server, MySQL, Cassandra",
+        "choice4": "PostgreSQL, MariaDB, MongoDB, Aurora",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following DynamoDB features are chargeable, when using a single region?",
+        "choice1": "Local secondary indexes",
+        "choice2": "Incoming Data Transfer",
+        "choice3": "Storage of Data",
+        "choice4": "Read and Write Capacity",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "Which of the following AWS services is a non-relational database?",
+        "choice1": "Amazon ElastiCache",
+        "choice2": "Amazon DynamoDB",
+        "choice3": "Amazon Redshift",
+        "choice4": "Amazon RDS",
+        "answer": 2,
+        "multi": 0
+    }
+]

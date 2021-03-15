@@ -1,0 +1,164 @@
+[
+    {
+        "question": "Power User Access allows ____.",
+        "choice1": "Read Only access to all AWS services and resources.",
+        "choice2": "Users to inspect the source code of the AWS platform",
+        "choice3": "Access to all AWS services except the management of groups and users within IAM.",
+        "choice4": "Full Access to all AWS services and resources.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are a solutions architect working for a large engineering company that are moving from a legacy infrastructure to AWS. You have configured the company's first AWS account and you have set up IAM. Your company is based in Andorra, but there will be a small subsidiary operating out of South Korea, so that office will need its own AWS environment. Which of the following statements is true?",
+        "choice1": "You will then need to configure Users and Policy Documents for each region, respectively.",
+        "choice2": "You will need to configure your policy documents regionally, however your users are global.",
+        "choice3": "You will need to configure your users regionally, however your policy documents are global.",
+        "choice4": "You will need to configure Users and Policy Documents only once, as these are applied globally.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An application you are working on has a new app. The development team for this app requires access to a bucket that is located within your team's aws account. The other team requires programmatic and console level access to your team's bucket. How would you share this bucket with this other team's account?",
+        "choice1": "Setting up a resource-based policy",
+        "choice2": "Setting up a shared IAM policy",
+        "choice3": "Setting up a cross account IAM Role",
+        "choice4": "Setting up a Resource Based Access Control List (ACL)",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are a developer at a fast-growing startup. Until now, you have used the root account to log in to the AWS console. However, as you have taken on more staff, you will need to stop sharing the root account to prevent accidental damage to your AWS infrastructure. What should you do so that everyone can access the AWS resources they need to do their jobs?",
+        "choice1": "Create a customized sign-in link such as 'yourcompany.signin.aws.amazon.com/console' for your new users to use to sign in with.",
+        "choice2": "Give your users the root account credentials so that they can also sign in.",
+        "choice3": "Create an additional AWS root account for each new user.",
+        "choice4": "Create individual user accounts with minimum necessary rights and tell the staff to log in to the console using the credentials provided.",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator, and she will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are, and you have provided the new user with their secret access key and their access key id. However, when she tries to log in to the AWS console, she cannot. Why might that be?",
+        "choice1": "You cannot log in to the AWS console using the Access Key ID / Secret Access Key pair. Instead, you must generate a password for the user, and supply the user with this password and your organization's unique AWS console login URL.",
+        "choice2": "You have not applied the 'log in from console' policy document to the user. You must apply this first so that they can log in.",
+        "choice3": "Your user is trying to log in from the AWS console from outside the corporate network. This is not possible.",
+        "choice4": "You have not yet activated multi-factor authentication for the user, so by default they will not be able to log in.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You have a client who is considering a move to AWS. In establishing a new account, what is the first thing the company should do?",
+        "choice1": "Set up an account using Cloud Search.",
+        "choice2": "Set up an account using their company email address.",
+        "choice3": "Set up an account via SQS (Simple Queue Service).",
+        "choice4": "Set up an account via SNS (Simple Notification Service)",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "When you create a new user, that user ____.",
+        "choice1": "Will be able to interact with AWS using their access key ID and secret access key using the API, CLI, or the AWS SDKs assuming programmatic access was enabled.",
+        "choice2": "Will be able to log in to the console only after multi-factor authentication is enabled on their account.",
+        "choice3": "Will only be able to log in to the console in the region in which that user was created.",
+        "choice4": "Will be able to log in to the console anywhere in the world, using their access key ID and secret access key.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "In what language are policy documents written?",
+        "choice1": "Java",
+        "choice2": "Python",
+        "choice3": "Node.js",
+        "choice4": "JSON",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "What is an additional way to secure the AWS accounts of both the root account and new users alike?",
+        "choice1": "Store the access key id and secret access key of all users in a publicly accessible plain text document on S3 of which only you and members of your organization know the address.",
+        "choice2": "Configure the AWS Console so that you can only log in to it from your internal network IP address range.",
+        "choice3": "Implement Multi-Factor Authentication for all accounts.",
+        "choice4": "Configure the AWS Console so that you can only log in to it from a specific IP Address range",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "What level of access does the 'root' account have?",
+        "choice1": "No Access",
+        "choice2": "Administrator Access",
+        "choice3": "Power User Access",
+        "choice4": "Read-only Access",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Every user you create in the IAM systems starts with ____.",
+        "choice1": "No Permissions",
+        "choice2": "Partial Permissions",
+        "choice3": "Full Permissions",
+        "choice4": "Inherited Permissions",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What is the default level of access a newly created IAM User is granted?",
+        "choice1": "No access to any AWS services.",
+        "choice2": "Power user access to all AWS services.",
+        "choice3": "Administrator access to all AWS services.",
+        "choice4": "Read-only access to all AWS services.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following is not a feature of IAM?",
+        "choice1": "IAM allows you to set up biometric authentication, so that no passwords are required.",
+        "choice2": "IAM offers fine-grained access control to AWS resources.",
+        "choice3": "IAM offers centralized control of your AWS account.",
+        "choice4": "IAM integrates with existing active directory account allowing single sign-on.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You have created a new AWS account for your company, and you have also configured multi-factor authentication on the root account. You are about to create your new users. What strategy should you consider in order to ensure that there is good security on this account.",
+        "choice1": "Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols.",
+        "choice2": "Restrict login to the corporate network only.",
+        "choice3": "Require users only to be able to log in using biometric authentication.",
+        "choice4": "Give all users the same password so that if they forget their password they can just ask their co-workers.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A new employee has just started work, and it is your job to give her administrator access to the AWS console. You have given her a user name, an access key ID, a secret access key, and you have generated a password for her. She is now able to log in to the AWS console, but she is unable to interact with any AWS services. What should you do next?",
+        "choice1": "Ensure she is logging in to the AWS console from your corporate network and not the normal internet.",
+        "choice2": "Tell her to log out and try logging back in again.",
+        "choice3": "Grant her Administrator access by adding her to an Administrators' group.",
+        "choice4": "Require multi-factor authentication for her user account.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A __ is a document that provides a formal statement of one or more permissions.",
+        "choice1": "Policy",
+        "choice2": "Group",
+        "choice3": "User",
+        "choice4": "Role",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which statement best describes IAM?",
+        "choice1": "IAM allows you to manage permissions for AWS resources only.",
+        "choice2": "IAM allows you to manage users' passwords only. AWS staff must create new users for your organization. This is done by raising a ticket.",
+        "choice3": "IAM allows you to manage users, groups, roles, and their corresponding level of access to the AWS Platform.",
+        "choice4": "IAM stands for Improvised Application Management, and it allows you to deploy and manage applications in the AWS Cloud.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following is not a component of IAM?",
+        "choice1": "Roles",
+        "choice2": "Users",
+        "choice3": "Organizational Units",
+        "choice4": "Groups",
+        "answer": 3,
+        "multi": 0
+    }
+]
