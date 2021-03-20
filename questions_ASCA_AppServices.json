@@ -1,0 +1,146 @@
+[
+    {
+        "question": "What is Amazon Kinesis Data Streams?",
+        "choice1": "A service on AWS that ingests and stores data streams for processing.",
+        "choice2": "A service for loading streaming data into data stores.",
+        "choice3": "A service for analyzing data, creating dashboards and storing data in S3.",
+        "choice4": "A service for generating streaming data",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What is the difference between SNS and SQS?",
+        "choice1": "SQS and SNS are basically the same service.",
+        "choice2": "SNS pulls (polls), whereas SQS is push-based message service.",
+        "choice3": "SQS sends messages to people on topics, whereas SNS manages tasks.",
+        "choice4": "SNS is a push notification service, whereas SQS is message system that requires worker nodes to poll a queue.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "By default, applications running on EC2 pull SQS messages from a standard SQS queue on a FIFO (First In First Out) basis.",
+        "choice1": "False",
+        "choice2": "True",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Amazon's SQS service guarantees a message will be delivered at least once.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What are the key components of Kinesis Data Firehose?",
+        "choice1": "Producers, shards and consumers",
+        "choice2": "Producers, records of data and consumers",
+        "choice3": "Delivery streams, records of data and destinations.",
+        "choice4": "Delivery streams, shards, data stores and consumers.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have discovered duplicate messages being processed in your SQS queue. How do you resolve this?",
+        "choice1": "Enable Long polling so that messages are deleted from the queue when processed.",
+        "choice2": "Enable Short polling so that messages are processed faster.",
+        "choice3": "Increase the visibility timeout of your queue, so that messages do not become visible once obtained by a consumer.",
+        "choice4": "Decrease the visibility timeout of your queue, so that messages do not become visible once obtained by a consumer.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Does the Standard SQS message queue preserve message order and guarantee messages are only delivered once?",
+        "choice1": "No",
+        "choice2": "Yes",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What happens when you create a topic on Amazon SNS?",
+        "choice1": "An Amazon Resource Name is created.",
+        "choice2": "Nothing, as topics are specific to Amazon SQS.",
+        "choice3": "You cannot create a topic on SNS.",
+        "choice4": "The topic will terminate your EC2 instances that aren't identified by tags.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Amazon SWF restricts me to the use of specific programming languages.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "In SWF, what does a 'domain' refer to?",
+        "choice1": "A specialized security group configuration",
+        "choice2": "The DNS record for the Amazon SWF service",
+        "choice3": "A collection of related workflows",
+        "choice4": "A special type of worker instance",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Amazon SWF is designed to help users ____.",
+        "choice1": "Manage user identification and authorization",
+        "choice2": "Secure their VPCs",
+        "choice3": "Store file-based objects",
+        "choice4": "Coordinate synchronous and asynchronous tasks",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Amazon SWF ensures that a task is assigned only once and is never duplicated.",
+        "choice1": "False",
+        "choice2": "True",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "What application service allows you to decouple your infrastructure using message based queues?",
+        "choice1": "SWF",
+        "choice2": "SNS",
+        "choice3": "SES",
+        "choice4": "SQS",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "True or False? At a high level an Amazon API gateway is a front door to your AWS environment.",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Amazon Kinesis Data Firehose is used for ...",
+        "choice1": "Loading data into data stores and analytics tools.",
+        "choice2": "Capturing, transforming and loading streaming data into Amazon S3",
+        "choice3": "Streaming your favourite online movies.",
+        "choice4": "Generating analytics dashboards of your streaming data.",
+        "answer": "1,2",
+        "multi": 2
+    },
+    {
+        "question": "With Amazon API gateway, how can you increase performance?",
+        "choice1": "Enable caching and set throttling limits.",
+        "choice2": "Disable caching and scale API gateway services.",
+        "choice3": "AWS automatically scales API gateway services, so no action is required.",
+        "choice4": "Increase the number of API gateway instances.",
+        "answer": 1,
+        "multi": 0
+    }
+]
