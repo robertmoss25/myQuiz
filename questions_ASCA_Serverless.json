@@ -1,0 +1,89 @@
+[
+    {
+        "question": "As a DevOps engineer you are told to prepare a complete solution to run a piece of code that requires multi-threaded processing. The code has been running on an old custom server using a 4 core Intel Xeon processor. Which of these options best describes the AWS compute services that could be used for multi-threaded processing?",
+        "choice1": "EC2, ECS, & Lambda.",
+        "choice2": "None of the above.",
+        "choice3": "Only a EC2 'Bare Steel' server.",
+        "choice4": "ECS, and EC2.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Lambda pricing is based on which of these measurements after the free tier?",
+        "choice1": "The number of requests for each time the lambda executes in response to an event notification, or invoke call.",
+        "choice2": "The amount of memory assigned.",
+        "choice3": "Duration of each request (in ms).",
+        "choice4": "Whether you choose an AMD or Intel processor.",
+        "choice5": "The amount of CPU assigned.",
+        "answer": "1,2,3",
+        "multi": 3
+    },
+    {
+        "question": "What does the common term 'Serverless' mean according to AWS",
+        "choice1": "The ability to run applications and services without thinking about servers or capacity provisioning.",
+        "choice2": "A pricing model based on high level commodity measures such as on compute duration and storage capacity.",
+        "choice3": "The use of Quantum computing to eliminate the need for physical servers.",
+        "choice4": "A native Cloud Architecture that allows customers to shift more operational responsibility to AWS.",
+        "choice5": "A marketing term for HaaS (Hosting as a Service).",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "On Friday morning your marketing manager calls an urgent meeting to celebrate that they have secured a deal to run a coordinated national promotion on TV, radio, and social media over the next 10 days. They anticipate a 500x increase on site visits and trial registrations. After the meeting you throw some ideas around with your team about how to ensure that your current 1 server web site will survive. Which of these best embody the AWS design strategy for this situation.",
+        "choice1": "Work with your web design team to create some web pages in PHP to run on a 32xlarge EC2 instance to emulate your 5 most popular information web pages and sign up web pages.",
+        "choice2": "Recreate your 5 most popular new customer web pages and sign up web pages on Lightsail and take advantage of AWS auto scaling to pick up the load.",
+        "choice3": "Upgrade your existing server from a 1xlarge to a 32xlarge for the duration of the campaign.",
+        "choice4": "Create a stand by sign up server to use in case the primary fails due to load.",
+        "choice5": "Create a duplicate sign up page that stores registration details in DynamoDB for asynchronous processing using SQS & Lambda.",
+        "choice6": "Work with your web design team to create some web pages with embedded JavaScript to emulate your 5 most popular information web pages and sign up web pages. Host those pages on S3.",
+        "answer": "5,6",
+        "multi": 2
+    },
+    {
+        "question": "In which direction(s) does Lambda scale automatically?",
+        "choice1": "Up",
+        "choice2": "None - Lambda does not scale automatically",
+        "choice3": "Up and Out",
+        "choice4": "Out",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following services can invoke a Lambda function synchronously (with functionality built-in with the invoking service)?",
+        "choice1": "EC2",
+        "choice2": "API Gateway",
+        "choice3": "Amazon Lex",
+        "choice4": "IAM",
+        "choice5": "Kinesis Data Firehose",
+        "choice6": "S3",
+        "answer": "2,3,5",
+        "multi": 3
+    },
+    {
+        "question": "What AWS service can help you to understand how your Lambda functions are performing?",
+        "choice1": "AWS X-Ray",
+        "choice2": "CloudTrail",
+        "choice3": "API Gateway",
+        "choice4": "DynamoDB",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You have created a simple serverless website using S3, Lambda, API Gateway and DynamoDB. Your website will process the contact details of your customers, predict an expected delivery date of their order and store their order in DynamoDB. You test the website before deploying it into production and you notice that although the page executes, and the lambda function is triggered, it is unable to write to DynamoDB. What could be the cause of this issue?",
+        "choice1": "The availability zone that Lambda is hosted in is down.",
+        "choice2": "You have written your function in Python which is not supported as a runtime environment for Lambda.",
+        "choice3": "The availability zone that DynamoDB is hosted in is down.",
+        "choice4": "Your lambda function does not have sufficient Identity Access Management (IAM) permissions to write to DynamoDB.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You have created a serverless application to add metadata to images that are uploaded to a specific S3 bucket. To do this, your lambda function is configured to trigger whenever a new image is created in the bucket. What will happen when multiple users upload multiple different images at the same time?",
+        "choice1": "A single Lambda functions will be triggered, that will process all images that have finished uploading one at a time",
+        "choice2": "Multiple instances of the Lambda function will be triggered, one for each image",
+        "choice3": "A single Lambda functions will be triggered, which will process all images at the same time",
+        "choice4": "Multiple Lambda functions will trigger, one after the other, until all images are processed",
+        "answer": 4,
+        "multi": 0
+    }
+]
