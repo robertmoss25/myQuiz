@@ -18,7 +18,7 @@
      })
     });
     function starttheQuiz(sel) {
-        let path = "/game.html?myGame=" + sel.options[sel.selectedIndex].value + "&myTitle=" + sel.options[sel.selectedIndex].text;
+        let path = "./game.html?myGame=" + sel.options[sel.selectedIndex].value + "&myTitle=" + sel.options[sel.selectedIndex].text;
         console.log(path);
         window.location = path;
     }
