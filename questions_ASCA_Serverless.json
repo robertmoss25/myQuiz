@@ -83,7 +83,7 @@
         "choice2": "Multiple instances of the Lambda function will be triggered, one for each image",
         "choice3": "A single Lambda functions will be triggered, which will process all images at the same time",
         "choice4": "Multiple Lambda functions will trigger, one after the other, until all images are processed",
-        "answer": 4,
+        "answer": 2,
         "multi": 0
     }
 ]
