@@ -13,7 +13,7 @@
         "choice1": "The application must have a bug",
         "choice2": "The Load Balancer does not have stickiness enabled",
         "choice3": "The EC2 instances log out users because they don't see their true IPs",
-        "choice4": "filler",
+        "choice4": "Filler",
         "answer": 2,
         "multi": 0
     },
@@ -76,7 +76,7 @@
         "choice1": "The ASG will keep the instance running and re-start the application",
         "choice2": "The ASG will detach the instance from the group, and leav it running",
         "choice3": "The ASG will terminate the instance",
-        "choice4": "filler",
+        "choice4": "Filler",
         "answer": 3,
         "multi": 0
     },
@@ -85,7 +85,7 @@
         "choice1": "You politely tell him its impossible",
         "choice2": "You create a CloudWatch custom metric and build an alarm on this to scale you ASG",
         "choice3": "You enable detailed monitoring and use that to scale you ASG",
-        "choice4": "filler",
+        "choice4": "Filler",
         "answer": 2,
         "multi": 0
     },
@@ -102,8 +102,8 @@
         "question": "Running an application on an auto scaling group that scales the number of instances in and out is called",
         "choice1": "Vertical Scalability",
         "choice2": "Horizontal Scalability",
-        "choice3": "filler",
-        "choice4": "filler",
+        "choice3": "Filler",
+        "choice4": "Filler",
         "answer": 2,
         "multi": 0
     },
@@ -112,7 +112,7 @@
         "choice1": "Application Load Balancer with Elastic IP attached to it",
         "choice2": "Network Load Balancer",
         "choice3": "Classic Load Balancer",
-        "choice4": "filler",
+        "choice4": "Filler",
         "answer": 2,
         "multi": 0
     },

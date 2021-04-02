@@ -1,0 +1,65 @@
+[
+    {
+        "question": "Your instance in us-east-1a just got terminated, and the attached EBS volume is now available. Your colleague tells you he can't seem to attach it to your instance in us-east-1b.",
+        "choice1": "He is missing IAM permissions",
+        "choice2": "EBS Volumes are region locked",
+        "choice3": "EBS Volumes and AZ locked",
+        "choice4": "EBS Volumes and Edge Location locked",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have provisioned an 8TB gp2 EBS volume and you are running out of IOPS. What is NOT a way to increase performance?",
+        "choice1": "Increase the EBS volume size",
+        "choice2": "Mount EBS volumes in RAID 0",
+        "choice3": "Change to an io1 volume type",
+        "choice4": "Add more RAM",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You would like to leverage EBS volumes in parallel to linearly increase performance, while accepting greater failure risks. Which RAID mode helps you in achieving that?",
+        "choice1": "RAID 0",
+        "choice2": "RAID 1",
+        "choice3": "RAID 5",
+        "choice4": "RAID 6",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Although EBS is already a replicated solution, your company SysOps advised you to use a RAID mode that will mirror data and will allow your instance to not be affected if an EBS volume entirely fails. Which RAID mode did he recommend to you?",
+        "choice1": "RAID 0",
+        "choice2": "RAID 1",
+        "choice3": "RAID 5",
+        "choice4": "RAID 6",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to have the same data being accessible as an NFS drive cross AZ on all your EC2 instances. What do you recommend?",
+        "choice1": "Mount an EFS",
+        "choice2": "Mount an EBS",
+        "choice3": "Mount an Instance Store",
+        "choice4": "Mount a Hard Disk",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You would like to have a high-performance cache for your application that mustn't be shared. You don't mind losing the cache upon termination of your instance. Which storage mechanism do you recommend as a Solution Architect?",
+        "choice1": "Instance Store",
+        "choice2": "EBS",
+        "choice3": "EFS",
+        "choice4": "Hard Disk",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You are running a high-performance database that requires an IOPS of 210,000 for its underlying filesystem. What do you recommend?",
+        "choice1":"Use an EBS gp2 drive",
+        "choice2":"Use an EBS io1 drive",
+        "choice3":"Use an EC2 Instance Store",
+        "choice4":"Use EFS",
+        "answer": "3",
+        "multi": 0
+    }
+]
