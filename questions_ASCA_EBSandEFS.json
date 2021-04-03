@@ -3,8 +3,8 @@
         "question": "Your instance in us-east-1a just got terminated, and the attached EBS volume is now available. Your colleague tells you he can't seem to attach it to your instance in us-east-1b.",
         "choice1": "He is missing IAM permissions",
         "choice2": "EBS Volumes are region locked",
-        "choice3": "EBS Volumes and AZ locked",
-        "choice4": "EBS Volumes and Edge Location locked",
+        "choice3": "EBS Volumes are AZ locked",
+        "choice4": "EBS Volumes are Edge Location locked",
         "answer": 3,
         "multi": 0
     },

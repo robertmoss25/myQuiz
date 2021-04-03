@@ -83,5 +83,59 @@
         "choice4": "Multivalue Routing",
         "answer": 4,
         "multi": 0
+    },
+    {
+        "question": "You have purchased 'mycoolcompany.com' on the AWS registrar and would like for it to point to lb1-1234.us-east-2.elb.amazonaws.com . What sort of Route 53 record is NOT POSSIBLE to set up for this?",
+        "choice1": "CNAME",
+        "choice2": "Alias",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You have deployed a new Elastic Beanstalk environment and would like to direct 5% of your production traffic to this new environment, in order to monitor for CloudWatch metrics and ensuring no bugs exist. What type of Route 53 records allows you to do so?",
+        "choice1": "Simple",
+        "choice2": "Weighted",
+        "choice3": "Latency",
+        "choice4": "Failover",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "After updating a Route 53 record to point 'myapp.mydomain.com' from an old Load Balancer to a new load balancer, it looks like the users are still not redirected to your new load balancer. You are wondering why...",
+        "choice1": "Its because of the alias record",
+        "choice2": "Its because of the CNAME record",
+        "choice3": "Its because of the TTL",
+        "choice4": "Its because of the health checks",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You want your users to get the best possible user experience and that means minimizing the response time from your servers to your users. Which routing policy will help?",
+        "choice1": "Multi Value",
+        "choice2": "Weighted",
+        "choice3": "Latency",
+        "choice4": "Geo location",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a legal requirement that people in any country but France should not be able to access your website. Which Route 53 record helps you in achieving this?",
+        "choice1": "Latency",
+        "choice2": "Simple",
+        "choice3": "Geo location",
+        "choice4": "Multi Value",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have purchased a domain on Godaddy and would like to use it with Route 53. What do you need to change to make this work?",
+        "choice1": "Request for a domain transfer",
+        "choice2": "Create a private hosted zone and update the 3rd party registrar NS records",
+        "choice3": "Create a public hosted zone and update Route 53 NS records",
+        "choice4": "Create a public hosted zone and update the 3rd party registrar NS records",
+        "answer": 4,
+        "multi": 0
     }
 ]

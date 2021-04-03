@@ -1,0 +1,146 @@
+[
+    {
+        "question": "My company would like to have a MySQL database internally that is going to be available even in case of a disaster in the AWS Cloud. I should setup",
+        "choice1": "Read Replicas",
+        "choice2": "Encryption",
+        "choice3": "Multi AZ",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Our RDS database struggles to keep up with the demand of the users from our website. Our million users mostly read news, and we don't post news very often. Which solution is NOT adapted to this problem?",
+        "choice1": "An ElastiCache cluster",
+        "choice2": "RDS Read Replicas",
+        "choice3": "RDS Multi AZ",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "We have setup read replicas on our RDS database, but our users are complaining that upon updating their social media posts, they do not see the update right away",
+        "choice1": "There must be a bug in our application",
+        "choice2": "Read Replicas have asynchronous replication and therefore its likely our users will only observe eventual consistency",
+        "choice3": "We should have setup multi-az instead",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which RDS Classic (not Aurora) feature does not require us to change our SQL connection string?",
+        "choice1": "Read Replicas",
+        "choice2": "Multi AZ",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You want to ensure your Redis cluster will always be available",
+        "choice1": "Enable Read Replicas",
+        "choice2": "Enable Multi AZ",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your application functions on an ASG behind an ALB. Users have to constantly log back in and you'd rather not enable stickiness on your ALB as you fear it will overload some servers. What should you do?",
+        "choice1": "Create your own Load Balancer and deploy that on EC2 instances",
+        "choice2": "Store session data in RDS",
+        "choice3": "Store session data in ElastiCache",
+        "choice4": "Store session data in a shared EBS Volume",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "One analytics application is currently performing its queries against your main production database. These queries slow down the database which impacts the main user experience. What should you do to improve the situation?",
+        "choice1":"Setup a Read Replica",
+        "choice2":"Setup Multi AZ",
+        "choice3":"Run the analytics queries at night",
+        "choice4":"Increase the RDS instance size",
+        "answer": "1",
+        "multi": 0
+    },
+    {
+        "question": "You have a requirement to use TDE (Transparent Data Encryption) on top of KMS. Which database technology does NOT support TDE on RDS?",
+        "choice1": "PostgreSQL",
+        "choice2": "Oracle",
+        "choice3": "MS SQL Server",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which RDS database technology does NOT support IAM authentication?",
+        "choice1": "Oracle",
+        "choice2": "PostgreSQL",
+        "choice3": "MySQL",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You would like to ensure you have a database available in another region if a disaster happens to your main region. Which database do you recommend?",
+        "choice1": "RDS Read Replicas",
+        "choice2": "RDS Multi AZ",
+        "choice3": "Aurora Read Replicas",
+        "choice4": "Aurora Global Database",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "How can you enhance the security of your Redis cache to force users to enter a password?",
+        "choice1": "Use Redis Auth",
+        "choice2": "Use IAM Auth",
+        "choice3": "User Security Groups",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Running an application on an auto scaling group that scales the number of instances in and out is called",
+        "choice1": "Vertical Scalability",
+        "choice2": "Horizontal Scalability",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your company has a production Node.js application that is using RDS MySQL 5.6 as its data backend. A new application programmed in Java will perform some heavy analytics workload to create a dashboard, on a regular hourly basis. You want to the final solution to minimize costs and have minimal disruption on the production application, what should you do?",
+        "choice1": "Enable Multi-AZ for the RDS database and run the analytics workload on the standby database",
+        "choice2": "Create a Read Replica in a different AZ and run the analytics workload on the replica database",
+        "choice3": "Create a Read Replica in a different AZ and run the analytics workload on the source database",
+        "choice4": "Create a Read Replica in a same AZ and run the analytics workload on the replica database",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You would like to create a disaster recovery strategy for your RDS PostgreSQL database so that in case of a regional outage, a database can be quickly made available for Read and Write workload in another region. The DR database must be highly available. What do you recommend?",
+        "choice1": "Create a Read Replica in the same region and enable multi-AZ on the main database",
+        "choice2": "Create a Read Replica in a different region and enable multi-AZ on the main database",
+        "choice3": "Create a Read Replica in the same region and enable multi-AZ on the read replica",
+        "choice4": "Enable Multi-Region on the main database",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You are managing a PostgreSQL database and for security reasons, you would like to ensure users are authenticated using short-lived credentials. What do you suggest doing?",
+        "choice1": "Install PostgreSQL on EC2 and install pg_iam module. Authenticate using IAM username and password",
+        "choice2": "Use PostgreSQL for RDS and install pg_iam module. Authenticate using IAM username and password",
+        "choice3": "Use PostgreSQL for RDS and authenticate using a token obtained through the RDS service",
+        "choice4": "Use PostgreSQL for RDS and force SSL connections. Authenticate using SSL certificates that you regularly rotate",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An application is running in production, using an Aurora database as its backend. Your development team would like to run a version of the application in a scaled-down application, but still, be able to perform some heavy workload on a need-basis. Most of the time, the application will be unused. Your CIO has tasked you with helping the team while minimizing costs. What do you suggest?",
+        "choice1": "Use an Aurura Global Database",
+        "choice2": "Use an RDS database instead",
+        "choice3": "Use Aurora Serverless",
+        "choice4": "Run Aurora on EC2, and write a script to shut down the EC2 instance at night",
+        "answer": 3,
+        "multi": 0
+    }
+]
