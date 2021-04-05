@@ -1,0 +1,56 @@
+[
+    {
+        "question": "You have an ASG that scales on demand based on the traffic going to your new website: TriangleSunglasses.Com. You would like to optimise for cost, so you have selected an ASG that scales based on demand going through your ELB. Still, you want your solution to be highly available so you have selected the minimum instances to 2. How can you further optimize the cost while respecting the requirements?",
+        "choice1": "Remove the ELB and use Elastic IP instead",
+        "choice2": "Reserve two EC2 instances",
+        "choice3": "Reduce the minimum number of instances to 1.",
+        "choice4": "Reduce the minimum number of instances to 0.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following will NOT help make our application tier stateless?",
+        "choice1": "Offload data in RDS",
+        "choice2": "Store the session data in ElastiCache",
+        "choice3": "Send the session data through the client cookies",
+        "choice4": "Storing shared data on EBS volumes",
+        "answer": "4",
+        "multi": 0
+    },
+    {
+        "question": "You are looking to store shared software updates data across 100s of EC2 instances. The software updates should be dynamically loaded on the EC2 instances and shouldn't require heavy operations. What do you suggest?",
+        "choice1": "Store the software updates on EBS and sync them using data replication software from one master in each AZ",
+        "choice2": "Store the software updates on EFS and mount EFS as a network drive",
+        "choice3": "Package the software updates as an EBS snapshot and create EBS volumes for each new software updates",
+        "choice4": "Store the software updates on an Amazon RDS instance",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "As a solution architect managing a complex ERP software suite, you are orchestrating a migration to the AWS cloud. The software traditionally takes well over an hour to setup on a Linux machine, and you would like to make sure your application does leverage the ASG feature of auto scaling based on the demand. How do you recommend you speed up the installation process?",
+        "choice1": "Use a Golden AMI",
+        "choice2": "Bootstrap using User Data",
+        "choice3": "Store the application in RDS",
+        "choice4": "Retrieve the application setup files from EFS",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "I am creating an application and would like for it to be running with minimal cost in a development environment with Elastic Beanstalk. I should run it in",
+        "choice1": "Single Instance Mode",
+        "choice2": "High Availability Mode",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "My deployments on Elastic Beanstalk have been painfully slow, and after looking at the logs, I realize this is due to the fact that my dependencies are resolved on each EC2 machine at deployment time. How can I speed up my deployment with the minimal impact?",
+        "choice1": "Remove some dependencies in your code",
+        "choice2": "Place the dependencies in Amazon EFS",
+        "choice3": "Create a Golden AMI that contains the dependencies and launch the EC2 instances from that.",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    }
+]

@@ -15,7 +15,7 @@
         "choice3": "VPC",
         "choice4": "RDS",
         "answer": "2,3",
-        "multi": 0
+        "multi": 2
     },
     {
         "question": "What does an AWS Region consist of?",
@@ -33,7 +33,7 @@
         "choice3": "Generally little upfront payment (Mostly pay as you go).",
         "choice4": "Traditional methods that are used for on-premise infrastructure always work just as well in cloud",
         "answer": "1,3",
-        "multi": 0
+        "multi": 2
     },
     {
         "question": "Which of the below are database services from AWS?",
@@ -42,7 +42,7 @@
         "choice3": "DynamoDB",
         "choice4": "EC2",
         "answer": "2,3",
-        "multi": 0
+        "multi": 2
     },
     {
         "question": "Which of the below are AWS compute services?",
@@ -51,7 +51,7 @@
         "choice3": "Lambda",
         "choice4": "EC2",
         "answer": "3,4",
-        "multi": 0
+        "multi": 2
     },
     {
         "question": "What is an AWS region?",
@@ -78,7 +78,7 @@
         "choice3": "VPC",
         "choice4": "EFS",
         "answer": "1,4",
-        "multi": 0
+        "multi": 2
     },
     {
         "question": "Considering the AWS Global Cloud Infrastructure, which of the following is correct in terms of numbers (greater to lesser)?",

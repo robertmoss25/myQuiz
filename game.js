@@ -97,6 +97,16 @@ getNewQuestion = () => {
         question.innerText = currentQuestion.question + " ( Pick " + value + ")";
     else
         question.innerText = currentQuestion.question;
+    if (currentQuestion.question.length > 550)
+    {
+        question.classList.remove('question');
+        question.classList.add('questionlong');
+    }
+    else
+    {
+        question.classList.add('question');
+        question.classList.remove('questionlong');
+    }
 
     choices.forEach( choice => {
         const number = choice.dataset['number'];
