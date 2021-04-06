@@ -1,0 +1,74 @@
+[
+    {
+        "question": "You're trying to upload a 25 GB file on S3 and it's not working",
+        "choice1": "The file size limit on S3 is 5GB",
+        "choice2": "The S3 service must be down",
+        "choice3": "You should use Multi Part upload when your file is bigger than 5GB",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "I tried creating an S3 bucket named 'dev' but it didn't work. This is a new AWS Account and I have no buckets at all. What is the cause?",
+        "choice1": "I'm missing IAM permissions to create a bucket",
+        "choice2": "Bucket names must be globally unique and 'dev' is already taken",
+        "choice3": "FFiller",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You've added files in your bucket and then enabled versioning. The files you've already added will have which version?",
+        "choice1": "1",
+        "choice2": "0",
+        "choice3": "-1",
+        "choice4": "null",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Your client wants to make sure the encryption is happening in S3, but wants to fully manage the encryption keys and never store them in AWS. You recommend",
+        "choice1": "SSE-S3",
+        "choice2": "SSE-KMS",
+        "choice3": "SSE-C",
+        "choice4": "Client Side Encryption",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your company wants data to be encrypted in S3, and maintain control of the rotation policy for the encryption keys, but not know the encryption keys values. You recommend",
+        "choice1": "SSE-S3",
+        "choice2": "SSE-KMS",
+        "choice3": "SSE-C",
+        "choice4": "Client Side Encryption",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your company does not trust S3 for encryption and wants it to happen on the application. You recommend",
+        "choice1": "SSE-S3",
+        "choice2": "SSE-KMS",
+        "choice3": "SSE-C",
+        "choice4": "Client Side Encryption",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "The bucket policy allows our users to read/write files in the bucket, yet we were not able to perform a PutObject API call.",
+        "choice1": "The bucket policy must be wrong",
+        "choice2": "The IAM user must have an explicit DENY in the attached IAM policy",
+        "choice3": "You need to contact AWS Support to life the limit",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have a website that loads files from another S3 bucket. When you try the URL of the files directly in your Chrome browser it works, but when the website you're visiting tries to load these files it doesn't. What's the problem?",
+        "choice1": "The bucket policy must be wrong",
+        "choice2": "The IAM policy is wrong",
+        "choice3": "CORS is wrong",
+        "choice4": "Encryption is wrong",
+        "answer": 3,
+        "multi": 0
+    }
+]
