@@ -1,0 +1,47 @@
+[
+    {
+        "question": "Which features allows us to distribute paid content from S3 securely, globally, if the S3 bucket is secured to only exchange data with CloudFront?",
+        "choice1": "Origin Access Identity",
+        "choice2": "S3 Pre-Signed URL",
+        "choice3": "CloudFront Signed URL",
+        "choice4": "CloudFront Distribution Invalidations",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are hosting highly dynamic content in Amazon S3 in us-east-1. Recently, there has been a need to make that data available with low latency in Singapore. What do you recommend using?",
+        "choice1": "CloudFront",
+        "choice2": "S3 Cross Region Replication",
+        "choice3": "S3 Pre-Signed URLs",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "How can you ensure that only users who access our website through Canada are authorized in CloudFront?",
+        "choice1": "Setup a security group and attach it to ClouFront",
+        "choice2": "Use a Route53 Latency record and attach it to CloudFront",
+        "choice3": "Usr CloudFront Geo Restriction",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You would like to provide your users access to hundreds of private files in your CloudFront distribution, which is fronting an HTTP web server behind an application load balancer. What should you use?",
+        "choice1": "CloudFront Signed URL",
+        "choice2": "CloudFront Signed Cookies",
+        "choice3": "CloudFront Origin Access Identity",
+        "choice4": "CloudFront HTTPS Encryption",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You are creating an application that is going to expose an HTTP REST API. There is a need to provide request routing rules at the HTTP level. Due to security requirements, your application can only be exposed through the use of two static IPs. How can you create a solution that validates these requirements?",
+        "choice1": "Use Global Accelerator and an Application Load Balancer",
+        "choice2": "Use a Network Load Balancer and attach Elastic IPs to it",
+        "choice3": "Use an Application Load Balancer and attach Elastic IPs to it",
+        "choice4": "Use CloudFront with Elastic IP and an Application Load Balancer",
+        "answer": 1,
+        "multi": 0
+    }
+]

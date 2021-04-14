@@ -1,0 +1,38 @@
+[
+    {
+        "question": "You need to move hundreds of Terabytes into the cloud in S3, and after that pre-process it using many EC2 instances in order to clean the data. You have a 1 Gbit/s broadband and would like to optimize the process of moving the data and pre-processing it, in order to save time. What do you recommend?",
+        "choice1": "Use the network",
+        "choice2": "Use snowball",
+        "choice3": "Use AWS Data Migration",
+        "choice4": "Use Snowball Edge",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You want to expose a virtually infinite storage for your tape backups. You want to keep the same software as today and want a iSCSI compatible interface. What do you use?",
+        "choice1": "Snowball",
+        "choice2": "File Gateway",
+        "choice3": "Volume Gateway",
+        "choice4": "Tape Gateway",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Your EC2 Windows Servers need to share some data by having a Network File System mounted, that respect the Windows security mechanisms and has integration with Active Directory. What do you recommend putting in place as an NFS? ",
+        "choice1": "EFS",
+        "choice2": "FSx For Windows",
+        "choice3": "FSx for Lustre",
+        "choice4": "Amazon S3 with File Gateway",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to have a distributed POSIX compliant file system that will allow you to maximize the IOPS in order to perform some HPC and genomics computational research. That file system will have to scale easily to millions of IOPS. What do you recommend?",
+        "choice1": "EFS with Max IO enabled",
+        "choice2": "FSx for Lustre",
+        "choice3": "Amazon S3 mounted on the instances",
+        "choice4": "EC2 Instance Store",
+        "answer": 2,
+        "multi": 0
+    }
+]

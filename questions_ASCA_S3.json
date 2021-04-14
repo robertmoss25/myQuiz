@@ -12,7 +12,7 @@
         "question": "I tried creating an S3 bucket named 'dev' but it didn't work. This is a new AWS Account and I have no buckets at all. What is the cause?",
         "choice1": "I'm missing IAM permissions to create a bucket",
         "choice2": "Bucket names must be globally unique and 'dev' is already taken",
-        "choice3": "FFiller",
+        "choice3": "Filler",
         "choice4": "Filler",
         "answer": 2,
         "multi": 0

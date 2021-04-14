@@ -1,0 +1,38 @@
+[
+    {
+        "question": "My EC2 Instance does not have the permissions to perform an API call PutObject on S3. What should I do?",
+        "choice1": "I should run 'aws configure' and insert my personal credentials, because I have access to the PutObject on S3",
+        "choice2": "I should ask an administrator to attach a Policy to the IAM Role on my EC2 instance that authorises it to do the API call",
+        "choice3": "I should export the environment variables with my credentials on the EC2 instance",
+        "choice4": "I should use the EC2 Metadata API call",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "I have an on-premise personal server that I'd like to use to perform AWS API calls",
+        "choice1": "I should run 'aws configure' and put my credentials there. Invalidate them when I'm done",
+        "choice2": "I should attach an EC2 Role to my personal server",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 2
+    },
+    {
+        "question": "I need my colleagues help to debug my code. When he runs the application on his machine, it's working fine, whereas I get API authorisation exceptions. What should I do?",
+        "choice1": "Send him my AWS Access key and secret key so he can replicate the issue on his machine",
+        "choice2": "Ask him to send me his credentials so I can start working",
+        "choice3": "Compare his IAM policy and my IAM policy in the policy simulator to understand the differences",
+        "choice4": "Ask him to create an EC2 server and put his credentials there so I can run the application from the EC2 instance",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "To get the instance id of my EC2 machine from the EC2 machine, the best thing is to...",
+        "choice1": "Create an IAM role and attach it to my EC2 instance so I can peform a 'describe' API call",
+        "choice2": "Query the user data at http://169.254.169.254/latest/user-data",
+        "choice3": "Query the meta data at http://169.254.169.254/latest/meta-data",
+        "choice4": "Query the meta data at http://254.169.254.169/latest/meta-data",
+        "answer": 3,
+        "multi": 2
+    }
+]

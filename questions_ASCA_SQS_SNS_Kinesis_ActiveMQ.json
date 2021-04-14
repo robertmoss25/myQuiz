@@ -1,0 +1,101 @@
+[
+    {
+        "question": "You are preparing for the biggest day of sale of the year, where your traffic will increase by 100x. You have already setup SQS standard queue. What should you do?",
+        "choice1": "Open a support ticket to pre-warm the SQS queue",
+        "choice2": "Enable auto scaling in the SQS queue",
+        "choice3": "Increase the capacity of the SQS queue",
+        "choice4": "Do nothing, SQS scales automatically",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You would like messages to be processed by SQS consumers only after 5 minutes of being published to SQS. What should you do?",
+        "choice1": "Increase the DelaySeconds parameters",
+        "choice2": "Change the Visibility Timeout",
+        "choice3": "Enable Long Poling",
+        "choice4": "Use the extended SQS client",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Your consumers poll 10 messages at a time and finish processing them in 1 minute. You notice that your messages are processed twice, as other consumers also receive the messages. What should you do?",
+        "choice1": "Enable Long Poling",
+        "choice2": "Add delay to the messages when being produced",
+        "choice3": "Increase the Visibility Timeout",
+        "choice4": "Decrease the Visibility Timeout",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You'd like your messages to be processed exactly once and in order. Which do you need?",
+        "choice1": "SQS Standard Queue",
+        "choice2": "SQS Dead Letter Queue",
+        "choice3": "SQS Delay Queue",
+        "choice4": "SQS FIFO Queue",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You'd like to send a message to 3 different applications all using SQS. You should",
+        "choice1": "Use SQS Replication Feature",
+        "choice2": "Use SNS + SQS Fan Out pattern",
+        "choice3": "Send messages individually to 3 SQS queues",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have a Kinesis stream usually receiving 5MB/s of data and sending out 8 MB/s of data. You have provisioned 6 shards. Some days, your traffic spikes up to 2 times and you get a throughput exception. You should",
+        "choice1": "Enable Kinesis Replication",
+        "choice2": "Add more Shards",
+        "choice3": "Use SQS as a buffer to Kinesis",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You are sending a clickstream for your users navigating your website, all the way to Kinesis. It seems that the users data is not ordered in Kinesis, and the data for one individual user is spread across many shards. How to fix that problem?",
+        "choice1": "There are too many shards, you should only use 1 shard",
+        "choice2": "You should use a partition key that respresents the identity of the user",
+        "choice3": "You shouldn't use multiple consumers, only one and it should re-order data",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "We'd like to perform real time analytics on streams of data. The most appropriate product will be",
+        "choice1": "SQS",
+        "choice2": "SNS",
+        "choice3": "Kinesis",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "We'd like for our big data to be loaded near real time to S3 or Redshift. We'd like to convert the data along the way. What should we use?",
+        "choice1": "SQS + Lambda",
+        "choice2": "SNS + HTTP EndPoint",
+        "choice3": "Kinesis Streams + Kinesis Firehose",
+        "choice4": "S3",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You want to send email notifications to your users. You should use",
+        "choice1": "SQS with Lambda",
+        "choice2": "SNS",
+        "choice3": "Kinesis",
+        "choice4": "Outlook",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have many microservices running on-premise and they currently communicate using a message broker that supports the MQTT protocol. You would like to migrate these applications and the message broker to the cloud without changing the application logic. Which technology allows you to get a managed message broker that supports the MQTT protocol?",
+        "choice1": "SQS",
+        "choice2": "SNS",
+        "choice3": "Kinesis",
+        "choice4": "Amazon MQ",
+        "answer": 4,
+        "multi": 0
+    }
+]
