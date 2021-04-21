@@ -1,0 +1,74 @@
+[
+    {
+        "question": "We'd like to have CloudWatch Metrics for EC2 at a 1 minute rate. What should we do?",
+        "choice1": "Enable Custom Metrics",
+        "choice2": "Enable High Resolution",
+        "choice3": "Enable Basic Monitoring",
+        "choice4": "Enabled Detailed Monitoring",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "High Resolution Custom Metrics can have a minimum resolution of",
+        "choice1": "1 second",
+        "choice2": "10 seconds",
+        "choice3": "30 seconds",
+        "choice4": "1 minute",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Your CloudWatch alarm is triggered and controls an ASG. The alarm should trigger 1 instance being deleted from your ASG, but your ASG has already 2 instances running and the minimum capacity is 2. What will happen?",
+        "choice1": "One instance will be deleted and the ASH capacity and minimum will go to 1",
+        "choice2": "The alarm will remina in 'ALARM' state but never decrease the number of instances in my ASG",
+        "choice3": "The alarm will be detached from my ASG",
+        "choice4": "The alarm will go in OK state",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "An Alarm on a High Resolution Metric can be triggered as often as",
+        "choice1": "1 second",
+        "choice2": "10 seconds",
+        "choice3": "30 seconds",
+        "choice4": "1 minute",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have made a configuration change and would like to evaluate the impact of it on the performance of your application. Which service do you use?",
+        "choice1": "CloudWatch",
+        "choice2": "CloudTrail",
+        "choice3": "ASG",
+        "choice4": "EC2",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Someone has terminated an EC2 instance in your account last week, which was hosting a critical database. You would like to understand who did it and when, how can you achieve that?",
+        "choice1": "Look at the CloudWatch Metrics",
+        "choice2": "Look at the CloudWatch Alarms",
+        "choice3": "Look at the CloudWatch Events",
+        "choice4": "Look at CloudTrail",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You would like to ensure that over time, none of your EC2 instances expose the port 84 as it is known to have vulnerabilities with the OS you are using. What can you do to monitor this?",
+        "choice1": "Setup CloudWatch Metrics",
+        "choice2": "Setup CloudTrail trails",
+        "choice3": "Setup Config Rules",
+        "choice4": "Create an AWS Lambda cron job",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You would like to evaluate the compliance of your resource's configurations over time. Which technology do you choose?",
+        "choice1": "CloudWatch",
+        "choice2": "CloudTrail",
+        "choice3": "Config",
+        "choice4": "EC2",
+        "answer": 3,
+        "multi": 0
+    }
+]

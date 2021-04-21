@@ -233,5 +233,77 @@
         "choice4": "Amazon RDS",
         "answer": 2,
         "multi": 0
+    },
+    {
+        "question": "Which database helps you store data in a relational format, with SQL language compatibility and capability of processing transactions?",
+        "choice1": "RedShift",
+        "choice2": "RDS",
+        "choice3": "DynamoDB",
+        "choice4": "ElastiCache",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which database do you suggest to have caching capability with a Redis compatible API?",
+        "choice1": "RBD",
+        "choice2": "DynamoDB",
+        "choice3": "ElasticSearch",
+        "choice4": "ElastiCache",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You are looking to perform OLTP, and would like to have the underlying storage with the maximum amount of replication and auto-scaling capability. What do you recommend?",
+        "choice1": "ElastiCache",
+        "choice2": "Redshift",
+        "choice3": "Athena",
+        "choice4": "RDS",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "As a solution architect, you plan on creating a social media website where users can be friends with each other, and like each other's posts. You plan on performing some complicated queries such as 'What are the number of likes on the posts that have been posted by the friends of Mike?'. What database do you suggest?",
+        "choice1": "RDS",
+        "choice2": "Redshift",
+        "choice3": "Neptune",
+        "choice4": "ElasticSearch",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You would like to store big objects of 100 MB into a reliable and durable Key Value store. What do you recommend?",
+        "choice1": "Athena",
+        "choice2": "S3",
+        "choice3": "DynamoDB",
+        "choice4": "ElastiCache",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to have a database which is efficient at performing analytical queries on large sets of columnar data. You would like to connect that Data Warehouse to a reporting and dashboard tool such as Amazon Quicksight. Which technology do you recommend?",
+        "choice1": "RDS",
+        "choice2": "S3",
+        "choice3": "Redshift",
+        "choice4": "Neptune",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your log data is currently stored in S3 and you would like to perform a quick analysis if possible serverless to filter the logs and find a user which may have completed an unauthorized action. Which technology do you recommend?",
+        "choice1": "DynamoDB",
+        "choice2": "Redshift",
+        "choice3": "Athena",
+        "choice4": "Glacier",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your gaming website is currently running on top of DynamoDB. Users have been asking for a search feature to find other gamers by name, with partial matches if possible. Which technology do you recommend to implement that feature?",
+        "choice1": "DynamoDB",
+        "choice2": "ElastiSearch",
+        "choice3": "Neptune",
+        "choice4": "Redshift",
+        "answer": 2,
+        "multi": 0
     }
 ]

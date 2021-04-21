@@ -85,5 +85,176 @@
         "choice4": "Multiple Lambda functions will trigger, one after the other, until all images are processed",
         "answer": 2,
         "multi": 0
+    },
+    {
+        "question": "You have a Lambda function that will process data for 25 minutes before successfully completing. The code is working fine in your machine, but in AWS Lambda it just fails with a 'timeout' issue after 3 seconds. What should you do?",
+        "choice1": "Set the timeout to 25 minutes",
+        "choice2": "Set the memory to 3GB",
+        "choice3": "Run your code somewhere else than Lambda - the maximum timeout is 15 minutes",
+        "choice4": "Use Azure",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You'd like to have a dynamic DB_URL variable loaded in your Lambda code",
+        "choice1": "Place it in the environment variables",
+        "choice2": "Place it in the code zip file",
+        "choice3": "Place it in the code itself",
+        "choice4": "Use Azure",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "We have to provision the instance type for our DynamoDB database",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A DynamoDB table has been provisioned with 10 RCU and 10 WCU. You would like to increase the RCU to sustain more read traffic. What is true about RCU and WCU?",
+        "choice1": "RCU and WCU are decoupled. So WCU can stay the same",
+        "choice2": "You will also have to increase WCU to match the RCU value",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You are about to enter the Christmas sale and you know a few items in your website are very popular and will be read often. Last year you had a ProvisionedThroughputExceededException. What should you do this year?",
+        "choice1": "Increase the RCU to a very, very high value",
+        "choice2": "Create a DAX Cluster",
+        "choice3": "Migrate the database away from DynamoDB for the time of the sale",
+        "choice4": "Use Azure",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to automate sending welcome emails to the users who subscribe to the Users table in DynamoDB. How can you achieve that?",
+        "choice1": "Create a Lambda function to scan the table every minute looking for new users",
+        "choice2": "Enable DynamoDB streams and have the Lambda function receive the events in real-time",
+        "choice3": "Enable the SNS and DynamoDB integration",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "To make a serverless API, I should integrate API Gateway with",
+        "choice1": "EC2",
+        "choice2": "ELB",
+        "choice3": "Lambda",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You would like to provide a Facebook login before your users call your API hosted by API Gateway. You need seamlessly authentication integration, you will use",
+        "choice1": "Cognito Sync",
+        "choice2": "DynamoDB user tables with Lambda Authorizer",
+        "choice3": "Cognito User Pools",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your production application is leveraging DynamoDB as its backend and is experiencing smooth sustained usage. There is a need to make the application run in development as well, where it will experience unpredictable, sometimes high, sometimes low volume of requests. You would like to make sure you optimize for cost. What do you recommend?",
+        "choice1": "Provision WCU & RCU and enable auto-scaling for both development and production",
+        "choice2": "Provision WCU & RCU and enable auto-scaling for production and use on-demand capacity for development",
+        "choice3": "Provision WCU & RCU and enable auto-scaling for both development and use on-demand capacity for production",
+        "choice4": "Use on-demand capacity for both development and production",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "As a solutions architect, you have been tasked to implement a fully Serverless REST API. Which technology choices do you recommend?",
+        "choice1": "APi Gateway + AWS Lambda",
+        "choice2": "Application Load Balancer + EC2",
+        "choice3": "ECS + EBS",
+        "choice4": "CloudFront + S3",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which technology does not have an out of the box caching feature?",
+        "choice1": "API Gateway",
+        "choice2": "Lambda",
+        "choice3": "DynamoDB",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which service allows to federate mobile users and generate temporary credentials so that they can access their own S3 bucket sub-folder?",
+        "choice1": "Cognito",
+        "choice2": "IAM",
+        "choice3": "SSO",
+        "choice4": "CloudFront",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You would like to distribute your static content which currently lives in Amazon S3 to multiple regions around the world, such as the US, France and Australia. What do you recommend?",
+        "choice1": "S3 Cross Region Replication",
+        "choice2": "CloudFront",
+        "choice3": "Route 53",
+        "choice4": "APi Gateway",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have hosted a DynamoDB table in ap-northeast-1 and would like to make it available in eu-west-1. What must be enabled first to create a DynamoDB Global Table?",
+        "choice1": "DynamoDB Stream",
+        "choice2": "DynamoDB DAX",
+        "choice3": "DynamoDB Versioning",
+        "choice4": "DynamoDB Backups",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A Lambda function is triggered by a DynamoDB stream and is meant to insert data into SQS for further long processing jobs. The Lambda function does seem able to read from the DynamoDB stream but isn't able to store messages in SQS. What's the problem?",
+        "choice1": "The flow DynamoDB => Lambda => SQS isn't authorized",
+        "choice2": "The Lambda IAM role is missing permissions",
+        "choice3": "The Lambda security group must allow outbound access to SQS",
+        "choice4": "The SQS security group must be edited to allow Lambda",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to create a micro service whose sole purpose is to encode video files with your specific algorithm from S3 back into S3. You would like to make that micro-service reliable and retry upon failure. Processing a video may take over 25 minutes. The service is asynchronous and it should be possible for the service to be stopped for a day and resume the next day from the videos that haven't been encoded yet. Which of the following service would you recommend to implement this service?",
+        "choice1": "S3 + Lambda",
+        "choice2": "SQS + EC2",
+        "choice3": "SNS + EC2",
+        "choice4": "SQS + Lambda",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to distribute paid software installation files globally for your customers that have indeed purchased the content. The software may be purchased by different users, and you want to protect the download URL with security including IP restriction. Which solution do you recommend?",
+        "choice1": "S3 pre-signed URLs",
+        "choice2": "CloudFront pre-signed URLs",
+        "choice3": "EFS",
+        "choice4": "S3 Public Bucket",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You are a photo hosting service and publish every month a master pack of beautiful mountains images, that are over 15 GB in size and downloaded from all around the world. The content is currently hosted on EFS and distributed by ELB and EC2 instances. You are experiencing high load each month and very high network costs. What can you recommend that won't force an application refactor and reduce network costs and EC2 load dramatically?",
+        "choice1": "Hosts the master pack into S3",
+        "choice2": "Create a CloudFront distribution",
+        "choice3": "Upgrade the EC2 instance",
+        "choice4": "Enable ELB caching",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to deliver big data streams in real time to multiple consuming applications, with replay features. Which technology do you recommend?",
+        "choice1": "Kinesis Data Streams",
+        "choice2": "Kinesis Firehose",
+        "choice3": "SQS",
+        "choice4": "Amazon MQ",
+        "answer": 1,
+        "multi": 0
     }
 ]
