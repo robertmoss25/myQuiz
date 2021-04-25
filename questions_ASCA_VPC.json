@@ -4,9 +4,9 @@
 		"choice1": "Cross Connect",
 		"choice2": "Direct Connect Gateway",
 		"choice3": "Virtual Private Gateway",
-                "choice4": "Customer Gateway",
-                "answer": "3,4",
-                "multi": 2
+		"choice4": "Customer Gateway",
+		"answer": "3,4",
+		"multi": 2
 	},
 	{
 		"question": "True or False: A subnet can span multiple Availability Zones.",
@@ -14,8 +14,8 @@
 		"choice2": "False",
 		"choice3": "Filler",
 		"choice4": "Filler",
-                "answer": 2,
-                "multi": 0
+		"answer": 2,
+		"multi": 0
 	},
 	{
 		"question": "Which of the following offers the largest range of internal IP addresses?",
@@ -24,7 +24,7 @@
 		"choice3": "/16",
 		"choice4": "/20",
 		"answer": 3,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "By default, EC2 instances in new subnets in a custom VPC can communicate with each other across Availability Zones.",
@@ -33,7 +33,7 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "What is the name given to an isolated unit with its own set of physical infrastructure which is used to provide global accelerator services?",
@@ -42,7 +42,7 @@
 		"choice3": "Accelerator Zone",
 		"choice4": "Availability Zone",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "When I create a new security group, all outbound traffic is allowed by default.",
@@ -51,18 +51,18 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 1,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Which of the following are true for security groups?",
 		"choice1": "Security groups operate at the subnet level",
 		"choice2": "Security groups operate at the instance level",
 		"choice3": "Security groups evaluate all rules before deciding whether to allow traffic",
-                "choice4": "Security groups process rules in number order when deciding whether to allow traffic",
-                "choice5": "Security groups support both 'allow' and 'deny' rules",
-                "choice6": "Security groups support 'allow' rules only.",
-                "answer": "2,3,6",
-                "multi": 3
+		"choice4": "Security groups process rules in number order when deciding whether to allow traffic",
+		"choice5": "Security groups support both 'allow' and 'deny' rules",
+		"choice6": "Security groups support 'allow' rules only.",
+		"answer": "2,3,6",
+		"multi": 3
 	},
 	{
 		"question": "True or False: An Application Load Balancer must be deployed into at least two Availability Zone subnets.",
@@ -71,7 +71,7 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Which of the following statements are NOT true of EC2 instances in a VPC?",
@@ -80,7 +80,7 @@
 		"choice3": "It is possible to have private subnets in a VPC.",
 		"choice4": "In Amazon VPC, an EBS backed instance retains its private IP when stopped and started.",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "In a default VPC, when you launch an EC2 instance and don't specify a subnet, the EC2 instances are assigned 2 IP addresses at launch. What are they?",
@@ -89,7 +89,7 @@
 		"choice3": "An IPv6 Address and Elastic IP Address",
 		"choice4": "A Public IP Address & Secret IP Address",
 		"answer": 1,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "True or False: You can accelerate your application by adding a second Internet Gateway to your VPC.",
@@ -105,11 +105,11 @@
 		"choice1": "Route Table",
 		"choice2": "Internet Gateway",
 		"choice3": "Subnets",
-                "choice4": "NAT Gateway",
-                "choice5": "Network Access Control List (ACL)",
-                "choice6": "Security Group",
+		"choice4": "NAT Gateway",
+		"choice5": "Network Access Control List (ACL)",
+		"choice6": "Security Group",
 		"answer": "1,5,6",
-                "multi": 3
+		"multi": 3
         },
         {
 		"question": "You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually peered with VPCs 'B', 'C', 'D', and 'E', which make up the spokes. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?",
@@ -118,7 +118,7 @@
 		"choice3": "VPCs 'A' and 'E'",
 		"choice4": "VPCs 'A' and 'C'",
 		"answer": 1,
-                "multi": 0
+		"multi": 0
 	},
     {
 		"question": "Which of the following options allows you to securely administer an EC2 instance located in a private subnet?",
@@ -127,7 +127,7 @@
 		"choice3": "NAT Instance",
 		"choice4": "Bastion Host",
 		"answer": 4,
-                "multi": 0
+		"multi": 0
 	},
     {
 		"question": "To save administration headaches, a consultant advises that you leave all security groups in web-facing subnets open on port 22 to 0.0.0.0/0 CIDR. That way, you can connect wherever you are in the world. Is this a good security design?",
@@ -136,7 +136,7 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "How many Amazon VPCs are allowed per AWS account per AWS Region? (Before any support requests to increase the number).",
@@ -145,7 +145,7 @@
 		"choice3": "1",
 		"choice4": "2",
 		"answer": 1,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "How many internet gateways can be attached to a custom VPC?",
@@ -154,7 +154,7 @@
 		"choice3": "3",
 		"choice4": "1",
 		"answer": 4,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Security groups act like a firewall at the instance level, whereas _________ are an additional layer of security that act at the subnet level. (Fill in the blank with the correct answer.)",
@@ -163,7 +163,7 @@
 		"choice3": "Route Tables",
 		"choice4": "VPC Security Groups",
 		"answer": 1,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Having just created a new VPC and launching an instance into its Public Subnet, you realize that you have forgotten to assign a Public IP to the instance during creation. What is the simplest way to make your instance reachable from the outside world?",
@@ -172,7 +172,7 @@
 		"choice3": "Associate the Private IP of your instance to the Public IP of the Internet Gateway",
 		"choice4": "Create an Elastic IP address and associate it with your instance",
 		"answer": 4,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "What is the advantage of running your AWS VPN connection through your Direct Connect connection over using the ordinary Internet?",
@@ -190,7 +190,7 @@
 		"choice3": "Prevents IPv6 based internet resources to initiate a connection into a VPC",
 		"choice4": "Allows VPC based IPv6 traffic to communicate to the internet",
 		"answer": "3,4",
-                "multi": 2
+		"multi": 2
 	},
 	{
 		"question": "Which of these is NOT a component of the AWS Global Accelerator service?",
@@ -199,7 +199,7 @@
 		"choice3": "Static IP Address",
 		"choice4": "CloudFront",
 		"answer": 4,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Which of the following is true?",
@@ -208,18 +208,18 @@
 		"choice3": "Security groups are stateful and Network Access Control Lists (NACLs) are stateless.",
 		"choice4": "Security groups are stateless and Network Access Control Lists (NACLs) are stateful.",
 		"answer": 3,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "At which of the following levels can VPC Flow Logs be created?",
 		"choice1": "Security Group Level",
 		"choice2": "Account Level",
 		"choice3": "Network Interface Level",
-                "choice4": "Network Access Control List Level",
-                "choice5": "VPC Level",
-                "choice6": "Subnet Level",
-                "answer": "3,5,6",
-                "multi": 3
+		"choice4": "Network Access Control List Level",
+		"choice5": "VPC Level",
+		"choice6": "Subnet Level",
+		"answer": "3,5,6",
+		"multi": 3
 	},
 	{
 		"question": "Which of the following is a chief advantage of using VPC gateway endpoints to connect your VPC to services such as S3 and DynamoDB?",
@@ -228,7 +228,7 @@
 		"choice3": "VPC gateway endpoints are dedicated hardware devices that cannot be accessed without the correct IAM credentials.",
 		"choice4": "VPC gateway endpoints ensure traffic between your VPC and the other service does not leave the Amazon network.",
 		"answer": 4,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "Are you permitted to conduct your own security assessments or penetration tests on your own VPC without alerting AWS first?",
@@ -237,7 +237,7 @@
 		"choice3": "No. You must always alert AWS before performing any type of security assessment or penetration test.",
 		"choice4": "Filler",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "VPC stands for:",
@@ -246,7 +246,7 @@
 		"choice3": "Very Public Cloud",
 		"choice4": "Virtual Public Cloud",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
 	},
 	{
 		"question": "When peering VPCs, you may peer your VPC only with another VPC in your same AWS account.",
@@ -255,6 +255,96 @@
 		"choice3": "Filler",
 		"choice4": "Filler",
 		"answer": 2,
-                "multi": 0
+		"multi": 0
+	},
+	{
+		"question": "What does this CIDR correspond to? 10.0.4.0/28",
+		"choice1": "10.0.4.0 to 10.0.4.15",
+		"choice2": "10.0.4.0 to 10.0.32.0",
+		"choice3": "10.0.4.0 to 10.0.4.28",
+		"choice4": "10.0.4.0 to 10.0.16.0",
+		"answer": 1,
+		"multi": 0
+	},
+	{
+		"question": "You have a corporate network of size 10.0.0.0/8  and a satellite office of size 192.168.0.0/16. Which CIDR is acceptable for your AWS VPC if you plan on connecting your networks later on?",
+		"choice1": "172.16.0.0/12",
+		"choice2": "172.16.0.0/16",
+		"choice3": "10.0.16.0/16",
+		"choice4": "192.168.4.0/18",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "You plan on creating a subnet and want it to have at least capacity for 28 EC2 instances. What's the minimum size you need to have for your subnet?",
+		"choice1": "/28",
+		"choice2": "/27",
+		"choice3": "/26",
+		"choice4": "/25",
+		"answer": 3,
+		"multi": 0
+	},
+	{
+		"question": "You have set up an internet gateway in your VPC, but your EC2 instances still don't have access to the internet. What is NOT a possible issue?",
+		"choice1": "Route Tables are missing entries",
+		"choice2": "The security group does not allow network in",
+		"choice3": "The NACL does not allow network traffic out",
+		"choice4": "Filler",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "You would like to provide internet access to your instances in private subnets with IPv4, while making sure this solution requires the least amount of administration and scales seamlessly. What should you use?",
+		"choice1": "NAT instances with Source/Destination Check flag off",
+		"choice2": "NAT Gateway",
+		"choice3": "Egress Only Internet Gateway",
+		"choice4": "Filler",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "VPC Peering has been enabled between VPC A and VPC B, and the route tables have been updated for VPC A. Still, your instances cannot communicate. What is the likely issue?",
+		"choice1": "Check the NACL",
+		"choice2": "Check the route tables in VPC B",
+		"choice3": "Check the instance security groups",
+		"choice4": "Check if DNS Resolution is enabled",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "You have set-up a direct connection between your Corporate Data Center and your VPC A. You need to access VPC B in another region from your Corporate Data Center as well. What should you do?",
+		"choice1": "Enable VPC Peering",
+		"choice2": "Use a Direct Connect Gateway",
+		"choice3": "Use a Direct Connect",
+		"choice4": "Setup a NAT Gateway",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "Which are the only two services that have a Gateway Endpoint instead of an Interface Endpoint as a VPC endpoint?",
+		"choice1": "Amazon S3 & Amazon SQS",
+		"choice2": "Amazon S3 & DynamoDB",
+		"choice3": "Amazon SQS & DynamoDB",
+		"choice4": "Filler",
+		"answer": 2,
+		"multi": 0
+	},
+	{
+		"question": "Your company has created a REST API that it will sell to hundreds of customers as a SaaS. Your customers are on AWS and are using their own VPC. You would like to allow your customers to access your SaaS without going through the public internet while ensuring your infrastructure is not left exposed to network attacks. What do you recommend?",
+		"choice1": "Create a VPC Endpoint",
+		"choice2": "Create a VPC peering connection",
+		"choice3": "Create a PrivateLink",
+		"choice4": "Create a ClassicLink",
+		"answer": 3,
+		"multi": 0
+	},
+	{
+		"question": "Your company has several on-premise sites across the USA. These sites are currently linked using a private connection, but your private connection provider has been recently quite unstable, making your IT architecture partially offline. You would like to create a backup connection that will use the public internet to link your on-premise sites, that you can failover in case of issues with your provider. What do you recommend?",
+		"choice1": "Site-to-Site VPN",
+		"choice2": "Direct Connect",
+		"choice3": "VPN CloudHub",
+		"choice4": "PrivateLink",
+		"answer": 3,
+		"multi": 0
 	}
 ]

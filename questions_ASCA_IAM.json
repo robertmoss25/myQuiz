@@ -160,5 +160,50 @@
         "choice4": "Groups",
         "answer": 3,
         "multi": 0
+    },
+    {
+        "question": "We need to gain access to a Role in another AWS account. How is it done?",
+        "choice1": "We should ask for them to create a user for us",
+        "choice2": "We should ask for them to us access keys",
+        "choice3": "We should use the SYS service to gain temporary credentials",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a mobile application and would like to give your users access to their own personal space in Amazon S3. How do you achieve that?",
+        "choice1": "Generate IAM user credentials for each of you applications users",
+        "choice2": "Use Cognito Identity Federation",
+        "choice3": "Use SAML Identity Federation",
+        "choice4": "Use a Bucket Policy to make your bucket public",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have strong regulatory requirements to only allow fully internally audited AWS Services in production. You still want to allow your teams to experiment in development environments while services are being audited. How can you best set this up?",
+        "choice1": "Provide the Dev team with a completely independent AWS account",
+        "choice2": "Create an AWS Organization and create two Prod and Dev OU. Apply a SCP on Prod",
+        "choice3": "Apply a Global IAM Policy on your production account",
+        "choice4": "Create an AWS Config Rule",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have an on-premise active directory setup and would like to provide access for your on-premise users to the multiple accounts you have in AWS. The solution should scale to adding accounts in the future. What do you recommend?",
+        "choice1": "Setup the SAML 2.0 integration between each AWS account and your on-premise AD.",
+        "choice2": "Setup AWS Single Sign-On",
+        "choice3": "Setup Web Identity Federation through Cognito",
+        "choice4": "Create a Lambda function that automatically creates a corresponding IAM user in every AWS account for each user in your AD.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which AWS Directory Service allows you to proxy requests to your on-premise active directory?",
+        "choice1": "AD on EC2",
+        "choice2": "Managed Microsoft AD",
+        "choice3": "AD Connector",
+        "choice4": "Simple AD",
+        "answer": 3,
+        "multi": 0
     }
 ]

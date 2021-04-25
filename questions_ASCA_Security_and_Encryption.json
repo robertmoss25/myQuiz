@@ -1,0 +1,92 @@
+[
+    {
+        "question": "To enable encryption in flight, we need to have",
+        "choice1": "An HTTP endpoint with a SSL certificate",
+        "choice2": "An HTTPS endpoint with a SSL certificate",
+        "choice3": "a TCP endpint",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Server side encryption means that the data is sent encrypted to the server first",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "In server side encryption, only the encryption happens on the server. Where does the decryption happen?",
+        "choice1": "The Server",
+        "choice2": "The Client",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "In client side encryption, the server must know our encryption scheme to accept the data",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "We need to create User Keys in KMS before using the encryption features for EBS, S3, etc...",
+        "choice1": "True",
+        "choice2": "False",
+        "choice3": "Filler",
+        "choice4": "Filler",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "We'd like our Lambda function to have access to a database password. We should",
+        "choice1": "Embed it in the code",
+        "choice2": "Have it as a plaintext environmental variable",
+        "choice3": "Have it as an encrypted environmental variable and descrypt it at runtime",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "We would like to audit the values of an encryption value over time",
+        "choice1": "We should use AWS KMS versioning feature",
+        "choice2": "We should use S3",
+        "choice3": "We should use SSM Parameter Store",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Under the shared responsibility model, what are you responsible for in RDS?",
+        "choice1": "Security Group Rules",
+        "choice2": "OS patching",
+        "choice3": "Database Patching",
+        "choice4": "Underlying Hardware Security",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Your user-facing website is a high risk target for DDoS attack and you would like to get 24/7 support in case they happen, as well as AWS bill reimbursement for the incurred costs during the attacks. What service should you use?",
+        "choice1": "AWS Shield Advanced",
+        "choice2": "AWS WAF",
+        "choice3": "AWS Shield",
+        "choice4": "AWS DDos OpsTeam",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You need an encryption service that supports asymmetric encryption schemes, and you want to have full control and ownership of the encryption keys. Which service could you use?",
+        "choice1": "CloudHSM",
+        "choice2": "KMS",
+        "choice3": "Parameter Store",
+        "choice4": "Filler",
+        "answer": 1,
+        "multi": 0
+    }
+]
