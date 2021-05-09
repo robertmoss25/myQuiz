@@ -1,0 +1,29 @@
+[
+    {
+        "question": "As part of your disaster recovery strategy, you would like to have only the critical systems up and running in AWS. You don't mind a longer RTO. Which DR strategy do you recommend?",
+        "choice1": "Backup and Restore",
+        "choice2": "Pilot Light",
+        "choice3": "Warm Standby",
+        "choice4": "Multi Site",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to get the DR strategy with the lowest RTO and RPO, regardless of the cost, which one do you recommend?",
+        "choice1": "Backup and Restore",
+        "choice2": "Pilot Light",
+        "choice3": "Warm Standby",
+        "choice4": "Multi Site",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following strategies has a potentially high RPO and RTO?",
+        "choice1": "Backup and Restore",
+        "choice2": "Pilot Light",
+        "choice3": "Warm Standby",
+        "choice4": "Multi Site",
+        "answer": "1",
+        "multi": 0
+    }
+]

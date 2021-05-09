@@ -1,0 +1,146 @@
+[
+    {
+        "question": "You are looking for a service to store docker images in AWS. Which one do you recommend?",
+        "choice1": "ECS",
+        "choice2": "ECR",
+        "choice3": "S3",
+        "choice4": "CodeCommit",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You would like to find a managed-service in AWS alternative to GitLab, in order to version control your code entirely in AWS. Which technology do you recommend?",
+        "choice1": "CodeBuild",
+        "choice2": "CodeCommit",
+        "choice3": "S3",
+        "choice4": "CodePipeline",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "As part of your disaster recovery strategy, you would like to make sure your entire infrastructure is code, so that you can easily re-deploy it in any region. Which service do you recommend?",
+        "choice1": "CodePipeline",
+        "choice2": "Elastic Beanstalk",
+        "choice3": "CodeDeploy",
+        "choice4": "CloudFormation",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You need to manage a fleet of Docker containers in the cloud, which service do you recommend?",
+        "choice1": "EC2",
+        "choice2": "ECR",
+        "choice3": "ECS",
+        "choice4": "Lambda",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You would like to orchestrate your CICD pipeline to deliver all the way to Elastic Beanstalk. Which service do you recommend?",
+        "choice1": "CodeBuild",
+        "choice2": "CodePipeline",
+        "choice3": "CloudFormation",
+        "choice4": "SWF",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You need to deploy your code to a fleet of EC2 instances with a specific strategy. Which technology do you recommend?",
+        "choice1": "CodeBuild",
+        "choice2": "CodePipeline",
+        "choice3": "CodeDeploy",
+        "choice4": "CodeCommit",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a Jenkins CI build server hosted on premise and you would like to de-commission it and replace it by a managed service on AWS. Which service do you recommend?",
+        "choice1": "AWS Jenkins",
+        "choice2": "CodeBuild",
+        "choice3": "CloudFormation",
+        "choice4": "ECS",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You need to orchestrate a series of AWS Lambda function into a workflow. Which service do you recommend?",
+        "choice1": "SWF",
+        "choice2": "CodePipeline",
+        "choice3": "Step Functions",
+        "choice4": "OpsWorks",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are looking to create an Hadoop cluster to perform Big Data Analysis. Which service do you recommend on using?",
+        "choice1": "Redshift",
+        "choice2": "Athena",
+        "choice3": "EMR",
+        "choice4": "Glue",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are looking to move data all around your AWS databases using a managed ETL service that has a metadata catalog feature. Which one do you recommend?",
+        "choice1": "EMR",
+        "choice2": "Redshift",
+        "choice3": "Glue",
+        "choice4": "Athena",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your company is already using Chef recipes to manage its infrastructure. You would like to move to the AWS cloud and keep on using Chef. What service do you recommend?",
+        "choice1": "CloudFormation",
+        "choice2": "SSM",
+        "choice3": "OpsWorks",
+        "choice4": "EC2",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You work for a consulting company which has recently decided to create video training content for their clients. They would like to view the videos on different devices such as iPhone, iPad, Web browsers. Which service do you recommend to convert the videos?",
+        "choice1": "ElasticVideo",
+        "choice2": "ElasticTranscoder",
+        "choice3": "ECS",
+        "choice4": "Lambda",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your organization would like to create various accounts to physically separate their dev, test and production environments. Your IT lead would still like to manage these environments centrally from a billing purposes, in order for management to be simple. Which service do you recommend?",
+        "choice1": "IAM",
+        "choice2": "STS",
+        "choice3": "Organizations",
+        "choice4": "Workspaces",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a VDI (Virtual Desktop Infrastructure) on premise and as a solution architect, you would like to optimize maintenance and management cost by switching to virtual desktops on the AWS Cloud. Which service do you recommend?",
+        "choice1": "AppSync",
+        "choice2": "Organizations",
+        "choice3": "Workspaces",
+        "choice4": "ECR",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Your developers are creating a mobile application and would like to have a managed GraphQL backend. Which service do you recommend?",
+        "choice1": "API Gateway",
+        "choice2": "AWS Lambda",
+        "choice3": "AppSync",
+        "choice4": "ECS",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are deploying your application on an ECS cluster made of EC2 instances. The cluster is hosting one application that has been issuing API calls to DynamoDB successfully. Upon adding a second application, which issues API calls to S3, you are getting authorization issues. What should you do to resolve the problem and ensure proper security?",
+        "choice1": "Edit the EC2 instance role to add permissions to S3",
+        "choice2": "Create an IAM task role for the new application",
+        "choice3": "Enable the Fargate mode",
+        "choice4": "Edit the S3 bucket policy to allow the ECS task",
+        "answer": 2,
+        "multi": 0
+    }
+]

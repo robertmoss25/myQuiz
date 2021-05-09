@@ -1,0 +1,74 @@
+[
+    {
+        "question": "You have a set of Docker images that you use for building containers. You want to start using the Elastic Container Service and utilize the Docker images. You need a place to store these Docker images. Which of the following can be used for this purpose?",
+        "choice1": "Use AWS DynamoDB to store the Docker images.",
+        "choice2": "Use AWS RDS to store the Docker images.",
+        "choice3": "Use EC2 Instances with EBS Volumes to store the Docker images.",
+        "choice4": "Use the ECR Service to store the Docker images.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A company wants to deploy docker containers to the AWS Cloud. They also want a highly scalable service which can help manage the orchestration of these containers. Which of the following would be ideal for such a requirement?",
+        "choice1": "Use the Amazon Elastic Container Service for Kubernetes.",
+        "choice2": "Install a custom orchestration tool on EC2 Instances.",
+        "choice3": "Use SQS to orchestrate the messages between docker containers.",
+        "choice4": "Use AWS Lambda functions to embed the logic for container orchestration.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A company is planning to use the AWS ECS service to work with containers. There is a need for the least amount of administrative overhead while launching containers. How can this be achieved?",
+        "choice1": "Use the Fargate launch type in AWS ECS.",
+        "choice2": "Use the EC2 launch type in AWS ECS.",
+        "choice3": "Use the Auto Scaling launch type in AWS ECS.",
+        "choice4": "Use the ELB launch type in AWS ECS.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A company wants to build a brand new application on the AWS Cloud. They want to ensure that this application follows the Microservices architecture. Which of the following services can be used to build this sort of architecture? Choose 3 answers from the options given below.",
+        "choice1": "AWS Lambda",
+        "choice2": "AWS ECS",
+        "choice3": "AWS API Gateway",
+        "choice4": "AWS Config",
+        "answer": "1,2,3",
+        "multi": 3
+    },
+    {
+        "question": "A company plans on deploying a batch processing application in AWS. Which of the following is an ideal way to host this application? Choose 2 answers from the options below. Each answer forms a part of the solution.",
+        "choice1": "Copy the batch processing application to an ECS Container.",
+        "choice2": "Create a docker image of your batch processing application.",
+        "choice3": "Deploy the image as an Amazon ECS task.",
+        "choice4": "Deploy the container behind the ELB.",
+        "answer": "2,3",
+        "multi": 2
+    },
+    {
+        "question": "A company is planning to use Docker containers and necessary container orchestration tools for their batch processing requirements. There is a requirement for batch processing for both critical and non-critical data. Which of the following is the best implementation step for this requirement, to ensure that cost is effectively managed?",
+        "choice1": "Use Kubernetes for container orchestration and Reserved instances for all underlyinginstances.",
+        "choice2": "Use ECS orchestration and Reserved Instances for all underlying instances.",
+        "choice3": "Use Docker for container orchestration and a combination of Spot and ReservedInstances for the underlying instances.",
+        "choice4": "Use ECS for container orchestration and a combination of Spot and Reserved Instances for the underlying instances.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You need a solution to distribute traffic evenly across all of the containers for a task running on Amazon ECS. Your task definitions define dynamic host port mapping for your containers. What AWS feature provides this functionally?",
+        "choice1": "Application Load Balancers support dynamic host port mapping.",
+        "choice2": "CloudFront custom origins support dynamic host port mapping.",
+        "choice3": "All Elastic Load Balancing instances support dynamic host port mapping.",
+        "choice4": "Classic Load Balancers support dynamic host port mapping.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Your security team requires each Amazon ECS task to have an IAM policy that limits the task’s privileges to only those required for its use of AWS services. How can you achieve this?",
+        "choice1": "Use IAM roles for Amazon ECS tasks to associate a specific IAM role with each ECS task definition",
+        "choice2": "Use IAM roles on the Amazon ECS container instances to associate IAM role with each ECS task on that instance",
+        "choice3": "Connect to each running amazon ECS container instance and add discrete credentials",
+        "choice4": "Reboot each Amazon ECS task programmatically to generate new instance metadata for each task",
+        "answer": 1,
+        "multi": 0
+    }
+]

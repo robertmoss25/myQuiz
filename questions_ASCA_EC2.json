@@ -270,5 +270,59 @@
         "choice5": "Dedicated Host",
         "answer": 4,
         "multi": 0
+    },
+    {
+        "question": "Which EC2 Purchasing Option can provide the biggest discount, but is not suitable for critical jobs or databases?",
+        "choice1": "Scheduled Instances",
+        "choice2": "Convertible Instances",
+        "choice3": "Dedicated Hosts",
+        "choice4": "Spot instances",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which network security tool can you use to control traffic in and out of EC2 Instances?",
+        "choice1": "Network Access Control List (NACL)",
+        "choice2": "Identify and Management Access (IAM)",
+        "choice3": "Security Groups",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which network security tool can you use to control traffic in and out of EC2 Instances?",
+        "choice1": "Network Access Control List (NACL)",
+        "choice2": "Identify and Management Access (IAM)",
+        "choice3": "Security Groups",
+        "choice4": "Filler",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "How long can you reserve an EC2 Reserved Instance?",
+        "choice1": "1 or 3 years",
+        "choice2": "2 or 4 years",
+        "choice3": "6 months or 1 year",
+        "choice4": "Anythime between 1 and 3 years",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A company would like to deploy a high-performance computing (HPC) application on EC2. Which EC2 instance type should it choose?",
+        "choice1": "Compute Optimized",
+        "choice2": "Storage Optimized",
+        "choice3": "Memory Optimized",
+        "choice4": "General Purpose",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which EC2 Purchasing Option should you use for an application you plan on running on a server continuously for 1 year?",
+        "choice1": "Reserved Instances",
+        "choice2": "Spot Instances",
+        "choice3": "On-demand Instances",
+        "choice4": "Convertible Instances",
+        "answer": 1,
+        "multi": 0
     }
 ]

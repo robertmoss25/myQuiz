@@ -1,0 +1,31 @@
+[
+    {
+        "question": "Your Lambda function is processing events coming through S3 events and distributed through an SNS topic. You have decided to ensure that events that can not be processed are sent to a DLQ. In which service should you set up the DLQ?",
+        "choice1": "S3 Events",
+        "choice2": "SNS Topic",
+        "choice3": "Lambda function",
+        "choice4": "Filler",
+        "answer": "3",
+        "multi": 0
+    },
+    {
+        "question": "You have created an architecture including CloudFront with WAF, Shield, an ALB, and EC2 instances. You would like to block an IP, where should you do it?",
+        "choice1": "CloudFront",
+        "choice2": "WAF",
+        "choice3": "Shield",
+        "choice4": "ALB Security Group",
+        "choice5": "EC2 Security Group",
+        "choice6": "NACL",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your instances are deployed in an EC2 placement group of type cluster in order to perform HPC. You would like to maximize network performance between your instances. What should you use?",
+        "choice1": "Elastic Network Inferface",
+        "choice2": "Elastic Fabric Adapter",
+        "choice3": "Elastic Network Adapter",
+        "choice4": "FSx for Lustre",
+        "answer": 2,
+        "multi": 0
+    }
+]
