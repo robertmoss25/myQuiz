@@ -240,6 +240,15 @@
         "choice4": "Leverage AWS Database Migration Service (AWS DMS) as a bridge between Amazon S3 and Amazon Kinesis Data Streams",  
         "answer": 4,
         "multi": 0
+    },
+    {
+        "question": "An engineering team wants to examine the feasibility of the user data feature of Amazon EC2 for an upcoming project. Which of the following are true about the EC2 user data configuration? (Select two)",
+        "choice1": "By default user data runs only during the boot cycle when you first launch an instance",
+        "choice2": "By default, user data is executed every time an EC2 instance is re-started",
+        "choice3": "When an instance is running, you can update user data by using root user credentials",
+        "choice4": "By default, scripts entered as user data are executed with root user",  
+        "answer": 1,
+        "multi": 0
     }, 
     {
         "question": "A cyber security company is running a mission critical application using a single Spread placement group of EC2 instances. The company needs 15 Amazon EC2 instances for optimal performance. How many Availability Zones (AZs) will the company need to deploy these EC2 instances per the given use-case?",
