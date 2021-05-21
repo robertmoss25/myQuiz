@@ -97,7 +97,7 @@ getNewQuestion = () => {
         question.innerText = currentQuestion.question + " ( Pick " + value + ")";
     else
         question.innerText = currentQuestion.question;
-    if (currentQuestion.question.length > 550)
+    if (currentQuestion.question.length > 450)
     {
         question.classList.remove('question');
         question.classList.add('questionlong');
