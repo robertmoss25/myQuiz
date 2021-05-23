@@ -1,0 +1,552 @@
+[
+    {
+        "question": "A new instance is launched in public VPC subnet. There is an internet gateway and a route entry as 0.0.0.0/0 but instance can not reach internet. Other instances in this subnet have no issue. How can this problem be solved?",
+        "choice1": "NACL should be configured for outbound rule allowing for any protocol and ports",
+        "choice2": "instance should be terminated and relaunched again",
+        "choice3": "A new security group should be created and allow outbound for any. Then instance should be attached to this security group",
+        "choice4": "Instance should have either public IP or elastic IP",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "What is the most secure option to connect to instances without Internet connectivity in private subnet VPC?",
+        "choice1": "Configure IAM policy to restrict access to the instances",
+        "choice2": "Using a bastion host server to connect to the instances",
+        "choice3": "Enable internet connectivity and configure security group to connect to the instances",
+        "choice4": "Enable internet connectivity and configure NACL and security group to connect to the instances",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "If any change is made to a security group rule, when are these changes effective?",
+        "choice1": "Changes will be effective after 5 minutes",
+        "choice2": "Changes will be effective after rebooting the instances in that security group",
+        "choice3": "Changes are automatically applied after a short period",
+        "choice4": "Security group rules can not be changed. You have to create a new security group and assign it to instances",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which DNS name can only be resolved within Amazon EC2?",
+        "choice1": "Private DNS name",
+        "choice2": "Internal DNS name",
+        "choice3": "Global DNS name",
+        "choice4": "External DNS name",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Is it possible to change an instance type after it has been created?",
+        "choice1": "Type can be changed if it has an EBS store volume root device",
+        "choice2": "Instance type can not be changed",
+        "choice3": "This question doesn't make sense",
+        "choice4": "Type can be changed if it has an instance store volume root device",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following is a durable key-value store?",
+        "choice1": "Amazon Simple Storage Service",
+        "choice2": "Amazon Simple Queue Service",
+        "choice3": "Amazon Simple Workflow Service",
+        "choice4": "Amazon Simple Notification Service",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which record type queries are free when using Route 53?",
+        "choice1": "AAAA",
+        "choice2": "Alias",
+        "choice3": "MX",
+        "choice4": "TXT",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Is it possible to create an AMI while an instance is running?",
+        "choice1": "Yes, only if it is Linux instance",
+        "choice2": "Yes, AMI can be created without any change",
+        "choice3": "No, instance should be stopped and rebooted",
+        "choice4": "Yes, if only 'no reboot' option is checked",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Can we attach an EBS volume to more than one EC2 instance at the same time?",
+        "choice1": "Yes",
+        "choice2": "Only EC2-optimized EBS volumes.",
+        "choice3": "No",
+        "choice4": "Only in read mode",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are developing a highly available web application using stateless web servers. Which services are suitable for storing session state data? Choose 3 answers",
+        "choice1": "Amazon ElasticCache",
+        "choice2": "Elastic Loab Balancing",
+        "choice3": "Amazon DynamoDB",
+        "choice4": "Amazon Relational Database Service (RDS)",
+        "choice5": "Amazon CloudWatch",
+        "choice6": "AWS Storage Gateway",
+        "answer": "1,3,4",
+        "multi": 3
+    },
+    {
+        "question": "When you run a DB Instance as a Multi-AZ deployment, the “______” serves database writes and reads",
+        "choice1": "Stand by",
+        "choice2": "Backup",
+        "choice3": "Primary",
+        "choice4": "Secondary",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A customer’s nightly EMR job processes a single 2TB data file stored on Amazon Simple Storage Service (S3). The Amazon Elastic Map Reduce (EMR) job runs on two On-Demand core nodes and three On-Demand task nodes. Which of the following may help reduce the EMR job completion time? Choose 2 answers",
+        "choice1": "Adjust the number of simultaneous mapper tasks",
+        "choice2": "Launch the core nodes and task nodes within an Amazon Virtual Cloud",
+        "choice3": "Use three Spot Instances rather than three On-Demand instances for the taks nodes.",
+        "choice4": "Use a bootstrap action the present the S3 bucket as a local filesystem.",
+        "choice5": "Enable termination protection for the job flow.",
+        "choice6": "Change the input split size in the MapReduce job configuration",
+        "answer": "1,6",
+        "multi": 2
+    },
+    {
+        "question": "You have been tasked with creating a VPC network topology for your company. The VPC network must support both Internet-facing applications and internally-facing applications accessed only over VPN. Both Internet-facing and internally-facing applications must be able to leverage at least three AZs for high availability. At a minimum, how many subnets must you create within your VPC to accommodate these requirements?",
+        "choice1": "3",
+        "choice2": "2",
+        "choice3": "4",
+        "choice4": "6",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You are deploying an application an Amazon Elastic Cloud Compute (EC2) that must call AWS APIs. What method of securely passing credentials to the application should you use?",
+        "choice1": "Pass API credentials to the instance using instance userdata.",
+        "choice2": "Store API credentials as an object in Amazon Simple Storage Service.",
+        "choice3": "Use AWS Identity and Access Management roles for EC2 instances.",
+        "choice4": "Embed the API credentials into your JAR files.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A startup company hired you to help them build a mobile application, that will ultimately store billions of images and videos in Amazon Simple Storage Service (S3). The company is lean on funding, and wants to minimize operational costs, however, they have an aggressive marketing plan, and expect to double their current installation base every six months. Due to the nature of their business, they are expecting sudden and large increases in the traffic to and from S3, and need to ensure that it can handle the performance needs of their application. What other information must you gather from this customer in order to determine whether S3 is the right option?",
+        "choice1": "You must find out the total number of requests per second at peak usage.",
+        "choice2": "In order to build the key namespace correctly, you must understand the total amount of storage needs for each S3 bucket .",
+        "choice3": "You must know the size of individual objects being written to S3, in order to properly design the key namespace.",
+        "choice4": "You must know how many customers the company has today, because this is critical in understanding what their customer base will be in two years.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What about is EC2 Role is true ?",
+        "choice1": "Setup an IAM user for the instance to restrict access to AWS API and assign it at launch.",
+        "choice2": "Launch an instance with an AWS Identity and Aceess Management (IAM) role to restrict AWS API access for the instance.",
+        "choice3": "Pass access AWS credentials in the User Data field when the instance is launched.",
+        "choice4": "Setup an IAM group with restricted AWS API access and put the instance in the group at launch.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "How can you change the instance type used in Auto Scaling Group?",
+        "choice1": "A new launch configuration with a new instance type should be created and attached to AS group",
+        "choice2": "AS Group should be deleted and recreated",
+        "choice3": "Instances should be stopped and then type can be changed",
+        "choice4": "It is not possible to change the instance type",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You want to implement a HPC ( High performance computing ) system with low-latency network performance. In order to establish this, which AWS feature can be used?",
+        "choice1": "Placement groups",
+        "choice2": "ElasticMapReduce",
+        "choice3": "EC2 and DynamoDB",
+        "choice4": "ELB and Auto scaling",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "After creating a new AWS account, you use the API to request 40 on-demand Amazon Elastic Compute Cloud (EC2) instances in a single Availability Zone. After 20 successful requests, subsequent requests failed. What could be a reason for this issue, and how would you resolve it?",
+        "choice1": "You encountered an API throttling situation and should try the failed requests using an exponential decay retry algorithm.",
+        "choice2": "AWS allows you to provision no more than 20 instances per AZ. Select a different AZ and retry the failed request.",
+        "choice3": "You encountered a soft limit of 20 instances per region. Submit the limit increase form and retry the failed requests once approved",
+        "choice4": "You need to use Amazon Virtual Private Cloud (VPC) in order to provision more than 20 instances in a single AZ. Simply terminate the resources already provisioned and re-launch them all in a VPC.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "About the charge of Elastic IP Address, which of the following is true?",
+        "choice1": "Elastic IP addresses can always be used with no charge.",
+        "choice2": "You are charged for each Elastic IP addressed.",
+        "choice3": "You can have 5 Elastic IP addresses per region with no charge.",
+        "choice4": "You can have one Elastic IP (EIP) address associated with a running instance at no charge.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "How can we protect accidental termination of our instances?",
+        "choice1": "By using Enable termination protection option",
+        "choice2": "By using Change shutdown behavior option.",
+        "choice3": "We can not prevent accidental termination.",
+        "choice4": "By using security group and disabling remote access to instances.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You receive a Spot Instance at a bid of $0.05/hr. After 30 minutes, the Spot Price increases to $0.06/hr and your Spot Instance is terminated by AWS. What was the total EC2 compute cost of running your Spot Instance?",
+        "choice1": "$0.05",
+        "choice2": "$0.06",
+        "choice3": "$0.00",
+        "choice4": "$0.025",
+        "choice5": "$0.02",
+        "answer": 3,
+        "multi" : 0
+    },
+    {
+        "question": "In “Detailed” monitoring data available for your EBS volumes, Provisioned IOPS volumes automatically send _________ minute metrics to Amazon CloudWatch",
+        "choice1": "4",
+        "choice2": "3",
+        "choice3": "2",
+        "choice4": "1",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You have an Amazon Virtual Private Cloud (VPC) with a public subnet. Three Amazon Elastic Compute Cloud (EC2) instances currently running inside the subnet can successfully communicate with other hosts on the Internet. You launch a fourth instance in the same subnet, using the same Amazon Machine Image (AMI) and security group configuration you used for the others, but find that this instance cannot be accessed from the Internet. What should you do to enable Internet access?",
+        "choice1": "Deploy a NAT instance into the public subnet",
+        "choice2": "Assign an elastic IP address to the fourth instance",
+        "choice3": "Modify the routing table for the public subnet",
+        "choice4": "Configure a publically routable IP address in the host OS of the fourth instance.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which type of volume is suited for use as boot volume?",
+        "choice1": "Ephemeral instance store volume",
+        "choice2": "Standard volume",
+        "choice3": "Provisioned IOPS volume",
+        "choice4": "None of them",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which protocol is not supported when using with Route 53 health check?",
+        "choice1": "TCP",
+        "choice2": "UDP",
+        "choice3": "HTTP",
+        "choice4": "HTTPS",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "We run a database on a m1.small instance and customers have performance issues. After investigation, database administrators asks you to improve iops performance. Which options can be used to improve iops?",
+        "choice1": "Using a compute optimized instance",
+        "choice2": "Using Provisioned IOPS",
+        "choice3": "Configuring Elastic load balancing and adding additional database servers",
+        "choice4": "Using a GPU instance",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "What about below is false for AWS SLA?",
+        "choice1": "RDS multi-AZ is guarantee to 99.95%.",
+        "choice2": "EBS availability is guarantee to 99.95%.",
+        "choice3": "S3 availability is guarantee to 99.95%.",
+        "choice4": "EC2 availability is guarantee to 99.95%.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An instance is launched in private VPC subnet. All security, NACL and routing definition configured as expected. A custom NAT instance is launched. Which of the following answer is right for configuring custom NAT instance?",
+        "choice1": "NAT instance should have elastic ip address configured",
+        "choice2": "Source/Destination check should be disabled",
+        "choice3": "NAT instance should be launched in public subnet",
+        "choice4": "NAT instance should have public ip address configured",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Placement Groups: enables applications to participate in a low-latency, 10 Gbps network. Which of below statements is false.",
+        "choice1": "A placement group can't span multiple Availability Zones.",
+        "choice2": "A placement group can span peered VPCs.",
+        "choice3": "You can move an existing instance into a placement group by specify parameter of placement group.",
+        "choice4": "Not all of the instance types that can be launched into a placement group.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "What action is required to establish an Amazon Virtual Private Cloud (VPC) VPN connection between an on-premises data center and an Amazon VPC virtual private gateway?",
+        "choice1": "Modify the main route table to allow traffic to a network address translation instance.",
+        "choice2": "Use a dedicated network address translation instance in the public subnet",
+        "choice3": "Assign a static Internet-routable IP address to an Amazon VPC customer gateway.",
+        "choice4": "Establish a dedicated networking connection using AWS Direct Connect.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "What does Amazon CloudFormation provide?",
+        "choice1": "None of these",
+        "choice2": "A template resource creation for Amazon Web Services.",
+        "choice3": "The ability to setup Auto Scaling for Amazon EC2 Instances",
+        "choice4": "A template to map network resources for Amazon Web Services",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have an application running in us-west-2 that requires six Amazon Elastic Compute Cloud (EC2) instances running at all times. With three AZs available in that region (us-west-2a, us-west-2b, and us-west-2c), which of the following deployments provides 100 percent fault tolerance if any single AZ in us-west-2 becomes unavailable? Choose 2 answers",
+        "choice1": "Us-west-2a with two EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances",
+        "choice2": "Us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2-instances",
+        "choice3": "Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances",
+        "choice4": "Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.",
+        "choice5": "Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "How can we attach our instance store volume to another instance?",
+        "choice1": "We can not detach or attach instance store volume",
+        "choice2": "We can use 'force detach' and then attach to another instance",
+        "choice3": "We can stop the instance. Detach the volume. And attach to other instance",
+        "choice4": "We can use 'detach volume' and then attach to another instance.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What does the “Server Side Encryption” option an Amazon S3 provide?",
+        "choice1": "It provides an encrypted virtual disk in the cloud",
+        "choice2": "It allows to upload files using an SSL endpoint, for a secure transfer.",
+        "choice3": "It doesn’t exist for Amazon S3, but only for Amazon EC2",
+        "choice4": "It encrypts the files that you send to Amazon S3, on the server side.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "The user just started an instance at 3 PM. Between 3 PM to 5 PM, he stopped and started the instance twice. During the same period, he has run the linux reboot command by ssh once and triggered reboot from AWS console once. For how many instance hours will AWS charge this user",
+        "choice1": "3",
+        "choice2": "5",
+        "choice3": "2",
+        "choice4": "4",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An IAM user is trying to perform an action on an object belonging to some other root account’s bucket. Which of the below mentioned options will AWS S3 not verify?",
+        "choice1": "Permission provided by the parent of the IAM user on the bucket",
+        "choice2": "Permission provided by the bucket owner to the IAM user",
+        "choice3": "Permission provided by the parent of the IAM user",
+        "choice4": "The object owner has provided access to the IAM user",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What combination of the following options will protect Amazon Simple Storage (S3) objects from both accidental deletion and accidental overwriting? Choose 2 answers",
+        "choice1": "Disable S3 delete using an IAM bucket policy.",
+        "choice2": "Enable S3 versioning on the bucket.",
+        "choice3": "Enable S3 Reduced Redundancy Storage.",
+        "choice4": "Enable multi-factor authentication (MFA) protected access.",
+        "choice5": "Access S3 data using only signer URLs.",
+        "answer": "2,4",
+        "multi": 2
+    },
+    {
+        "question": "You are setting up a VPC and you need to set up a public subnet within that VPC. What following requirement must be met for this subnet to be considered a public subnet?",
+        "choice1": "None of these answers can be considered a public subnet",
+        "choice2": "Subnet's traffic is not routed to an Internet gateway but has its traffic routed to a virtual private gateway.",
+        "choice3": "Subnet's traffic is routed to an Internet gateway",
+        "choice4": "Subnet's traffic is not routed to an Internet gateway",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "In reviewing the Auto Scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. What design choice could you make to optimize for cost while preserving elasticity? Choose 2 answers",
+        "choice1": "Modify the Auto Scaling group termination policy to terminate the newest instance first",
+        "choice2": "Modify the Auto Scaling policy to use scheduled scaling actions.",
+        "choice3": "Modify the Auto Scaling group termination policy to terminate the oldest instance first.",
+        "choice4": "Modify the Auto Scaling group cool-down timers.",
+        "choice5": "Modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy.",
+        "answer": "4,5",
+        "multi": 2
+    },
+    {
+        "question": "Will my standby RDS instance be in the same AZ as my primary?",
+        "choice1": "No",
+        "choice2": "Yes",
+        "choice3": "Only if configured at launch",
+        "choice4": "Only for Oracle RDS types",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Can you create IAM security credentials for existing users?",
+        "choice1": "No, IAM requires that all users who have credentials set up are not existing users",
+        "choice2": "No, security credentials are created within GROUPS, and then users are associated to GROUPS at a later time.",
+        "choice3": "Yes, existing users can have security credentials associated with their account",
+        "choice4": "Yes, but only IAM credentials, not ordinary security credentials.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An instance running a webserver is launched in a VPC subnet. A security group and a NACL are configured to allow inbound port 80. What should be done to make web server accessible by everyone?",
+        "choice1": "Outbound Ports 49152-65535 should be enabled on NACL",
+        "choice2": "Outbound Port 80 rule should be enabled on security group",
+        "choice3": "All ports both inbound and outbound should be enabled on security group and NACL",
+        "choice4": "Outbound Port 80 rule should be enabled on both security group and NACL",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A VPC public subnet is one that:",
+        "choice1": "Has the Public Subnet option selected in its configuration.",
+        "choice2": "Includes a route in its associated routing table via a Network Address Translation (NAT) instance.",
+        "choice3": "Has a Network Access Control List (NACL) permitting outbound traffic to 0.0.0.0/0",
+        "choice4": "Has at least one route in its associated routing table that uses an Internet Gateway (IGW).",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You can use _______ and ________ to help secure the instances in your VPC.",
+        "choice1": "Security groups and biometric authentication",
+        "choice2": "Security groups and 2-factor authentication",
+        "choice3": "Security groups and network ACLs",
+        "choice4": "Security groups and multi-factor authentication",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a business-critical two-tier web app currently deployed in two AZ in a single region, using Elastic Load Balancing and Auto Scaling. The app depends on synchronous replication (very low latency connectivity) at the database layer. The application needs to remain fully available even if one application AZs goes off-line, and Auto Scaling cannot launch new instances in the remaining AZs. How can the current architecture be enhanced to ensure this?",
+        "choice1": "Deploy in three Availability Zones, with Auto Scaling minimum set to handle 50 percent peak load per zone.",
+        "choice2": "Deploy in two regions using Weighted Round Robin (WRR), with Auto Scaling minimums set for 100 percent peak load per region",
+        "choice3": "Deploy in two regions using Weighted Round Robin (WRR), with Auto Scaling minimums set for 50 percent peak load per Region.",
+        "choice4": "Deploy in three Availability Zones, with Auto Scaling minimum set to handle 33 percent peak load per zone.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "How can an instance be copied to another region?",
+        "choice1": "By creating an AMI and copy it to another region",
+        "choice2": "First instance's root volume is detached. Then a new instance is created in another region. Finally detached volume can be attached to new instance as root device",
+        "choice3": "There is no way to copy an instance to another region",
+        "choice4": "By stopping instance and using copy option",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the below mentioned steps will not be performed while creating the AMI of instance stored-backend?",
+        "choice1": "Register the AMI.",
+        "choice2": "Define the AMI launch permissions.",
+        "choice3": "Upload the bundled volume.",
+        "choice4": "Bundle the volume.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which service alias record is not free when using with Route 53?",
+        "choice1": "AS",
+        "choice2": "S3",
+        "choice3": "ELB",
+        "choice4": "CloudFront",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Select the correct set of options. These are the initial settings for the default security group",
+        "choice1": "Allow all inbound traffic, Allow no outbound traffic and Allow instances associated with this security group to talk to each other.",
+        "choice2": "Allow no inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other.",
+        "choice3": "Allow all inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other.",
+        "choice4": "Allow no inbound traffic, Allow all outbound traffic and Allow instances associated with this security group to talk to each other.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Does Route 53 support MX Records?",
+        "choice1": "Yes",
+        "choice2": "No",
+        "choice3": "Only Primary MX records, Secondary MX records are not supported.",
+        "choice4": "It supports CNAME records, but not MX records.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following requires a custom CloudWatch metric to monitor?",
+        "choice1": "Disk read operations",
+        "choice2": "Estimated charges",
+        "choice3": "CPU use",
+        "choice4": "Network in",
+        "choice5": "Memory use",
+        "answer": 5,
+        "multi": 0
+    },
+    {
+        "question": "You are configuring a new VPC for one of your client for a cloud migration project. Only a public VPN will be in place. After you created your VPC, you created a new subnet, a new internet gateway and attached your internet gateway with your VPC. As you created your first instance in to your VPC, you realized that you can not connect the instance even it is configured with elastic IP. What should be done to access the instance?",
+        "choice1": "A route should be created as 0.0.0.0/0 and your internet gateway as target",
+        "choice2": "A NACL should be created and allow all outbound traffic",
+        "choice3": "A NAT instance should be created and all traffic should be forwarded to NAT instance",
+        "choice4": "Attach another ENI to instance and connect via new ENI",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What is the Reduced Redundancy option in Amazon S3?",
+        "choice1": "Less redundancy for a lower cost",
+        "choice2": "It allows you to destroy any copy of your files outside",
+        "choice3": "It doesn’t exist in Amazon S3, but in Amazon EBS",
+        "choice4": "It doesn’t exist at all",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "What happens to data on ephemeral volume of an EBS-backed instance if instance is stopped and started?",
+        "choice1": "Data is automatically copied to another volume",
+        "choice2": "Data is deleted",
+        "choice3": "Volume snapshot is saved in S3",
+        "choice4": "Data persists",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "To protect accidental overwrites or deletions of your objects in your S3 bucket you configured versioning. Because of changes in your environment, you don’t want to use versioning anymore and want to enable lifecycle rules. How can versioning be disabled?",
+        "choice1": "Once enabled, Versioning cannot be disabled. You can also add Lifecycle Rules for this bucket",
+        "choice2": "When Lifecycle rules are enabled, versioning is automatically disabled",
+        "choice3": "There is no need to disable versioning. Both lifecycle rules and versioning can work simultaneously",
+        "choice4": "After manually disabling versioning , lifecycle rules can be enabled",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "How can software determine the public and private IP addresses of the Amazon Elastic Cloud Compute instance that it is running on?",
+        "choice1": "Use an ipconfig or ifconfig command",
+        "choice2": "Query the local instance userdata.",
+        "choice3": "Query the appropriate Amazon CloudWatch metric.",
+        "choice4": "Query the local instance metadata.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You have assigned one Elastic IP to your EC2 instance. Now we need to restart the VM without EIP changed. Which of below you should not do?",
+        "choice1": "Reboot the instance.",
+        "choice2": "When the instance is in VPC private subnet, stop/start works.",
+        "choice3": "When the instance is in VPC public subnets, stop/start works.",
+        "choice4": "Reboot and stop/start both works.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which route must be added to your routing table in order to allow connections to the Internet from your subnet?",
+        "choice1": "Destination: 10.0.0.0/32 --> Target: your virtual private gateway",
+        "choice2": "Destination: 192.168.1.257/0 --> Target: your Internet gateway",
+        "choice3": "Destination: 0.0.0.0/32 --> Target: your virtual private gateway",
+        "choice4": "Destination: 0.0.0.0/0 --> Target: 0.0.0.0/32",
+        "choice5": "Destination: 0.0.0.0/0 --> Target: your Internet gateway",
+        "answer": 5,
+        "multi": 0
+    },
+    {
+        "question": "You have an Amazon Elastic Cloud Compute (EC2) security group with several running EC2 instances. You change the security group rules to allow inbound traffic on a new port and protocol, and launch several new instances in the same security group. The new rules apply:",
+        "choice1": "Immediately to the new instances only.",
+        "choice2": "Immediately to all instances in the security group",
+        "choice3": "To all instances, but it may take several minutes for old instances to see the changes.",
+        "choice4": "Immediately to the new instances, but old instances must be stopped and restarted before the new rules apply.",
+        "answer": 2,
+        "multi": 0
+    }
+]

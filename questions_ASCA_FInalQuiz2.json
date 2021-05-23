@@ -564,8 +564,8 @@
         "choice3": "Enable MFA delete on the bucket",
         "choice4": "Create an event trigger on deleting any S3 object. The event invokes an SNS notification via email to the IT manager ",
         "choice5": "Establish a process to get managerial approval for deleting S3 objects",
-        "answer": 1,
-        "multi": 0
+        "answer": "1,3",
+        "multi": 2
     },
     {
         "question": "The engineering team at a company wants to use Amazon SQS to decouple components of the underlying application architecture. However, the team is concerned about the VPC-bound components accessing SQS over the public internet. As a solutions architect, which of the following solutions would you recommend to address this use-case?",

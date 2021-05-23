@@ -1,0 +1,93 @@
+[
+    {
+        "question": "A company is storing an access key (access key ID and secret access key) in a text file on a custom AMI. The company uses the access key to access DynamoDB tables from instances created from the AMI. The security team has mandated a more secure solution.Which solution will meet the security team’s mandate?",
+        "choice1": "Put the access key in an S3 bucket, and retrieve the access key on boot from the instance.",
+        "choice2": "Pass the access key to the instances through instance user data.",
+        "choice3": "Obtain the access key from a key server launched in a private subnet.",
+        "choice4": "Create an IAM role with permissions to access the table, and launch all instances with the new role.",
+        "answer": 4,
+        "multi": 0
+    },    
+    {
+        "question": "A company is developing a highly available web application using stateless web servers. Which services are suitable for storing session state data? (Select TWO.)",
+        "choice1": "CloudWatch",
+        "choice2": "DynamoDB",
+        "choice3": "Elastic Load Balancing",
+        "choice4": "ElastiCache",
+        "choice5": "Storage Gateway",
+        "answer": "2,4",
+        "multi": 2
+    },
+    {
+        "question": "Company salespeople upload their sales figures daily. A Solutions Architect needs a durable storage solution for these documents that also protects against users accidentally deleting important documents. Which action will protect against unintended user actions?",
+        "choice1": "Store data in an EBS volume and create snapshots once a week.",
+        "choice2": "Store data in an S3 bucket and enable versioning.",
+        "choice3": "Store data in two S3 buckets in different AWS regions.",
+        "choice4": "Store data on EC2 instance storage.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "An application requires a highly available relational database with an initial storage capacity of 8 TB. The database will grow by 8 GB every day. To support expected traffic, at least eight read replicas will be required to handle database reads.Which option will meet these requirements?",
+        "choice1": "DynamoDB",
+        "choice2": "Amazon S3",
+        "choice3": "Amazon Aurora",
+        "choice4": "Amazon Redshift ",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A Solutions Architect is designing a critical business application with a relational database that runs on an EC2 instance. It requires a single EBS volume that can support up to 16,000 IOPS. Which Amazon EBS volume type can meet the performance requirements of this application?",
+        "choice1": "EBS Provisioned IOPS SSD",
+        "choice2": "EBS Throughput Optimized HDD",
+        "choice3": "EBS General Purpose SSD",
+        "choice4": "EBS Cold HDD",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A web application allows customers to upload orders to an S3 bucket. The resulting Amazon S3 events trigger a Lambda function that inserts a message to an SQS queue. A single EC2 instance reads messages from the queue, processes them, and stores them in an DynamoDB table partitioned by unique order ID. Next month traffic is expected to increase by a factor of 10 and a Solutions Architect is reviewing the architecture for possible scaling problems. Which component is MOST likely to need re-architecting to be able to scale to accommodate the new traffic?",
+        "choice1": "Lambda function",
+        "choice2": "SQS queue",
+        "choice3": "EC2 instance",
+        "choice4": "DynamoDB table",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An application saves the logs to an S3 bucket. A user wants to keep the logs for one month for troubleshooting purposes, and then purge the logs. What feature will enable this?",
+        "choice1": "Adding a bucket policy on the S3 bucket.",
+        "choice2": "Configuring lifecycle configuration rules on the S3 bucket.",
+        "choice3": "Creating an IAM policy for the S3 bucket.",
+        "choice4": "Enabling CORS on the S3 bucket.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "An application running on EC2 instances processes sensitive information stored on Amazon S3. The information is accessed over the Internet. The security team is concerned that the Internet connectivity to Amazon S3 is a security risk. Which solution will resolve the security concern?",
+        "choice1": "Access the data through an Internet Gateway.",
+        "choice2": "Access the data through a VPN connection.",
+        "choice3": "Access the data through a NAT Gateway.",
+        "choice4": "Access the data through a VPC endpoint for Amazon S3.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An organization is building an Amazon Redshift cluster in their shared services VPC. The cluster will host sensitive data. How can the organization control which networks can access the cluster?",
+        "choice1": "Run the cluster in a different VPC and connect through VPC peering.",
+        "choice2": "Create a database user inside the Amazon Redshift cluster only for users on the network.",
+        "choice3": "Define a cluster security group for the cluster that allows access from the allowed networks.",
+        "choice4": "Only allow access to networks that connect with the shared services network via VPN.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A Solutions Architect is designing an online shopping application running in a VPC on EC2 instances behind an ELB Application Load Balancer. The instances run in an Auto Scaling group across multiple Availability Zones. The application tier must read and write data to a customer managed database cluster. There should be no access to the database from the Internet, but the cluster must be able to obtain software patches from the Internet. Which VPC design meets these requirements?",
+        "choice1": "Public subnets for both the application tier and the database cluster",
+        "choice2": "Public subnets for the application tier, and private subnets for the database cluster",
+        "choice3": "Public subnets for the application tier and NAT Gateway, and private subnets for the database cluster",
+        "choice4": "Public subnets for the application tier, and private subnets for the database cluster and NAT Gateway",
+        "answer": 3,
+        "multi": 0
+    }
+]

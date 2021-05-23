@@ -1,0 +1,567 @@
+[
+    {
+        "question": "You have just discovered that you can upload your objects to Amazon S3 using Multipart Upload API. You start to test it out and but are unsure of the benefits that it would provide. Which of the following is not a benefit of using multipart uploads?",
+        "choice1": "Pause and resume object uploads",
+        "choice2": "Improved throughput",
+        "choice3": "Begin an upload before you know the final object size",
+        "choice4": "More secure than normal upload",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "What are the characteristics of Dynamo DB ? (choose 3 correct answers)",
+        "choice1": "It is used for SQL databases like SQL Server , MySQL , Oracle",
+        "choice2": "Gives you a fast and predictable performance with seamless scalability",
+        "choice3": "It is a managed service provided by AWS",
+        "choice4": "There is a limit of stored data or throughput of data",
+        "choice5": "When reading data from Amazon DynamoDB, users can specify whether they want the read to be eventually consistent or strongly consistent",
+        "answer": "2,3,5",
+        "multi": 3
+    },
+    {
+        "question": "You are architecting a highly-scalable and reliable web application which will have a huge amount of content. You have decided to use Cloudfront as you know it will speed up distribution of your static and dynamic web content and know that Amazon CloudFront integrates with Amazon CloudWatch metrics so that you can monitor your web application. Because you live in Sydney you have chosen the Asia Pacific (Sydney) region in the AWS console. However you have set this up but no CloudFront metrics seem to be appearing in the CloudWatch console. What is the most likely reason from the possible choices below for this?",
+        "choice1": "Metrics for CloudWatch are available only when you choose the same region as the application you are monitoring.",
+        "choice2": "Metrics for CloudWatch are available only when you choose the US East (N. Virginia)",
+        "choice3": "You need to pay for CloudWatch for it to become active.",
+        "choice4": "Metrics for CloudWatch are not available for the Asia Pacific region as yet.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which features can be used to restrict access to data in S3? (Pick 2 correct answers)",
+        "choice1": "Set an S3 ACL on the bucket or the object.",
+        "choice2": "Use S3 Virtual Hosting",
+        "choice3": "Create a CloudFront distribution for the bucket",
+        "choice4": "Set an S3 bucket policy",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "How do you ensure that the data has been saved properly in S3 ? (Choose 1 correct answer)",
+        "choice1": "When processing a request to store data, the service will redundantly store your object across multiple facilities before returning SUCCESS.",
+        "choice2": "Using a combination of Content-MD5 checksums",
+        "choice3": "You can see the HTTP success code in the logs",
+        "choice4": "Every S3 account has a predefined bucket where the logs are stored",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You have a publicly facing web application where users self-register to sign up for an account. The account shares static objects with authenticated users of your application you want to store this content on Amazon S3 and make it available only to properly authorized users over the web. What is the most cost-effective and performant method for achieving this?",
+        "choice1": "Grant access to the objects with AM policies.",
+        "choice2": "Grant access to the bucket with a bucket policy.",
+        "choice3": "Write web server code that reads the objects from Amazon 53 for delivery to the user's browser.",
+        "choice4": "Return signed URLs with temporary access to the objects from the web server.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "How to secure data on rest in EBS ?",
+        "choice1": "Block the EC2 to access data to your EBS",
+        "choice2": "Use S3 instead",
+        "choice3": "You can use your own encryption layer on the top",
+        "choice4": "EBS automatically encrypts data on it for more security",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Where should you use SWF – Simple Workflow Service ? (choose 2 correct answers)",
+        "choice1": "Video encoding application where each video is encoded with a pre-defined number of steps",
+        "choice2": "Process a queue of messages where each message is a task that needs to be completed",
+        "choice3": "Receiving thousands of notifications from a process and add them to a queue",
+        "choice4": "Designing a business application which requires a lot of coordination between different tasks",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "In which of the following cases should you use SQS – Simple Queue Service (choose 2 correct answers)",
+        "choice1": "Video encoding application where each video is encoded with a pre-defined number of steps",
+        "choice2": "Receiving thousands of notifications from a process and add them to a queue",
+        "choice3": "Designing a business application which requires a lot of coordination between different tasks",
+        "choice4": "Process a queue of messages where each message is a task that needs to be completed",
+        "answer": "2,4",
+        "multi": 2
+    },
+    {
+        "question": "You configured ELB to perform health checks on EC2 instances. If an instance fails to pass health checks, which statement will be true? (choose 1 correct answer)",
+        "choice1": "The instance gets terminated automatically by the ELB.",
+        "choice2": "The instance is replaced automatically by the ELB.",
+        "choice3": "The instance gets quarantined by the ELB for root cause analysis.",
+        "choice4": "The ELB stops sending traffic to the instance that failed its health check.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following are characteristics of the Auto Scaling service on AWS? (choose 3)",
+        "choice1": "Collects and tracks metrics and sets alarms.",
+        "choice2": "Responds to changing conditions by adding or terminating Amazon EC2 instances.",
+        "choice3": "Sends traffic to healthy instances.",
+        "choice4": "Delivers push notifications.",
+        "choice5": "Enforces a minimum number of running Amazon EC2 instances.",
+        "choice6": "Launches instances from a specified Amazon Machine Image (AMI).",
+        "answer": "2,5,6",
+        "multi": 3
+    },
+    {
+        "question": "Which of the following will occur when an EC2 instance in a VPC (Virtual Private Cloud) with an associated Elastic IP is stopped and started? (Choose 2 answers)",
+        "choice1": "The ENI (Elastic Network Interface) is detached",
+        "choice2": "The Elastic IP will be disassociated from the instance",
+        "choice3": "All data on instance-store devices will be lost",
+        "choice4": "The underlying host for the instance is changed",
+        "choice5": "All data on EBS (Elastic Block Store) devices will be lost",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "For an application running in ap-northeast-1 with three Availability Zones ( ap-northeast-la , ap-northeast-1b , and ap-northeast-1c ) . Which instance deployment provides high availability for the application that normally requires nine running Amazon EC2 instances but can run on a minimum of 65% capacity while Auto Scaling launches replacement instances in the remaining Availability Zones?",
+        "choice1": "Deploy the application on four servers in ap-northeast-1 a and five servers in ap-northeast-1b. and keep five stopped instances in ap-northeast-1a as reserve.",
+        "choice2": "Deploy the application on three servers in ap-northeast-la. three servers in ap-northeast-1b. and three servers in ap-northeast-1c",
+        "choice3": "Deploy the application on nine servers in ap-northeast-1 b and keep nine stopped instances in ap-northeast-1a as reserve.",
+        "choice4": "Deploy the application on six servers in a ap-northeast-1 b and three servers in ap-northeast-1c.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Your web service has a performance SLA to respond to requests in < 1 second. Under normal and heavy operations, distributing requests over four instances meets this SLA. What architecture ensures high availability and fault-tolerant operation of your service if an AZ becomes unreachable?",
+        "choice1": "Deploy the service on four servers in a single Availability Zone.",
+        "choice2": "Deploy the service on six servers in a single Availability Zone.",
+        "choice3": "Deploy the service on four servers across two Availability Zones.",
+        "choice4": "Deploy the service on eight servers across two Availability Zones",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which AWS services that you can access to underlying host? Multiple choice",
+        "choice1": "ElastiCache",
+        "choice2": "RDS",
+        "choice3": "Elastic Beanstalk",
+        "choice4": "DynamoDB",
+        "choice5": "EC2",
+        "choice6": "EMR",
+        "answer": "5,6",
+        "multi": 2
+    },
+    {
+        "question": "What services are required for Auto Scaling ? (choose 2 correct answers)",
+        "choice1": "ELB",
+        "choice2": "SNS",
+        "choice3": "Cloudwatch",
+        "choice4": "SQS",
+        "answer": "1,3",
+        "multi": 2
+    },
+    {
+        "question": "You have just discovered that you can upload your objects to Amazon S3 using Multipart Upload API. You start to test it out and but are unsure of the benefits that it would provide. Which of the following is not a benefit of using multipart uploads?",
+        "choice1": "Improved throughput",
+        "choice2": "Pause and resume object uploads",
+        "choice3": "More secure than normal upload",
+        "choice4": "Begin an upload before you know the final object size",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "To maximize I/O throughput and consistency on an Amazon EC2 instance running a database on several Amazon EBS volumes. you should deploy using: (choose 2)",
+        "choice1": "An Amazon EBS—optimized Amazon EC2 instance type",
+        "choice2": "An Amazon EC2 placement group",
+        "choice3": "A storage-optimized instance type",
+        "choice4": "Provisioned lOPS Amazon EBS volumes",
+        "choice5": "A dedicated Amazon EC2 instance",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "You have an existing VPC with the default routing table. And several Linux instances running a single subnet. You launch a Windows instance from an Amazon-provided AMI in the same subnet, using the same security group. The Windows instance is running, but you cannot connect to it via RDP. However, you can connect to the Linux instances via SSH, and from there can successfully ping the Windows instance. What is the likely problem?",
+        "choice1": "A routing rule must be configured to allow RDP traffic.",
+        "choice2": "A security group rule must be added to allow RDP traffic.",
+        "choice3": "A Windows firewall rule must be added to allow RDP.",
+        "choice4": "A NACL allow rule must be added to allow RDP traffic.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following actions can be controlled with IAM policies? (Choose 3)",
+        "choice1": "Creating tables in a MySOL RDS database.",
+        "choice2": "Configuring a VPC security group.",
+        "choice3": "Logging in to a NET application.",
+        "choice4": "Creating an Amazon S3 bucket.",
+        "choice5": "Creating an Oracle RDS database.",
+        "answer": "2,4,5",
+        "multi": 3
+    },
+    {
+        "question": "Which is an operational process performed by AWS for data security?",
+        "choice1": "Replication of data access multiple AWS Regions",
+        "choice2": "AES-256 encryption of data stored on any shared storage device",
+        "choice3": "Background virus scans of EBS volumes and EBS snapshots",
+        "choice4": "Decommissioning of storage devices using industry-standard practices",
+        "choice5": "Secure wiping of EBS data when an EBS volume is unmounted",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A user is assigning an elastic IP to an instance when the instance is booted. The user is running AWS CLI inside instance to assign the IP. The AWS CLI requires the AWS credentials to execute the action. Which of the below mentioned options is a possible solution to achieve the above task without compromising on the AWS credentials security?",
+        "choice1": "Setup the X.509 certificates of the root account with an instance and use it to access the CLIs.",
+        "choice2": "All the options listed are viable solutions.",
+        "choice3": "Create an IAM user which only has the EC2 assigned IP related permission and use its credentials.",
+        "choice4": "Use the root account access key and secret access key with CLI but do not create an AMI",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You need to set up security for your VPC and you know that Amazon VPC provides two features that you can use to increase security for your VPC. Security groups and Network access control lists (ACLs). You start to look into Security groups first. Which statement below is incorrect in relation to Security groups?",
+        "choice1": "Supports allow rules and deny rules",
+        "choice2": "Is stateful: Return traffic is automatically allowed regardless of any rules",
+        "choice3": "Operates at the instance level (first layer of defense)",
+        "choice4": "Evaluate all rules before deciding whether to allow traffic",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You need to establish a backup and archiving strategy for your company using AWS. Documents should be immediately accessible for 3 months and available for 5 years for compliance reasons. Which AWS service fulfills these requirements in the most cost effective way?",
+        "choice1": "Upload data to S3 and use life-cycle policies to move the data into Glacier for long-time archiving",
+        "choice2": "Use DirectConnect to upload data to S3 and use IAM policies to move the data into Glacier for long-time archiving",
+        "choice3": "Use StorageGateway to store data to S3 and use life-cycle policies to move the data into Redshift for long-time archiving",
+        "choice4": "Upload the data on EBS, use life-cycle policies to move EBS snapshots into S3 and later into Glacier for long-time archiving",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "An application hosted at the EC2 instance receives an HTTP request from ELB. The same request has an X-Forwarded-For header, which has three IP addresses. Which systems IP will be a part of this header?",
+        "choice1": "Previous Request IP address.",
+        "choice2": "All of the answers listed here.",
+        "choice3": "Load Balancer IP address.",
+        "choice4": "Client IP address.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You are running an application on an EC2 and now you want to add another EC2 for your application that requires a high bandwidth connect with the existing EC2. Where should you launch your EC2 in this case ? (Choose 1 correct answers)",
+        "choice1": "Availability Zone",
+        "choice2": "Public Subnet",
+        "choice3": "Placement Group",
+        "choice4": "Private Subnet",
+        "choice5": "VPC",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Your web site is hosted on 10 EC2 instances in 5 regions around the globe with 2 instances per region. How could you configure your site to maintain site availability with minimum downtime if one of the 5 regions was to lose network connectivity for an extended period of time?",
+        "choice1": "Create a Route 53 Latency Based Routing Record Set that resolves to an Elastic Load Balancer in each region. Set an appropriate health check on each ELB",
+        "choice2": "Create a Route 53 Latency Based Routing Record Set that resolves to Elastic Load Balancers in each region and has the Evaluate Target Health flag set to true.",
+        "choice3": "Establish VPN Connections between the instances in each region. Rely on BGP to failover in the case of a region wide connectivity outage",
+        "choice4": "Create an Elastic Load Balancer to place in front of the EC2 instances. Set an appropriate health check on each ELB",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "After setting up a data streaming service for a media corporation they are complaining about their data limits being exceeded so you begin to investigate. What happens if the capacity limits of an Amazon Kinesis stream are exceeded while the data producer puts data into the stream?",
+        "choice1": "The put data transaction will be rejected with a ProvisionedThroughputExceeded exception.",
+        "choice2": "Nothing.",
+        "choice3": "The put data transaction will be rejected with a Throughput Exceeded exception.",
+        "choice4": "All data will be terminated",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You maintain an application on AWS to provide development and test platforms for your developers. Currently both environments consist of an m1.small EC2 instance. Your developers notice performance degradation as they increase network load in the test environment? How would you mitigate these performance issues in the test environment?",
+        "choice1": "Upgrade the m1.small to a larger instance type",
+        "choice2": "Use the EBS optimized option to offload EBS traffic",
+        "choice3": "Configure Amazon Cloudwatch to provision more network bandwidth when network utilization exceeds 80%",
+        "choice4": "Add an additional ENI to the test instance",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "You are building a system to distribute confidential training videos to employees. Using CloudFront, what method could be used to serve content that is stored in S3, but not publically accessible from S3 directly?",
+        "choice1": "Create a S3 bucket policy that lists the CloudFront distribution ID as the Principal and the target bucket as the Amazon Resource Name (ARN)",
+        "choice2": "Add the CloudFront account security group “amazon-cf/amazon-cf-sg” to the appropriate S3 bucket policy",
+        "choice3": "Create an Identity and Access Management (IAM) User for CloudFront and grant access to the objects in your S3 bucket to that IAM User.",
+        "choice4": "Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OAI",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following AWS services facilitate the implementation of loosely coupled architectures? (choose 2)",
+        "choice1": "AWS CloudFormation",
+        "choice2": "Amazon Elastic MapReduce",
+        "choice3": "AWS CloudTrail",
+        "choice4": "Elastic Load Balancing",
+        "choice5": "Amazon Simple Queue Service",
+        "answer": "4,5",
+        "multi": 2
+    },
+    {
+        "question": "Your company has confidential information that, according to security policies, must be stored in an encrypted format. Which of the following services provide an encryption feature? (Choose 3)",
+        "choice1": "Amazon EC2 instance storage volumes",
+        "choice2": "Amazon S3",
+        "choice3": "Amazon ElastiCache",
+        "choice4": "Amazon EBS volumes",
+        "choice5": "Amazon DynamoDB",
+        "choice6": "Amazon Redshift",
+        "answer": "2,4,6",
+        "multi": 3
+    },
+    {
+        "question": "If I have multiple Read Replicas for my master DB Instance and I promote one of them, what happens to the rest of the Read Replicas?",
+        "choice1": "The remaining Read Replicas will be combined to one replica.",
+        "choice2": "None of these.",
+        "choice3": "The remaining Read Replicas will be deleted",
+        "choice4": "The remaining Read Replicas will still replicate from the older master DB Instance",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Does AWS allow for the use of Multi Factor Authentication tokens?",
+        "choice1": "Yes, but it offers only virtual MFA devices",
+        "choice2": "No",
+        "choice3": "Yes, with both hardware and virtual MFA devices",
+        "choice4": "Yes, but it offers only physical (hardware) MFA devices",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "In the basic monitoring package for EC2, Amazon CloudWatch provides the following metrics:",
+        "choice1": "Web server visible metrics such as number failed transaction requests",
+        "choice2": "Database visible metrics such as number of connections",
+        "choice3": "Operating system visible metrics such as memory utilization",
+        "choice4": "Hypervisor visible metrics such as CPU utilization",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "You have a business critical application that requires it to be highly available with 6 instances always running. What should you do to achieve this ? (choose 3 correct answers)",
+        "choice1": "Auto Scaling rule for 6 instances always running",
+        "choice2": "Auto Scaling Replace the lost capacity in case of zone failure in the other zone",
+        "choice3": "2 EC2 in 3 regions with ELB on top",
+        "choice4": "Auto scaling rule for 3 instance always running in each zone",
+        "choice5": "Auto Scaling Replace the lost capacity in case of region failure in other region",
+        "choice6": "3 EC2 in 2 AZ with ELB on top",
+        "answer": "2,4,6",
+        "multi": 3
+    },
+    {
+        "question": "My Read Replica appears “stuck” after a Multi-AZ failover and is unable to obtain or apply updates from the source DB instance. What do I do?",
+        "choice1": "The instance should be deployed to Single AZ and then moved to Multi-AZ once again",
+        "choice2": "You will need to delete the Read Replica and create a new one to replace it",
+        "choice3": "You will need to disassociated the DB Engine and re-associate it",
+        "choice4": "You will need to delete the DB Instance and create a new one to replace it.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have been tasked with identifying an appropriate storage solution for a NoSQL database that requires random I/O reads of greater than 100,000 4kB IOPS Which EC2 option will meet this requirement?",
+        "choice1": "EBS optimized instances",
+        "choice2": "SSD instance store",
+        "choice3": "High Storage instance configured in RAID 10",
+        "choice4": "EBS provisioned IOPS",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have a photo selling website where you have a library of photos on S3. You noticed that there are some websites that are showing the link to your S3 photos. How do you restrict sites like these using your S3 photos link ?",
+        "choice1": "Use glacier to store images",
+        "choice2": "Restrict access to those websites in the bucket policy",
+        "choice3": "Use Cloudfront to serve images",
+        "choice4": "Remove the public URL link from the object in S3",
+        "choice5": "Restrict access to those websites in the IAM policy",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "Which of the following statements about SQS is true?",
+        "choice1": "Messages will be delivered exactly once and message delivery order is indeterminate",
+        "choice2": "Messages will be delivered exactly once and messages will be delivered in First in, First out order",
+        "choice3": "Messages will be delivered one or more times and message delivery order is indeterminate",
+        "choice4": "Messages will be delivered one or more times and messages will be delivered in First in, First out order",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You have deployed an instance in a subnet in your VPC. What steps below will allow access to Amazon",
+        "choice1": "Add a virtual private gateway: route 0.0.0.0/0 to the virtual private gateway. open an outbound rule in the ACL to port 443: add an Elastic IP to the instance.",
+        "choice2": "Add a virtual private gateway: route 0.0.0.0/0 to the virtual private gateway open an outbound rule in the security group to port 443: add an Elastic IP to instance",
+        "choice3": "Add a virtual private gateway: route 0.0.0.0/0 to the virtual private gateway open an outbound rule in the security group to port 443: use the VPC-assigned internal IP address.",
+        "choice4": "Add an Internet gateway. route 0.0.0.0/0 to the Internet gateway ;open an outbound rule in the security group to port 443 ; add an Elastic IP to the instance",
+        "choice5": "Add an Internet gateway; route 0.0.0.0/0 to the Internet gateway: open an outbound rule in the security group to port 443; use the VPC-assigned internal IP address.",
+        "choice6": "Add an Internet gateway: route 0.0.0.0/0 to the Internet gateway: open an outbound rule in the ACL to port 443: add an Elastic IP to the instance.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "Your web application front end consists of multiple EC2 instances behind an Elastic Load Balancer. You configured ELB to perform health checks on these EC2 instances. If an instance fails to pass health checks, which statement will be true?",
+        "choice1": "The instance gets terminated automatically by the ELB",
+        "choice2": "The instance gets quarantined by the ELB for root cause analysis",
+        "choice3": "The instance is replaced automatically by the ELB",
+        "choice4": "The ELB stops sending traffic to the instance that failed its health check.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "As AWS grows most of your clients main concerns seem to be about security especially when all of their competitors seem to be using AWS also. Consequently one of your clients asks you if one of your competitors EC2 instances are on the same physical host would that make it easier for them to hack into your data. Which of the following statements would be the best choice to put your clients mind at rest?",
+        "choice1": "Different instances running on the same physical machine are isolated from each other via IAM permissions.",
+        "choice2": "Different instances running on the same physical machine are isolated from each other via the Xen hypervisor.",
+        "choice3": "Different instances running on the same physical machine are isolated from each other via the Xen hypervisor and via a 256-bit Advanced Encryption Standard (AES-256).",
+        "choice4": "Different instances running on the same physical machine are isolated from each other via a 256-bit Advanced Encryption Standard (AES-256).",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "How do you secure company critical data on S3 ? (choose 4 correct answers)",
+        "choice1": "You can serve it through Cloudfront",
+        "choice2": "You can use IAM Policies",
+        "choice3": "You can use Access Control Lists (ACLs)",
+        "choice4": "You can use the Server Side Encryption (SSE)",
+        "choice5": "You can use Bucket policies",
+        "answer": "1,2,3,5",
+        "multi": 4
+    },
+    {
+        "question": "Amazon Glacier is designed for: (Choose 2 answers)",
+        "choice1": "Infrequently accessed data",
+        "choice2": "Data archives",
+        "choice3": "Active database storage",
+        "choice4": "Frequently accessed data",
+        "choice5": "Cached session data",
+        "answer": "1,2",
+        "multi": 2
+    },
+    {
+        "question": "How do you ensure that the data has been saved properly in S3 ?",
+        "choice1": "You can see the HTTP success code in the logs",
+        "choice2": "Every S3 account has a predefined bucket where the logs are stored",
+        "choice3": "When processing a request to store data, the service will redundantly store your object across multiple facilities before returning SUCCESS.",
+        "choice4": "Using a combination of Content-MD5 checksums",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A lot of your companies data is stored on Amazon Glacier as most of your data is not accessed often and for which retrieval times of several hours are suitable. However someone within your organisation has expressed concerns that his data is even more sensitive than all of your other data and is wondering whether the high level of encryption that he knows is on S3 is also used on Glacier as it is a much cheaper service. Which of the following statements would be most applicable in regards to this concern?",
+        "choice1": "Amazon Glacier automatically encrypts the data using AES-128 a lesser encryption method than Amazon S3 but you can change it to AES-256 if you are willing to pay more.",
+        "choice2": "Amazon Glacier automatically encrypts the data using AES-128 a lesser encryption method than Amazon S3.",
+        "choice3": "There is no encryption on Amazon Glacier. That’s why it is cheaper.",
+        "choice4": "Amazon Glacier automatically encrypts the data using AES-256 the same as Amazon S3.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "What happens to an Amazon RDS multi-AZ deployment if the primary DB instance fails? (choose 3)",
+        "choice1": "The DNS record of the DB instance is changed to point to the new primary",
+        "choice2": "The standby DB instance takes over the IP address of the original primary.",
+        "choice3": "A new primary DB instance is created from the most recent backup.",
+        "choice4": "The original primary DB instance is terminated and a new standby replica is created.",
+        "choice5": "The standby replica in another AZ is 'promoted' to become the new primary.",
+        "choice6": "The original primary DB instance reboots and becomes the new standby replica.",
+        "answer": "1,5,6",
+        "multi": 3
+    },
+    {
+        "question": "You have started to use AWS Elastic Beanstalk to quickly deploy and manage applications in the AWS cloud. Again you start to wonder if you are being charged for this service? What is AWS’s billing policy for AWS Elastic Beanstalk?",
+        "choice1": "You pay only for the underlying AWS resources that your application consumes but you need to apply to AWS to use it .",
+        "choice2": "You pay only for the underlying AWS resources that your application consumes as long as they are all in the same availabilty zone.",
+        "choice3": "You pay only for the underlying AWS resources that your application consumes.",
+        "choice4": "You pay a one time yearly fee to use it.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "You are setting up some IAM user policies and have also become aware that some services support resource-based permissions, which let you attach policies to the service’s resources instead of to IAM users or groups. Which of the below statements is true in regards to resource-level permissions?",
+        "choice1": "Some services support resource-level permissions only for some actions.",
+        "choice2": "Resource-level permissions are supported by Amazon Cloud Front",
+        "choice3": "All services support resource-level permissions for all actions.",
+        "choice4": "All services support resource-level permissions only for some actions.",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Per the AWS Acceptable Use Policy, penetration testing of EC2 instances :",
+        "choice1": "Are expressly prohibited under all circumstances",
+        "choice2": "May be performed by AWS, and will be performed by AWS upon customer request.",
+        "choice3": "May be performed by AWS, and is periodically performed by AWS",
+        "choice4": "May be performed by the customer against their own instances with prior authorization from AWS",
+        "choice5": "May be performed by the customer against their own instances, only if performed from EC2 instances",
+        "answer": 4,
+        "multi": 1
+    },
+    {
+        "question": "Instance A and Instance B are running in two different subnets A and B of a VPC. Instance A is not able to ping instance B. What are two possible reasons for this? (Pick 2 correct answers)",
+        "choice1": "The NACL on subnet B does not allow outbound ICMP traffic",
+        "choice2": "The policy linked to the IAM role on instance A is not configured correctly",
+        "choice3": "The routing table of subnet A has no target to route to subnet B",
+        "choice4": "The security group attached to instance B does not allow inbound ICMP traffic",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "You run a stateless web application with the following components: Elastic Load Balancer (ELB), 3 Web/Application servers on EC2, and 1 MySQL RDS database with 5000 Provisioned IOPS. Average response time for users is increasing. Looking at CloudWatch, you observe 95% CPU usage on the Web/Application servers and 20% CPU usage on the database. The average number of database disk operations varies between 2000 and 2500. Which two options could improve response times? (Pick 2 correct answer)",
+        "choice1": "Choose a different EC2 instance type for the Web/Application servers with a more appropriate CPU/Memory ratio",
+        "choice2": "Use Auto Scaling to add additional Web/Application servers based on a memory usage threshold.",
+        "choice3": "Use Auto Scaling to add additional Web/Application servers based on a CPU load threshold",
+        "choice4": "Increase the number of open TCP connections allowed per web/application EC2 instance",
+        "answer": "1,3",
+        "multi": 2
+    },
+    {
+        "question": "A cell phone company is running dynamic-content television commercials for a contest. They want their website to handle traffic spikes that come after a commercial airs. The website is interactive, offering personalized content to each visitor based on location, purchase history, and the current commercial airing. Which architecture will configure Auto Scaling to scale out to respond to spikes in demand? While minimizing costs during quiet periods?",
+        "choice1": "Create an Auto Scaling group large enough to handle peak traffic loads. and then stop some instances. Configure Auto Scaling to scale out when traffic increases using the stopped instances. so new capacity will come online quickly.",
+        "choice2": "Use CloudFront and Amazon S3 to store static content. Configure Auto Scaling to scale out as traffic increases. Configure the Launch Configuration to start new instances from a preconfigured MAI with metadata passed in at launch.",
+        "choice3": "Use CloudFront and Amazon S3 to cache changing content. with the Auto Scaling group set as the origin. Configure Auto Scaling to have sufficient instances necessary to initially populate CloudFront and ElastiCache. and then scale in after the cache is fully populated.",
+        "choice4": "Set the minimum size of the Auto Scaling group so that it can handle high traffic volumes without needing to scale out.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "An Amazon EC2 instance is launched. and an Elastic IP address (EIP) is associated with the instance. How can an application running on the Amazon EC2 instance determine the instance’s new public DNS name?",
+        "choice1": "Use the OS-level hostname command.",
+        "choice2": "Query the Amazon EC2 instance metadata.",
+        "choice3": "Query the Amazon EC2 instance user data.",
+        "choice4": "Query the appropriate Amazon CloudWatch metric.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "You have multiple VPN connections and want to provide secure communication between sites using the AWS VPN CloudHub. Which statement is the most accurate in describing what you must do to set this up correctly?",
+        "choice1": "Create a virtual private gateway with multiple customer gateways, each with unique subnet id",
+        "choice2": "Create a virtual private gateway with multiple customer gateways. each with a unique set of keys",
+        "choice3": "Create a virtual public gateway with multiple customer gateways. each with a unique Private subnet",
+        "choice4": "Create a virtual private gateway with multiple customer gateways, each with unique Border Gateway Protocol (BGP) Autonomous System Numbers (ASNs)",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "When working with Amazon RDS, by default AWS is responsible for implementing which two management-related activities? (Pick 2 correct answers)",
+        "choice1": "Installing and periodically patching the database software",
+        "choice2": "Creating and maintaining automated database backups in compliance with regulatory long-term retention requirements",
+        "choice3": "Importing data and optimizing queries",
+        "choice4": "Creating and maintaining automated database backups with a point-in-time recovery of up to five minutes",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "Your AWS Account Administrator left your company today The Administrator had access to the Master account and a personal IAM Administrator account. With these accounts he generated other IAM accounts and keys. Which of the following should you do today to protect your AWS infrastructure? (Choose 3)",
+        "choice1": "Delete the Administrator's IAM account.",
+        "choice2": "Delete all IAM accounts.",
+        "choice3": "Change the password and add MFA to the Master account.",
+        "choice4": "Rotate keys and change passwords for IAM accounts.",
+        "choice5": "Relaunch all Amazon EC2 instances with new roles.",
+        "choice6": "Put an IP restriction on Master account logins",
+        "answer": "1,3,4",
+        "multi": 3
+    },
+    {
+        "question": "You need to import several hundred megabytes of data from a local Oracle database to an Amazon RDS DB instance. What does AWS recommend to use to accomplish this?",
+        "choice1": "DBMS_FILE_TRANSFER",
+        "choice2": "Oracle Export/Import utilities",
+        "choice3": "Oracle SQL Developer",
+        "choice4": "Oracle Data Pump",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "One of the criteria for a new deployment is that the customer wants to use AWS Storage Gateway. However you are not sure whether you should use gateway-cached volumes or gateway-stored volumes or even what the differences are. Which statement below best describes those differences?",
+        "choice1": "Gateway-stored lets you store your data locally in storage volumes whilst gateway-cached lets you create storage volumes and mount them iSCSI devices.",
+        "choice2": "Gateway-cached is free whilst gateway-stored is not.",
+        "choice3": "Gateway-cached is up to 10 times faster than gateway-stored.",
+        "choice4": "Gateway-cached lets you store your data locally in storage volumes whilst gateway-stored lets you create storage volumes and mount them iSCSI devices.",
+        "answer": 1,
+        "multi": 0
+    }
+]
