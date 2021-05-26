@@ -12,6 +12,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let currentPercent = 0;
 
 let questions = [];
 
@@ -29,6 +30,7 @@ function getParameterByName(name, url = window.location.href) {
 let selectedGame = getParameterByName('myGame');
 let selectedTitle = getParameterByName('myTitle');
 console.log(selectedGame);
+console.log(selectedTitle.length);
 questionlistchosen.innerText = selectedTitle;
 
 ////fetch("questions.json")
@@ -72,6 +74,22 @@ const CORRECT_BONUS = 10;
 let MAX_QUESTIONS = 3;
 
 startGame = () => {
+    // let highscores = [];
+    // let score = {
+    //     quiz: 'A',
+    //     percent: 100,
+    //     score: 20,
+    //     name: 'rob',
+    //     takendate: '2021-5-25:19:54:00'
+    // };
+    // highscores.push(score);
+    // highscores.sort((a, b) => b.score - a.score);
+    // highscores.splice(25);
+
+    // localStorage.setItem("highScores", JSON.stringify(highscores));
+    // let highscore = JSON.parse(localStorage.getItem("highScores"));
+    // console.log(highscore);
+
     questionCounter = 0;
     MAX_QUESTIONS = questions.length;
     score = 0;
@@ -84,6 +102,8 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
+        localStorage.setItem("quiz", questionlistchosen.innerText);
+        localStorage.setItem("percent", currentPercent);
         return window.location.assign("./end.html");
     }
     questionCounter++;
@@ -239,7 +259,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score += num;
-    let currentPercent = ((score / 10) / questionCounter) * 100;
+    currentPercent = ((score / 10) / questionCounter) * 100;
     scoreText.innerText = score + " (" + currentPercent.toFixed(2) + "%)";
 };
 
