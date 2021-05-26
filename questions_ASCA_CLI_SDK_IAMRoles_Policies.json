@@ -33,6 +33,6 @@
         "choice3": "Query the meta data at http://169.254.169.254/latest/meta-data",
         "choice4": "Query the meta data at http://254.169.254.169/latest/meta-data",
         "answer": 3,
-        "multi": 2
+        "multi": 0
     }
 ]
