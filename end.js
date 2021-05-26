@@ -25,7 +25,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     var d = new Date();
-    let result = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDay() + ":" + d.getHours() + "-" + d.getMinutes() + "-" + d.getMinutes();
+    let result = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDay() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getMinutes();
     const score = {
         quiz: quizChosen,
         percent: quizPercent,
