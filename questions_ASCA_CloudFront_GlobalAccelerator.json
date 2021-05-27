@@ -21,7 +21,7 @@
         "question": "How can you ensure that only users who access our website through Canada are authorized in CloudFront?",
         "choice1": "Setup a security group and attach it to ClouFront",
         "choice2": "Use a Route53 Latency record and attach it to CloudFront",
-        "choice3": "Usr CloudFront Geo Restriction",
+        "choice3": "Use CloudFront Geo Restriction",
         "choice4": "Filler",
         "answer": 3,
         "multi": 0
