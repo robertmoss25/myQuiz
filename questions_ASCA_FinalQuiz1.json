@@ -142,7 +142,7 @@
         "choice2": "Network Access Control lists are stateful.",
         "choice3": "Network Access Control lists are stateless.",
         "choice4": "Updates to network access control lists can take time to propagate.",
-        "answer": "1,3",
+        "answer": "3,4",
         "multi": 2
     },
     {

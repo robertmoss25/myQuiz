@@ -131,7 +131,7 @@
         "choice1": "Globally",
         "choice2": "In Regions",
         "choice3": "In Availability Zones",
-        "choice4": "rrect Answer: C",
+        "choice4": "Filler",
         "answer": 3,
         "multi": 0
     },
@@ -211,8 +211,8 @@
         "question": "You would like to make sure your EC2 instances have the highest performance while talking to each other as you're performing big data analysis. Which placement group should you choose?",
         "choice1": "cluster",
         "choice2": "spread",
-        "choice3": "filler",
-        "choice4": "filler",
+        "choice3": "Filler",
+        "choice4": "Filler",
         "answer": 1,
         "multi": 0
     },
@@ -238,8 +238,8 @@
         "question": "You are launching an EC2 instance in us-east-1 using this Python script snippet: ec2.create_instances(ImageId='ami-b23a5e7', MinCount=1, MaxCount=1). It works well, so you decide to deploy your script in us-west-1 as well. There, the script does not work and fails with 'ami not found' error. What's the problem?",
         "choice1": "AMI is region locked and the same ID cannot be used across regions",
         "choice2": "AMI needs to first be shared to another region. The same IS can then be used",
-        "choice3": "filler",
-        "choice4": "filler",
+        "choice3": "Filler",
+        "choice4": "Filler",
         "answer": 1,
         "multi": 0
     },
