@@ -1,0 +1,184 @@
+[
+    {
+        "question": "A company has used Amazon EC2 Spot Instances for a demonstration. The demonstartion is complete and a solutions architect must not remove the Spot Instances\nWHich action should the solutions architect take to remove the Spot instances?",
+        "choice1": "Cancel the spot request",
+        "choice2": "Terminate the Spot Instances",
+        "choice3": "Cancel the Spot request and then terminate the instances",
+        "choice4": "Terminate the Spot instances and then cancel the Spot request",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A company wants to use an Amazon S3 bucket to store legal documents. The documents are frequently revised and re-uploaded to the bucket using the same object key. The company needs to be able to download older copies of the documents and wants to protect the documents from accidential deletion\n What solution meets these requirements?",
+        "choice1": "Enable versioning on the S3 bucket",
+        "choice2": "Enable MFA Delete on the S3 Bucket",
+        "choice3": "Configure Cross-region replication from the S3 Bucket to a bucket in a differant region",
+        "choice4": "Configure an S3 lifetime policy to archive the documents to Amazon S3 Glacier after 30 days",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A company's application allows users to upload images files to an Amazon S3 bucket. These files are accessed frequently for the first 30 days. After 30 days, these files all rarely accessed, but need to be durable stored and available immediately upon request. A solutions architect is tasked with configuring a lifecycle policy that minimizes the overall cost within meeting the application requirements. Which action will accomplish this?",
+        "choice1": "Configure a lifecycle policy to move files to Amazon S3 Glacier after 30 days.",
+        "choice2": "Configure a lifecycle policy to move files to Amazon S3 Glacier Deep Archive after 30 days.",
+        "choice3": "Configure a lifecycle policy to move files to Amazon S3 Standard Infrequent Access (S3 Standard-IA) after 30 days",
+        "choice4": "Configure a lifecycle policy to move files to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A company is developing a social media chat tool that will be deployed on AWS. The application stores the messages using a key value data model. Messages typically are read multiple times by groups of users. A solutions architect needs to select a database solution that will scale for a high rate of reads and deliver messages with microsecond latency. Which approach meets these requirements?",
+        "choice1": "Amazon Aurora with Aurora replicas",
+        "choice2": "Amazon DynamoDB with DynamoDB Accelerator",
+        "choice3": "Amazon Aurora with Amazon Elasticache for Memcached",
+        "choice4": "Amazon Neptune with Amazon Elasticache for Memcached",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "An API receives a high volume of sensor data. The data is written to a queue before being processed to produce trend analysis and forecasting reports. With the current architecture, some data records are being received and processed more than once. How can a solutions architect modify the architecture to ensure that duplicate records are not processed?",
+        "choice1": "Configure the API to send the records to Amazon Kinesis Data Streams",
+        "choice2": "Configure the API to send the records to Amazon Kinesis Data Firehose",
+        "choice3": "Configure the API to send the records to Amazon Simple Notification Service (SNS)",
+        "choice4": "Configure the API to send the records to Amazon Simple Queue Service (SQS) FIFO queue",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A solutions architect has been asked to reduce the cost of data transfer between Amazon EC2 instances. The instances are in 2 availability zones in a single AWS region. The instances use public IP addresses for all communications. How should the solutions architect reduce costs without sacrificing reliability and scalability?",
+        "choice1": "Link the instances with AWS App Mesh",
+        "choice2": "Put the instances in a spread placement group",
+        "choice3": "Use private IP addresses instead of public IP addresses",
+        "choice4": "Implement AWS Direct Connect between two Availability Zones",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A reporting application runs on Amazon EC2 instances behind an application load balancer. The instances run in an EC2 Auto Scaling group across multiple availability zones. Due to their complexity, some reports may take up to 15 minutes to respond to a request. A solutions architect is concerned that users will receive 500 errors if a report request is in process during a scale-in event. which action will ensure that user requests are completed before instances are terminated?",
+        "choice1": "Enable sticky sessions for the target group of the instances.",
+        "choice2": "Enable connection draining on the application load balancer. ",
+        "choice3": "Increase the cooldown period for the auto scaling group to greater than 1500 seconds",
+        "choice4": "Increase the deregistration delay timeout for the target group of the instances to greater than 1500 seconds",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A company uses one AWS account to run production workloads and has a separate AWS account for the security team. During periodic audits, the security team needs to view certain account settings and resource configurations in the other AWS account. How can a solutions architect provide the required access to the security team following the principle of least privilege?",
+        "choice1": "Create an IAM user for each security team member on the production account. Attach a permissions policy that provides the permissions required by the security team to each other.",
+        "choice2": "Create an IAM role in the production account. Attach a permissions policy that provides the permissions required by the security team. Add the security team account to the trust policy.",
+        "choice3": "Create an IAM user in the production account. Assign administrative privileges to the user. Allows the security team to use this account to log in to the systems that need to be accessed.",
+        "choice4": "Create an IAM user for each security team member on the production account. Attach a permissions policy that provides the permissions required by the security team to a new IAM group. Assign the security team members to the group.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A solutions architect is designing a solution to run a containerized web application using Amazon Elastic Container Service (ECS). The solutions architect wants to minimize costs by running multiple copies of a task on each conatiner instance.\nWhich solution for routing the requests will meet these requirements?",
+        "choice1": "Configure an ALB to distribute the requests using path-based routing",
+        "choice2": "Configure an ALB to distribute the requests using dynamic host mapping",
+        "choice3": "Configure an Route53 alias record set to distribute the requests with a failover routing policy",
+        "choice4": "Configure an Route53 alias record set to distribute the requests with a weighted routing policy",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A data processing facility wants to move a group of Microsoft Windows servers to AWS cloud. These servers require access to a shared file system that can integrate with the facilities existing Active Directory (AD) infrastructure for file and folder permissions. The solution needs to provide seamless support for shared files with a WS and on premises servers and allow the environment to be highly available. The chosen solution should provide added security by supporting encryption at rest and in transit. The solution should also be cost effective to implement and manage. which storage solution would meet these requirements?",
+        "choice1": "An AWS storage gateway file gateway joined to the existing AD domain",
+        "choice2": "On Amazon FSx For Windows file server file system joined to the existing AD domain",
+        "choice3": "On Amazon Elastic File System (Amazon EFS) file system joined to an AWS managed AD domain",
+        "choice4": "An Amazon S3 bucket mounted on an Amazon EC2 instances in multiple Availability Zones running Windows Server and joined to an AWS managed AD domain",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A company currently runs its website on Amazon EC2 instances behind an Application Load Balancer that is configured as the origin for the Amazon CloudFront distribution. The company wants to protect against cross-site scripting and SQL injection attacks. Which approach should a solutions architect recommend to meet these requirements?",
+        "choice1": "Enable AWS Shield Advanced and list the CloudFront distribution as a protected resource.",
+        "choice2": "Define an AWS Firewall Manager Shield Advanced policy that blocks cross-site scripting and SQL injection attacks.",
+        "choice3": "Set up a AWS WAF on the CloudFront distribution with conditions and rules that block cross-site scripting and SQL injection attacks.",
+        "choice4": "Deploy AWS Firewall Manager on the EC2 instances and create conditions and rules that block cross-site scripting an SQL injection attacks.",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A company has deploying a new application that will consist of an application layer and an online transaction processing (OLTP) relational database. The application needs to be available at all times, but is going to experience periods of inactivity. The chief financial officer wants to pay the minimum for compute costs during these idle times. What is the best solution for these requirements?",
+        "choice1": "Run the application in containers on AWS Fargate and use the Amazon Aurora serverless for the database.",
+        "choice2": "Run the application on Amazon EC2 instances using a T-class instance type use Amazon Redshift for the database.",
+        "choice3": "Use AWS CloudFormation to deploy the infrastructure when it is needed. Delete the stack at the beginning of the idle periods.",
+        "choice4": "Deploy the application on Amazon EC2 instances in an Auto Scaling Group behind an Application Load Balancer. Use Amazon RDS from MySQL for the database.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A company has a strict data protection requirement. A solutions architect must configure security for a VPC to make sure backend Amazon RDS DB instances cannot be accessible from the Internet, and are accessible from the application tier over a specified port only. Which actions should the solutions architect take to ensure these requirements are met? (Select TWO).",
+        "choice1": "Specify a DB subnet group containing only private subnets for the DB instances.",
+        "choice2": "Attach an elastic network interface (ENI) with a private IPv4 address to each DB instance.",
+        "choice3": "Attach an Internet gateway to the VPC and update the route tables for the subnets used by the DB instances.",
+        "choice4": "Configure an AWS Direct Connect connection on the database port between the application tier and the backend.",
+        "choice5": "Add an inbound rule to the database security group that allows requests from the security group for the application tier over the database port. Remove other inbound rules.",
+        "answer": "1,5",
+        "multi": 2
+    },
+    {
+        "question": "A company is developing a new mobile version of its popular web application in the AWS Cloud. It should be accessible to internal and external users. The mobile application must handle authorization, authentication, and user management from one central source. Which solution meets these requirements?",
+        "choice1": "IAM Roles",
+        "choice2": "IAM Users and Groups",
+        "choice3": "Amazon Cognito user tools",
+        "choice4": "AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD)",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A solutions architect has been given a large number of video files to upload to an Amazon S3 bucket. The file sizes are 100 - 500 MB. The solutions architect wants to minimize the overall time for the upload by maximizing throughput. The solutions architect also wants to easily resume failed upload attempts. How should the solutions architect perform the uploads?",
+        "choice1": "Split each file into 5 MB parts. Upload the individual object parts in parallel.",
+        "choice2": "Using the AWS CLI, copy individual objects into the Amazon S3 bucket with the AWS s3 cp command.",
+        "choice3": "From the Amazon S3 console, select the Amazon S3 bucket. Upload the S3 bucket and drag and drop items into the bucket.",
+        "choice4": "From the Amazon S3 console, select the Amazon S3 bucket. Upload the S3 bucket, choose to add new files, and find and select the objects to be uploaded.",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A solutions architect needs to design a secure environment for resources that are being deployed to a VPC. The solution should include support for a three-tier architecture consisting of web, application, and database tiers. The VPC needs to allow resources is in the web tier to be accessible from the Internet using HTTPS. Which combination of actions would create the most secure network? (Select TWO.)",
+        "choice1": "Attach Amazon API gateway to the VPC. Create private subnets for the web, application, and database tiers.",
+        "choice2": "Attach an Internet gateway to the VPC. Create a public subnet for the web tier. Create private subnets for the application and database tiers.",
+        "choice3": "Attach a virtual private gateway to the VPC. create public subnets for the web and application tiers. Create a private subnet for the database tier.",
+        "choice4": "Create a web security group that allows all traffic from the Internet. Create an application security group that allows requests from Amazon API gateway only. Create a database security group that allows TCP connections from the application security group on the database port only.",
+        "choice5": "Create a web security group that allows HTTPS requests from the Internet. Create an application security group that allows HTTP requests from the web security group only. Create a database security group that allows TCP connections from this application security group on the database port only.",
+        "answer": "2,5",
+        "multi": 2
+    },
+    {
+        "question": "A startup company is looking for a solution to cost-effectively run microservices without the operational overhead of managing infrastructure. The solution needs to be able to scale quickly to accommodate rapid changes in the volume of requests. What is the MOST cost-effective solution?",
+        "choice1": "Run the microservices in containers using AWS Elastic Beanstalk",
+        "choice2": "Run the microservices in AWS Lambda behind an Amazon APi Gateway",
+        "choice3": "Run the microservices on EC2 instances in an Auto Scaling Group",
+        "choice4": "Run the microservices in containers using AWS Elastic Container Service (Amazon ECS)",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A company needs to implement a secure data encryption solution to meet regulatory requirements. The solution must provide security and durability in generating, storing, and controlling cryptographic data keys. Which action should be taken to provide the most secure solution?",
+        "choice1": "Use AWS key management service (AWS KMS) to generate customer master keys (CMKs) and data keys. Use AWS KMS key policies to control access to the CMKs.",
+        "choice2": "Use AWS key management service (AWS KMS) to generate cryptographic keys and import the keys to the AWS Certificate Manager. Use IAM policies to control access to the keys",
+        "choice3": "Use a third party solution from AWS Marketplace to generate the cryptographic keys and store them on encrypted instance store volumes. Use IAM policies to control access to the encryption key APIs",
+        "choice4": "User OpenSSL to generate the cryptographic keys and upload the keys to an Amazon S3 bucket with encryption enabled. Apply AWS Key Management Service (AWS KMS) key policies to control access to the keys",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "Users of an image processing application experienced long delays waiting for their images to process when the application experiences unpredictable periods of heavy usage. The architecture consists of a web tier, an Amazon Simple Queue Service (AmMazon SQS) standard queue, and message consumers running on Amazon EC2 instances. When there is a high volume of requests, the message backlog in Amazon SQS spikes. A solutions architect is tasked with improving the performance of the application or keeping costs low. Which solution meets these requirements?",
+        "choice1": "Purchase enough dedicated instances to meet the peak demand and employ them for the consumers.",
+        "choice2": "Convert the existing Amazon SQS queue to an Amazon SQS FIFO queue and increase the visibility timeout.",
+        "choice3": "Configure an AWS Lambda function to scale out the number of consumer instances when the message backlog grows.",
+        "choice4": "Run the message consumer instances in Auto Scaling group configured scale out and in based upon the ApproximateNumberOfMessages Amazon CloudWatch metric.",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An Application runs on two Amazon EC2 instances in a single AZ behind a Network Load Balancer. Which set of steps should a solutions architect take to make this architecture more highly available?",
+        "choice1": "Create a VPC peering connection to a VPC in a different AZ",
+        "choice2": "Replace the Network Load Balancer with an Application Load Balancer configured for automatic scaling",
+        "choice3": "Configure Amazon Route 53 to perform health checks on the Network Load Balancer and add a failover routing policy",
+        "choice4": "Add the target group of the instances to an Auto Scaling group configured to launch identical instances across multiple AZs",
+        "answer": 3,
+        "multi": 0
+    }
+]

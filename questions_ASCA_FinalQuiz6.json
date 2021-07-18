@@ -242,7 +242,7 @@
         "multi": 0
     },
     {
-        "question": "An engineering team wants to examine the feasibility of the user data feature of Amazon EC2 for an upcoming project. Which of the following are true about the EC2 user data configuration? (Select two)",
+        "question": "An engineering team wants to examine the feasibility of the user data feature of Amazon EC2 for an upcoming project. Which of the following are true about the EC2 user data configuration?",
         "choice1": "By default user data runs only during the boot cycle when you first launch an instance",
         "choice2": "By default, user data is executed every time an EC2 instance is re-started",
         "choice3": "When an instance is running, you can update user data by using root user credentials",

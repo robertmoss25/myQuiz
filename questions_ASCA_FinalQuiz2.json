@@ -603,5 +603,14 @@
         "choice4": "VPC Flow Logs, DNS logs, CloudTrail events",
         "answer": 4,
         "multi": 0
+    },
+    {
+        "question": "A retail company uses AWS Cloud to manage its IT infrastructure. The company has set up 'AWS Organizations' to manage several departments running their AWS accounts and using resources such as EC2 instances and RDS databases. The company wants to provide shared and centrally-managed VPCs to all departments using applications that need a high degree of interconnectivity. As a solutions architect, which of the following options would you choose to facilitate this use-case?",
+        "choice1": "Use VPC sharing to share one or more subnets with other AWS accounts belonging to the same parent organization from AWS Organizations",
+        "choice2": "Use VPC peering to share a VPC with other AWS accounts belonging to the same parent organization from AWS Organizations",
+        "choice3": "Use VPC peering to share one or more subnets with other AWS accounts belonging to the same parent organization from AWS Organizations",
+        "choice4": "Use VPC sharing to share a VPC with other AWS accounts belonging to the same parent organization from AWS Organizations",
+        "answer": 1,
+        "multi": 0
     }
 ]

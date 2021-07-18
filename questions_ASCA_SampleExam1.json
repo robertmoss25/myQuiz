@@ -1,0 +1,596 @@
+[
+    {
+        "question": "The engineering team at a Spanish professional football club has built a notification system for its website using Amazon SNS notifications which are then handled by a Lambda function for end-user delivery. During the off-season, the notification systems need to handle about 100 requests per second. During the peak football season, the rate touches about 5000 requests per second and it is noticed that a significant number of the notifications are not being delivered to the end-users on the website. As a solutions architect, which of the following would you suggest as the BEST possible solution to this issue?",
+        "choice1": "Amazon SNS message deliveries to AWS Lambda have crossed the account concurrency quota for Lambda, so the team needs to contact AWS support to raise the account limit",
+        "choice2": "The engineering team needs to provision more servers running the SNS service",
+        "choice3": "The engineering team needs to provision more servers running the Lambda service",
+        "choice4": "Amazon SNS has hit a scalability limit, so the team needs to contact AWS support to raise the account limit",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "The IT department at a consulting firm is conducting a training workshop for new developers. As part of an evaluation exercise on Amazon S3, the new developers were asked to identify the invalid storage class lifecycle transitions for objects stored on S3. Can you spot the INVALID lifecycle transitions from the options below? (Select two)",
+        "choice1": "S3 Standard-IA => S3 Intelligent-Tiering",
+        "choice2": "S3 Standard => S3 Intelligent-Tiering",
+        "choice3": "S3 One Zone-IA => S3 Standard-IA",
+        "choice4": "S3 Intelligent-Tiering => S3 Standard",
+        "choice5": "S3 Standard-IA => S3 One Zone-IA",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "A large IT company wants to federate its workforce into AWS accounts and business applications. Which of the following AWS services can help build a solution for this requirement? (Select two)",
+        "choice1": "Use AWS Organizations",
+        "choice2": "Use AWS Security Token Service (AWS STS) to get temporary security credentials",
+        "choice3": "Use AWS Identity and Access Management (IAM)",
+        "choice4": "Use Multi-Factor Authentication",
+        "choice5": "Use AWS Single Sign-On (SSO)",
+        "answer": "3,5",
+        "multi": 2
+    },
+    {
+        "question": "CloudFront offers a multi-tier cache in the form of regional edge caches that improve latency. However, there are certain content types that bypass the regional edge cache, and go directly to the origin. Which of the following content types skip the regional edge cache? (Select two)",
+        "choice1": "Proxy methods PUT/POST/PATCH/OPTIONS/DELETE go directly to the origin",
+        "choice2": "User-generated videos",
+        "choice3": "E-commerce assets such as product photos",
+        "choice4": "Static content such as style sheets, JavaScript files ",
+        "choice5": "Dynamic content, as determined at request time (cache-behavior configured to forward all headers)",
+        "answer": "1,5",
+        "multi": 2
+    },
+    {
+        "question": "A company wants some EBS volumes with maximum possible Provisioned IOPS (PIOPS) to support high-performance database workloads on EC2 instances. The company also wants some EBS volumes that can be attached to multiple EC2 instances in the same Availability Zone. As an AWS Certified Solutions Architect Associate, which of the following options would you identify as correct for the given requirements? (Select two)",
+        "choice1": "Use io1/io2 volumes to enable Multi-Attach on Nitro-based EC2 instances",
+        "choice2": "Use io2 Block Express volumes on Nitro-based EC2 instances to achieve a maximum Provisioned IOPS of 256,000",
+        "choice3": "Use gp3 volumes on Nitro-based EC2 instances to achieve a maximum Provisioned IOPS of 256,000",
+        "choice4": "Use io2 volumes on Nitro-based EC2 instances to achieve a maximum Provisioned IOPS of 256,000",
+        "choice5": "Use gp2 volumes to enable Multi-Attach on Nitro-based EC2 instances",
+        "answer": "1,2",
+        "multi": 2
+    },
+    {
+        "question": "A company uses DynamoDB as a data store for various kinds of customer data, such as user profiles, user events, clicks, and visited links. Some of these use-cases require a high request rate (millions of requests per second), low predictable latency, and reliability. The company now wants to add a caching layer to support high read volumes.As a solutions architect, which of the following AWS services would you recommend as a caching layer for this use-case? (Select two)",
+        "choice1": "Redshift",
+        "choice2": "RDS",
+        "choice3": "Elasticsearch",
+        "choice4": "DynamoDB Accelerator (DAX)",
+        "choice5": "ElastiCache",
+        "answer": "4,5",
+        "multi": 2
+    },
+    {
+        "question": "One of the biggest football leagues in Europe has granted the distribution rights for live streaming its matches in the US to a silicon valley based streaming services company. As per the terms of distribution, the company must make sure that only users from the US are able to live stream the matches on their platform. Users from other countries in the world must be denied access to these livestreamedmatches. Which of the following options would allow the company to enforce these streaming restrictions? (Select two)",
+        "choice1": "Use Route 53 based weighted routing policy to restrict distribution of content to only the locations in which you have distribution rights",
+        "choice2": "Use Route 53 based latency routing policy to restrict distribution of content to only the locations in which you have distribution rights",
+        "choice3": "Use Route 53 based failover routing policy to restrict distribution of content to only the locations in which you have distribution rights",
+        "choice4": "Use georestriction to prevent users in specific geographic locations from accessing content that you're distributing through a CloudFront web distribution",
+        "choice5": "Use Route 53 based geolocation routing policy to restrict distribution of content to only the locations in which you have distribution rights",
+        "answer": "4,5",
+        "multi": 2
+    },
+    {
+        "question": "A new DevOps engineer has just joined a development team and wants to understand the replication capabilities for RDS Multi-AZ as well as RDS Read-replicas. Which of the following correctly summarizes these capabilities for the given database?",
+        "choice1": "Multi-AZ follows asynchronous replication and spans at least two Availability Zones within a single region. Read replicas follow synchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region",
+        "choice2": "Multi-AZ follows asynchronous replication and spans at least two Availability Zones within a single region. Read replicas follow asynchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region",
+        "choice3": "Multi-AZ follows synchronous replication and spans at least two Availability Zones within a single region. Read replicas follow asynchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region",
+        "choice4": "Multi-AZ follows asynchronous replication and spans one Availability Zone within a single region. Read replicas follow synchronous replication and can be within an Availability Zone, Cross-AZ, or Cross-Region",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An Electronic Design Automation (EDA) application produces massive volumes of data that can be divided into two categories. The 'hot data' needs to be both processed and stored quickly in a parallel and distributed fashion. The 'cold data' needs to be kept for reference with quick access for reads and updates at a low cost. Which of the following AWS services is BEST suited to accelerate the aforementioned chip design process?",
+        "choice1": "Amazon FSx for Lustre (Correct)",
+        "choice2": "Amazon FSx for Windows File Server",
+        "choice3": "Amazon EMR",
+        "choice4": "AWS Glue",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A company has moved its business critical data to Amazon EFS file system which will be accessed by multiple EC2 instances. As an AWS Certified Solutions Architect Associate, which of the following would you recommend to exercise access control such that only the permitted EC2 instances can read from the EFS file system? (Select three)",
+        "choice1": "Set up the IAM policy root credentials to control and configure the clients accessing the EFS file system",
+        "choice2": "Use VPC security groups to control the network traffic to and from your file system",
+        "choice3": "Use Network ACLs to control the network traffic to and from your Amazon EC2 instance",
+        "choice4": "Attach an IAM policy to your file system to control clients who can mount your file system with the required permissions",
+        "choice5": "Use EFS Access Points to manage application access",
+        "choice6": "Use Amazon GuardDuty to curb unwanted access to EFS file system",
+        "answer": "2,4,5",
+        "multi": 3
+    },
+    {
+        "question": "A leading video streaming service delivers billions of hours of content from Amazon S3 to customers around the world. Amazon S3 also serves as the data lake for its big data analytics solution. The data lake has a staging zone where intermediary query results are kept only for 24 hours. These results are also heavily referenced by other parts of the analytics pipeline. Which of the following is the MOST cost-effective strategy for storing this intermediary query data?",
+        "choice1": "Store the intermediary query results in S3 Intelligent-Tiering storage class",
+        "choice2": "Store the intermediary query results in S3",
+        "choice3": "Standard-Infrequent Access storage class ",
+        "choice4": "Store the intermediary query results in S3 One Zone-Infrequent Access storage class",
+        "choice5": "Store the intermediary query results in S3 Standard storage class",
+        "answer": 5,
+        "multi": 0
+    },
+    {
+        "question": "A major bank is using SQS to migrate several core banking applications to the cloud to ensure high availability and cost efficiency while simplifying administrative complexity and overhead. The development team at the bank expects a peak rate of about 1000 messages per second to be processed via SQS. It is important that the messages are processed in order. Which of the following options can be used to implement this system?",
+        "choice1": "Use Amazon SQS FIFO queue in batch mode of 4 messages per operation to process the messages at the peak rate",
+        "choice2": "Use Amazon SQS FIFO queue in batch mode of 2 messages per operation to process the messages at the peak rate",
+        "choice3": "Use Amazon SQS standard queue to process the messages ",
+        "choice4": "Use Amazon SQS FIFO queue to process the messages",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A geological research agency maintains the seismological data for the last 100 years. The data has a velocity of 1GB per minute. You would like to store the data with only the most relevant attributes to build a predictive model for earthquakes. What AWS services would you use to build the most cost-effective solution with the LEAST amount of infrastructure maintenance?",
+        "choice1": "Ingest the data in Kinesis Data Analytics and use SQL queries to filter and transform the data before writing to S3",
+        "choice2": "Ingest the data in a Spark Streaming Cluster on EMR use Spark Streaming transformations before writing to S3",
+        "choice3": "Ingest the data in AWS Glue job and use Spark transformations before writing to S3",
+        "choice4": "Ingest the data in Kinesis Data Firehose and use a Lambda function to filter and transform the incoming stream before the output is dumped on S3",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "The engineering team at a data analytics company has observed that its flagship application functions at its peak performance when the underlying EC2 instances have a CPU utilization of about 50%. The application is built on a fleet of EC2 instances managed under an Auto Scaling group. The workflow requests are handled by an internal Application Load Balancer that routes the requests to the instances. As a solutions architect, what would you recommend so that the application runs near its peak performance state?",
+        "choice1": "Configure the Auto Scaling group to use step scaling policy and set the CPU utilization as the target metric with a target value of 50%",
+        "choice2": "Configure the Auto Scaling group to use a Cloudwatch alarm triggered on a CPU utilization threshold of 50%",
+        "choice3": "Configure the Auto Scaling group to use target tracking policy and set the CPU utilization as the target metric with a target value of 50%",
+        "choice4": "Configure the Auto Scaling group to use simple scaling policy and set the CPU utilization as the target metric with a target value of 50%",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A file-hosting service uses Amazon S3 under the hood to power its storage offerings. Currently all the customer files are uploaded directly under a single S3 bucket. The engineering team has started seeing scalability issues where customer file uploads have started failing during the peak access hours with more than 5000 requests per second. Which of the following is the MOST resource efficient and cost-optimal way of addressing this issue?",
+        "choice1": "Change the application architecture to use EFS instead of Amazon S3 for storing the customers' uploaded files",
+        "choice2": "Change the application architecture to create customer-specific custom prefixes within the single bucket and then upload the daily files into those prefixed locations",
+        "choice3": "Change the application architecture to create a new S3 bucket for each customer and then upload each customer's files directly under the respective buckets",
+        "choice4": "Change the application architecture to create a new S3 bucket for each day's data and then upload the daily files directly under that day's bucket",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A news network uses Amazon S3 to aggregate the raw video footage from its reporting teams across the US. The news network has recently expanded into new geographies in Europe and Asia. The technical teams at the overseas branch offices have reported huge delays in uploading large video files to the destination S3 bucket. Which of the following are the MOST cost-effective options to improve the file upload speed into S3? (Select two)",
+        "choice1": "Use Amazon S3 Transfer Acceleration to enable faster file uploads into the destination S3 bucket",
+        "choice2": "Create multiple AWS direct connect connections between the AWS Cloud and branch offices in Europe and Asia. Use the direct connect connections for faster file uploads into S3",
+        "choice3": "Use AWS Global Accelerator for faster file uploads into the destination S3 bucket",
+        "choice4": "Use multipart uploads for faster file uploads into the destination S3 bucket",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "A developer has created a new Application Load Balancer but has not registered any targets with the target groups. Which of the following errors would be generated by the Load Balancer?",
+        "choice1": "HTTP 502: Bad gateway",
+        "choice2": "HTTP 504: Gateway timeout",
+        "choice3": "HTTP 503: Service unavailable",
+        "choice4": "HTTP 500: Internal server error",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A video analytics organization has been acquired by a leading media company. The analytics organization has 10 independent applications with an on-premises data footprint of about 70TB for each application. The CTO of the media company has set a timeline of two weeks to carry out the data migration from on-premises data center to AWS Cloud and establish connectivity. Which of the following are the MOST cost-effective options for completing the data transfer and establishing connectivity? (Select two)",
+        "choice1": "Order 10 Snowball Edge Storage Optimized devices to complete the one-time data transfer",
+        "choice2": "Setup AWS direct connect to establish connectivity between the on-premises data center and AWS Cloud",
+        "choice3": "Order 70 Snowball Edge Storage Optimized devices to complete the one-time data transfer ",
+        "choice4": "Setup Site-to-Site VPN to establish connectivity between the on-premises data center and AWS Cloud",
+        "choice5": "Order 1 Snowmobile to complete the one-time data transfer",
+        "answer": "1,4",
+        "multi": 2
+    },
+    {
+        "question": "A media agency stores its re-creatable assets on Amazon S3 buckets. The assets are accessed by a large number of users for the first few days and the frequency of access falls down drastically after a week. Although the assets would be accessed occasionally after the first week, but they must continue to be immediately accessible when required. The cost of maintaining all the assets on S3 storage is turning out to be very expensive and the agency is looking at reducing costs as much as possible. As a Solutions Architect, can you suggest a way to lower the storage costs while fulfilling the business requirements?",
+        "choice1": "Configure a lifecycle policy to transition the objects to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days",
+        "choice2": "Configure a lifecycle policy to transition the objects to Amazon S3 Standard-Infrequent Access (S3 Standard-IA) after 7 days",
+        "choice3": "Configure a lifecycle policy to transition the objects to Amazon S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days",
+        "choice4": "Configure a lifecycle policy to transition the objects to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) after 7 days",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A leading carmaker would like to build a new car-as-a-sensor service by leveraging fully serverless components that are provisioned and managed automatically by AWS. The development team at the carmaker does not want an option that requires the capacity to be manually provisioned, as it does not want to respond manually to changing volumes of sensor data. Given these constraints, which of the following solutions is the BEST fit to develop this car-as-a-sensor service?",
+        "choice1": "Ingest the sensor data in a Kinesis Data Stream, which is polled by a Lambda function in batches and the data is written into an auto-scaled DynamoDB table for downstream processing",
+        "choice2": "Ingest the sensor data in a Kinesis Data Stream, which is polled by an application running on an EC2 instance and the data is written into an auto-scaled DynamoDB table for downstream processing",
+        "choice3": "Ingest the sensor data in an Amazon SQS standard queue, which is polled by a Lambda function in batches and the data is written into an auto-scaled DynamoDB table for downstream processing",
+        "choice4": "Ingest the sensor data in an Amazon SQS standard queue, which is polled by an application running on an EC2 instance and the data is written into an auto-scaled DynamoDB table for downstream processing",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "As part of a pilot program, a biotechnology company wants to integrate data files from its on-premises analytical application with AWS Cloud via an NFS interface. Which of the following AWS service is the MOST efficient solution for the given use-case?",
+        "choice1": "AWS Site-to-Site VPN",
+        "choice2": "AWS Storage Gateway - Tape Gateway",
+        "choice3": "AWS Storage Gateway - File Gateway",
+        "choice4": "AWS Storage Gateway - Volume Gateway",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An e-commerce company is looking for a solution with high availability, as it plans to migrate its flagship application to a fleet of Amazon EC2 instances. The solution should allow for content-based routing as part of the architecture. As a Solutions Architect, which of the following will you suggest for the company?Explanation",
+        "choice1": "Use an Application Load Balancer for distributing traffic to the EC2 instances spread across different Availability Zones. Configure Auto Scaling group to mask any failure of an instance",
+        "choice2": "Use an Auto Scaling group for distributing traffic to the EC2 instances spread across different Availability Zones. Configure an Elastic IP address to mask any failure of an instance",
+        "choice3": "Use a Network Load Balancer for distributing traffic to the EC2 instances spread across different Availability Zones. Configure a Private IP address to mask any failure of an instance",
+        "choice4": "Use an Auto Scaling group for distributing traffic to the EC2 instances spread across different Availability Zones. Configure a Public IP address to mask any failure of an instance",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "The sourcing team at the US headquarters of a global e-commerce company is preparing a spreadsheet of the new product catalog. The spreadsheet is saved on an EFS file system created in us-east-1 region. The sourcing team counterparts from other AWS regions such as Asia Pacific and Europe also want to collaborate on this spreadsheet. As a solutions architect, what is your recommendation to enable this collaboration with the LEAST amount of operational overhead?",
+        "choice1": "The spreadsheet will have to be copied in Amazon S3 which can then be accessed from any AWS region",
+        "choice2": "The spreadsheet data will have to be moved into an RDS MySQL database which can then be accessed from any AWS region",
+        "choice3": "The spreadsheet will have to be copied into EFS file systems of other AWS regions as EFS is a regional service and it does not allow access from other AWS regions",
+        "choice4": "The spreadsheet on the EFS file system can be accessed from EC2 instances running in other AWS regions by using an inter-region VPC peering connection",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An IT company wants to review its security best-practices after an incident was reported where a new developer on the team was assigned full access to DynamoDB. The developer accidentally deleted a couple of tables from the production environment while building out a new feature. Which is the MOST effective way to address this issue so that such incidents do not recur?",
+        "choice1": "Only root user should have full database access in the organization",
+        "choice2": "Remove full database access for all IAM users in the organization",
+        "choice3": "The CTO should review the permissions for each new developer's IAM user so that such incidents don't recur",
+        "choice4": "Use permissions boundary to control the maximum permissions employees can grant to the IAM principals",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "The payroll department at a company initiates several computationally intensive workloads on EC2 instances at a designated hour on the last day of every month. The payroll department has noticed a trend of severe performance lag during this hour. The engineering team has figured out a solution by using Auto Scaling Group for these EC2 instances and making sure that 10 EC2 instances are available during this peak usage hour. For normal operations only 2 EC2 instances are enough to cater to the workload. As a solutions architect, which of the following steps would you recommend to implement the solution?",
+        "choice1": "Configure your Auto Scaling group by creating a scheduled action that kicks-off at the designated hour on the last day of the month. Set the min count as well as the max count of instances to 10. This causes the scale-out to happen before peak traffic kicks in at the designated hour",
+        "choice2": "Configure your Auto Scaling group by creating a scheduled action that kicks-off at the designated hour on the last day of the month. Set the desired capacity of instances to 10. This causes the scale-out to happen before peak traffic kicks in at the designated hour",
+        "choice3": "Configure your Auto Scaling group by creating a simple tracking policy and setting the instance count to 10 at the designated hour. This causes the scale-out to happen before peak traffic kicks in at the designated hour",
+        "choice4": "Configure your Auto Scaling group by creating a scheduled action that kicks-off at the designated hour on the last day of the month. Set the desired capacity of instances to 10. This causes the scale-out to happen before peak traffic kicks in at the designated hour",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A company manages a multi-tier social media application that runs on EC2 instances behind an Application Load Balancer. The instances run in an EC2 Auto Scaling group across multiple Availability Zones and use an Amazon Aurora database. As a solutions architect, you have been tasked to make the application more resilient to periodic spikes in request rates. Which of the following solutions would you recommend for the given use-case? (Select two)",
+        "choice1": "Use CloudFront distribution in front of the Application Load Balancer",
+        "choice2": "Use Aurora Replica ",
+        "choice3": "Use AWS Direct Connect",
+        "choice4": "Use AWS Global Accelerator",
+        "choice5": "Use AWS Shield",
+        "answer": "1,2",
+        "multi": 2
+    },
+    {
+        "question": "Which of the following features of an Amazon S3 bucket can only be suspended once they have been enabled?",
+        "choice1": "Server Access Logging",
+        "choice2": "Versioning",
+        "choice3": "Static Website Hosting",
+        "choice4": "Requester Pays",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "The flagship application for a gaming company connects to an Amazon Aurora database and the entire technology stack is currently deployed in the United States. Now, the company has plans to expand to Europe and Asia for its operations. It needs the games table to be accessible globally but needs the users and games_played tables to be regional only. How would you implement this with minimal application refactoring?",
+        "choice1": "Use an Amazon Aurora Global Database for the games table and use DynamoDB tables for the users and games_played tables",
+        "choice2": "Use a DynamoDB global table for the games table and use Amazon Aurora for the users and games_played tables",
+        "choice3": "Use an Amazon Aurora Global Database for the games table and use Amazon Aurora for the users and games_played tables",
+        "choice4": "Use a DynamoDB global table for the games table and use DynamoDB tables for the users and games_played tables",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "The development team at an e-commerce startup has set up multiple microservices running on EC2 instances under an Application Load Balancer. The team wants to route traffic to multiple back-end services based on the URL path of the HTTP header. So it wants requests for https://www.example.com/orders to go to a specific microservice and requests for https://www.example.com/products to go to another microservice. Which of the following features of Application Load Balancers can be used for this use-case?",
+        "choice1": "Query string parameter-based routing",
+        "choice2": "Host-based Routing",
+        "choice3": "HTTP header-based routing",
+        "choice4": "Path-based Routing",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A gaming company is looking at improving the availability and performance of its global flagship application which utilizes UDP protocol and needs to support fast regional failover in case an AWS Region goes down. Which of the following AWS services represents the best solution for this use-case?",
+        "choice1": "Amazon Route 53",
+        "choice2": "AWS Elastic Load Balancing (ELB)",
+        "choice3": "AWS Global Accelerator",
+        "choice4": "Amazon CloudFront",
+        "answer": 3,
+        "multi": 0
+    },{
+        "question": "A gaming company uses Amazon Aurora as its primary database service. The company has now deployed 5 multi-AZ read replicas to increase the read throughput and for use as failover target. The replicas have been assigned the following failover priority tiers and corresponding sizes are given in parentheses: tier-1 (16TB), tier-1 (32TB), tier-10 (16TB), tier-15 (16TB), tier-15 (32TB). In the event of a failover, Amazon RDS will promote which of the following read replicas?",
+        "choice1": "Tier-15 (32TB)",
+        "choice2": "Tier-10 (16TB)",
+        "choice3": "Tier-1 (16TB)",
+        "choice4": "Tier-1 (32TB)",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A junior scientist working with the Deep Space Research Laboratory at NASA is trying to upload a high-resolution image of a nebula into Amazon S3. The image size is approximately 3GB. The junior scientist is using S3 Transfer Acceleration (S3TA) for faster image upload. It turns out that S3TA did not result in an accelerated transfer. Given this scenario, which of the following is correct regarding the charges for this image transfer?",
+        "choice1": "The junior scientist does not need to pay any transfer charges for the image upload",
+        "choice2": "The junior scientist only needs to pay S3TA transfer charges for the image upload",
+        "choice3": "The junior scientist needs to pay both S3 transfer charges and S3TA transfer charges for the image upload",
+        "choice4": "The junior scientist only needs to pay S3 transfer charges for the image upload",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A social gaming startup has its flagship application hosted on a fleet of EC2 servers running behind an Elastic Load Balancer. These servers are part of an Auto Scaling Group. 90% of the users start logging into the system at 6 pm every day and continue till midnight. The engineering team at the startup has observed that there is a significant performance lag during the initial hour from 6 pm to 7 pm. The application is able to function normally thereafter.As a solutions architect, which of the following steps would you recommend addressing the performance bottleneck during that initial hour of traffic spike?",
+        "choice1": "Configure your Auto Scaling group by creating a scheduled action that kicks-off before 6 pm. This causes the scale-out to happen even before peak traffic kicks in at 6 pm",
+        "choice2": "Configure your Auto Scaling group by creating a target tracking policy. This causes the scale-out to happen even before peak traffic kicks in at 6 pm",
+        "choice3": "Configure your Auto Scaling group by creating a lifecycle hook that kicks-off before 6 pm. This causes the scale-out to happen even before peak traffic kicks in at 6 pm",
+        "choice4": "Configure your Auto Scaling group by creating a step scaling policy. This causes the scale-out to happen even before peak traffic kicks in at 6 pm",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A solutions architect has created a new Application Load Balancer and has configured a target group with IP address as a target type. Which of the following types of IP addresses are allowed as a valid value for this target type?",
+        "choice1": "Elastic IP address",
+        "choice2": "Private IP address ",
+        "choice3": "Dynamic IP address",
+        "choice4": "Public IP address",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A retail company uses Amazon EC2 instances, API Gateway, Amazon RDS, Elastic Load Balancer and CloudFront services. To improve the security of these services, the Risk Advisory group has suggested a feasibility check for using the Amazon GuardDuty service. Which of the following would you identify as data sources supported by GuardDuty?",
+        "choice1": "VPC Flow Logs, DNS logs, CloudTrail events",
+        "choice2": "VPC Flow Logs, API Gateway logs, S3 access logs",
+        "choice3": "ELB logs, DNS logs, CloudTrail events",
+        "choice4": "CloudFront logs, API Gateway logs, CloudTrail events",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A new DevOps engineer has joined a large financial services company recently. As part of his onboarding, the IT department is conducting a review of the checklist for tasks related to AWS Identity and Access Management. As a solutions architect, which best practices would you recommend (Select two)?",
+        "choice1": "Use user credentials to provide access specific permissions for Amazon EC2 instances",
+        "choice2": "Configure AWS CloudTrail to log all IAM actions",
+        "choice3": "Enable MFA for privileged users ",
+        "choice4": "Create a minimum number of accounts and share these account credentials among employees",
+        "choice5": "Grant maximum privileges to avoid assigning privileges again",
+        "answer": "2,3",
+        "multi": 2
+    },
+    {
+        "question": "A gaming company is developing a mobile game that streams score updates to a backend processor and then publishes results on a leaderboard. The company has hired you as an AWS Certified Solutions Architect Associate to design a solution that can handle major traffic spikes, process the mobile game updates in the order of receipt, and store the processed updates in a highly available database. The company wants to minimize the management overhead required to maintain the solution. Which of the following will you recommend to meet these requirements?",
+        "choice1": "Push score updates to an SNS topic, subscribe a Lambda function to this SNS topic to process the updates and then store these processed updates in a SQL database running on Amazon EC2",
+        "choice2": "Push score updates to Kinesis Data Streams which uses a fleet of EC2 instances (with Auto Scaling) to process the updates in Kinesis Data Streams and then store these processed updates in DynamoDB",
+        "choice3": "Push score updates to Kinesis Data Streams which uses a Lambda function to process these updates and then store these processed updates in DynamoDB ",
+        "choice4": "Push score updates to an SQS queue which uses a fleet of EC2 instances (with Auto Scaling) to process these updates in the SQS queue and then store these processed updates in an RDS MySQL database",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A Big Data analytics company wants to set up an AWS cloud architecture that throttles requests in case of sudden traffic spikes. The company is looking for AWS services that can be used for buffering or throttling to handle such traffic variations. Which of the following services can be used to support this requirement?",
+        "choice1": "Amazon SQS, Amazon SNS and AWS Lambda",
+        "choice2": "Amazon API Gateway, Amazon SQS and Amazon Kinesis",
+        "choice3": "Amazon Gateway Endpoints, Amazon SQS and Amazon Kinesis",
+        "choice4": "Elastic Load Balancer, Amazon SQS, AWS Lambda",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A healthcare startup needs to enforce compliance and regulatory guidelines for objects stored in Amazon S3. One of the key requirements is to provide adequate protection against accidental deletion of objects. As a solutions architect, what are your recommendations to address these guidelines? (Select two)",
+        "choice1": "Create an event trigger on deleting any S3 object. The event invokes an SNS notification via email to the IT manager",
+        "choice2": "Change the configuration on AWS S3 console so that the user needs to provide additional confirmation while deleting any S3 object",
+        "choice3": "Establish a process to get managerial approval for deleting S3 objects",
+        "choice4": "Enable MFA delete on the bucket ",
+        "choice5": "Enable versioning on the bucket",
+        "answer": "4,5",
+        "multi": 2
+    },
+    {
+        "question": "An organization wants to delegate access to a set of users from the development environment so that they can access some resources in the production environment which is managed under another AWS account. As a solutions architect, which of the following steps would you recommend?",
+        "choice1": "Create new IAM user credentials for the production environment and share these credentials with the set of users from the development environment",
+        "choice2": "Create a new IAM role with the required permissions to access the resources in the production environment. The users can then assume this IAM role while accessing the resources from the production environment",
+        "choice3": "It is not possible to access cross-account resources - You can use IAM roles to access cross-account resources.",
+        "choice4": "Both IAM roles and IAM users can be used interchangeably for cross-account access",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A technology blogger wants to write a review on the comparative pricing for various storage types available on AWS Cloud. The blogger has created a test file of size 1GB with some random data. Next he copies this test file into AWS S3 Standard storage class, provisions an EBS volume (General Purpose SSD (gp2)) with 100GB of provisioned storage and copies the test file into the EBS volume, and lastly copies the test file into an EFS Standard Storage filesystem. At the end of the month, he analyses the bill for costs incurred on the respective storage types for the test file. What is the correct order of the storage charges incurred for the test file on these three storage types?",
+        "choice1": "Cost of test file storage on S3 Standard < Cost of test file storage on EFS < Cost of test file storage on EBS",
+        "choice2": "Cost of test file storage on S3 Standard < Cost of test file storage on EBS < Cost of test file storage on EFS",
+        "choice3": "Cost of test file storage on EFS < Cost of test file storage on S3 Standard < Cost of test file storage on EBS",
+        "choice4": "Cost of test file storage on EBS < Cost of test file storage on S3 Standard < Cost of test file storage on EFS",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A research group needs a fleet of EC2 instances for a specialized task that must deliver high random I/O performance. Each instance in the fleet would have access to a dataset that is replicated across the instances. Because of the resilient application architecture, the specialized task would continue to be processed even if any instance goes down, as the underlying application architecturewould ensure the replacement instance has access to the required dataset. Which of the following options is the MOST cost-optimal and resource-efficient solution to build this fleet of EC2 instances?",
+        "choice1": "Use EC2 instances with access to S3 based storage",
+        "choice2": "Use EBS based EC2 instances",
+        "choice3": "Use Instance Store based EC2 instances",
+        "choice4": "Use EC2 instances with EFS mount points",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "The engineering team at an in-home fitness company is evaluating multiple in-memory data stores with the ability to power its ondemand, live leaderboard. The company's leaderboard requires high availability, low latency, and real-time processing to deliver customizable user data for the community of users working out together virtually from the comfort of their home.As a solutions architect, which of the following solutions would you recommend? (Select two)",
+        "choice1": "Power the on-demand, live leaderboard using DynamoDB as it meets the in-memory, high availability, low latency requirements",
+        "choice2": "Power the on-demand, live leaderboard using RDS Aurora as it meets the in-memory, high availability, low latency requirements",
+        "choice3": "Power the on-demand, live leaderboard using ElastiCache Redis as it meets the in-memory, high availability, low latency requirements",
+        "choice4": "Power the on-demand, live leaderboard using DynamoDB with DynamoDB Accelerator (DAX) as it meets the in-memory, high availability, low latency requirements ",
+        "choice5": "Power the on-demand, live leaderboard using AWS Neptune as it meets the in-memory, high availability, low latency requirements",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "An IT consultant is helping the owner of a medium-sized business set up an AWS account. What are the security recommendations he must follow while creating the AWS account root user? (Select two)",
+        "choice1": "Create AWS account root user access keys and share those keys only with the business owner",
+        "choice2": "Send an email to the business owner with details of the login username and password for the AWS root user. This will help the business owner to troubleshoot any login issues in future",
+        "choice3": "Enable Multi Factor Authentication (MFA) for the AWS account root user account",
+        "choice4": "Create a strong password for the AWS account root user",
+        "choice5": "Encrypt the access keys and save them on Amazon S3",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "A telecom company operates thousands of hardware devices like switches, routers, cables, etc. The real-time status data for these devices must be fed into a communications application for notifications. Simultaneously, another analytics application needs to read the same real-time status data and analyze all the connecting lines that may go down because of any device failures. As a Solutions Architect, which of the following solutions would you suggest, so that both the applications can consume the realtime status data concurrently?",
+        "choice1": "Amazon Simple Notification Service (SNS)",
+        "choice2": "Amazon Simple Queue Service (SQS) with Amazon Simple Notification Service (SNS)",
+        "choice3": "Amazon Kinesis Data Streams",
+        "choice4": "Amazon Simple Queue Service (SQS) with Amazon Simple Email Service (Amazon SES)",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "The product team at a startup has figured out a market need to support both stateful and stateless client-server communications via the APIs developed using its platform. You have been hired by the startup as a solutions architect to build a solution to fulfill this market need using AWS API Gateway. Which of the following would you identify as correct?",
+        "choice1": "API Gateway creates RESTful APIs that enable stateful client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateful, full-duplex communication between client and server",
+        "choice2": "API Gateway creates RESTful APIs that enable stateless client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateless, full-duplex communication between client and server",
+        "choice3": "API Gateway creates RESTful APIs that enable stateless client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateful, full-duplex communication between client and server",
+        "choice4": "API Gateway creates RESTful APIs that enable stateful client-server communication and API Gateway also creates WebSocket APIs that adhere to the WebSocket protocol, which enables stateless, full-duplex communication between client and server",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "A data analytics company measures what the consumers watch and what advertising they’re exposed to. This real-time data is ingested into its on-premises data center and subsequently, the daily data feed is compressed into a single file and uploaded on Amazon S3 for backup. The typical compressed file size is around 2 GB. Which of the following is the fastest way to upload the daily compressed file into S3?",
+        "choice1": "Upload the compressed file in a single operation",
+        "choice2": "FTP the compressed file into an EC2 instance that runs in the same region as the S3 bucket. Then transfer the file from the EC2 instance into the S3 bucket",
+        "choice3": "Upload the compressed file using multipart upload with S3 transfer acceleration",
+        "choice4": "Upload the compressed file using multipart upload",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "The solo founder at a tech startup has just created a brand new AWS account. The founder has provisioned an EC2 instance 1A which is running in region A. Later, he takes a snapshot of the instance 1A and then creates a new AMI in region A from this snapshot. This AMI is then copied into another region B. The founder provisions an instance 1B in region B using this new AMI in region B. At this point in time, what entities exist in region B?",
+        "choice1": "1 EC2 instance and 2 AMIs exist in region B",
+        "choice2": "1 EC2 instance and 1 AMI exist in region B",
+        "choice3": "1 EC2 instance and 1 snapshot exist in region B",
+        "choice4": "1 EC2 instance, 1 AMI and 1 snapshot exist in region B",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A media company runs a photo-sharing web application that is accessed across three different countries. The application is deployed on several Amazon EC2 instances running behind an Application Load Balancer. With new government regulations, the company has been asked to block access from two countries and allow access only from the home country of the company. Which configuration should be used to meet this changed requirement?",
+        "choice1": "Configure the security group on the Application Load Balancer",
+        "choice2": "Configure the security group for the EC2 instances",
+        "choice3": "Use Geo Restriction feature of Amazon CloudFront in a VPC",
+        "choice4": "Configure AWS WAF on the Application Load Balancer in a VPC",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "A US-based healthcare startup is building an interactive diagnostic tool for COVID-19 related assessments. The users would be required to capture their personal health records via this tool. As this is sensitive health information, the backup of the user data must be kept encrypted in S3. The startup does not want to provide its own encryption keys but still wants to maintain an audit trail of when an encryption key was used and by whom. Which of the following is the BEST solution for this use-case?",
+        "choice1": "Use SSE-C to encrypt the user data on S3",
+        "choice2": "Use SSE-KMS to encrypt the user data on S3",
+        "choice3": "Use client-side encryption with client provided keys and then upload the encrypted user data to S3",
+        "choice4": "Use SSE-S3 to encrypt the user data on S3",
+        "answer": 2,
+        "multi": 0
+    },{
+        "question": "A leading social media analytics company is contemplating moving its dockerized application stack into AWS Cloud. The company is not sure about the pricing for using Elastic Container Service (ECS) with the EC2 launch type compared to the Elastic Container Service (ECS) with the Fargate launch type. Which of the following is correct regarding the pricing for these two services?",
+        "choice1": "Both ECS with EC2 launch type and ECS with Fargate launch type are just charged based on Elastic Container Service used per hour",
+        "choice2": "Both ECS with EC2 launch type and ECS with Fargate launch type are charged based on vCPU and memory resources that the containerized application requests",
+        "choice3": "ECS with EC2 launch type is charged based on EC2 instances and EBS volumes used. ECS with Fargate launch type is charged based on vCPU and memory resources that the containerized application requests",
+        "choice4": "Both ECS with EC2 launch type and ECS with Fargate launch type are charged based on EC2 instances and EBS volumes used",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A software engineering intern at an e-commerce company is documenting the process flow to provision EC2 instances via the Amazon EC2 API. These instances are to be used for an internal application that processes HR payroll data. He wants to highlight those volume types that cannot be used as a boot volume. Can you help the intern by identifying those storage volume types that CANNOT be used as boot volumes while creating the instances? (Select two)",
+        "choice1": "Throughput Optimized HDD (st1) (Correct)",
+        "choice2": "Provisioned IOPS SSD (io1)",
+        "choice3": "Cold HDD (sc1) (Correct)",
+        "choice4": "Instance Store (Incorrect)",
+        "choice5": "General Purpose SSD (gp2)",
+        "answer": "1,3",
+        "multi": 2
+    },
+    {
+        "question": "A financial services company recently launched an initiative to improve the security of its AWS resources and it had enabled AWS Shield Advanced across multiple AWS accounts owned by the company. Upon analysis, the company has found that the costs incurred are much higher than expected. Which of the following would you attribute as the underlying reason for the unexpectedly high costs for AWS Shield Advanced service?",
+        "choice1": "AWS Shield Advanced also covers AWS Shield Standard plan, thereby resulting in increased costs",
+        "choice2": "Savings Plans has not been enabled for the AWS Shield Advanced service across all the AWS accounts",
+        "choice3": "Consolidated billing has not been enabled. All the AWS accounts should fall under a single consolidated billing for the monthly fee to be charged only once",
+        "choice4": "AWS Shield Advanced is being used for custom servers, that are not part of AWS Cloud, thereby resulting in increased costs",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A company uses Amazon S3 buckets for storing sensitive customer data. The company has defined different retention periods for different objects present in the Amazon S3 buckets, based on the compliance requirements. But, the retention rules do not seem to work as expected. Which of the following options represent a valid configuration for setting up retention periods for objects in Amazon S3 buckets?",
+        "choice1": "When you apply a retention period to an object version explicitly, you specify a Retain Until Date for the object version",
+        "choice2": "When you use bucket default settings, you specify a Retain Until Date for the object version ",
+        "choice3": "Different versions of a single object can have different retention modes and periods",
+        "choice4": "The bucket default settings will override any explicit retention mode or period you request on an object version ",
+        "choice5": "You cannot place a retention period on an object version through a bucket default setting",
+        "answer": "1,3",
+        "multi": 2
+    },
+    {
+        "question": "An IT Company wants to move all the compute components of its AWS Cloud infrastructure into serverless architecture. Their development stack comprises a mix of backend programming languages and the company would like to explore the support offered by the AWS Lambda runtime for their programming languages stack. Can you identify the programming languages supported by the Lambda runtime? (Select two)different retention modes and periods (Correct)",
+        "choice1": "C",
+        "choice2": "Go",
+        "choice3": "R",
+        "choice4": "C#/.NET",
+        "choice5": "PHP",
+        "answer": "2,4",
+        "multi": 2
+    },
+    {
+        "question": "A social photo-sharing company uses Amazon S3 to store the images uploaded by the users. These images are kept encrypted in S3 by using AWS-KMS and the company manages its own Customer Master Key (CMK) for encryption. A member of the DevOps team accidentally deleted the CMK a day ago, thereby rendering the user's photo data unrecoverable. You have been contacted by the company to consult them on possible solutions to this crisis. As a solutions architect, which of the following steps would you recommend to solve this issue?",
+        "choice1": "The CMK can be recovered by the AWS root account user",
+        "choice2": "The company should issue a notification on its web application informing the users about the loss of their data",
+        "choice3": "As the CMK was deleted a day ago, it must be in the 'pending deletion' status and hence you can just cancel the CMK deletion and recover the key",
+        "choice4": "Contact AWS support to retrieve the CMK from their backup",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "An IT security consultancy is working on a solution to protect data stored in S3 from any malicious activity as well as check for any vulnerabilities on EC2 instances. As a solutions architect, which of the following solutions would you suggest to help address the given requirement?",
+        "choice1": "Use Amazon GuardDuty to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon Inspector to check for vulnerabilities on EC2 instances",
+        "choice2": "Use Amazon Inspector to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon GuardDuty to check for vulnerabilities on EC2 instances",
+        "choice3": "Use Amazon Inspector to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon Inspector to check for vulnerabilities on EC2 instances",
+        "choice4": "Use Amazon GuardDuty to monitor any malicious activity on data stored in S3. Use security assessments provided by Amazon GuardDuty to check for vulnerabilities on EC2 instances",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "A large financial institution operates an on-premises data center with hundreds of PB of data managed on Microsoft’s Distributed File System (DFS). The CTO wants the organization to transition into a hybrid cloud environment and run data-intensive analytics workloads that support DFS. Which of the following AWS services can facilitate the migration of these workloads?",
+        "choice1": "Amazon FSx for Windows File Server",
+        "choice2": "Microsoft SQL Server on Amazon",
+        "choice3": "Amazon FSx for Lustre",
+        "choice4": "AWS Managed Microsoft AD",
+        "answer": 1,
+        "multi": 0
+    },
+    {
+        "question": "An ivy-league university is assisting NASA to find potential landing sites for exploration vehicles of unmanned missions to our neighboring planets. The university uses High Performance Computing (HPC) driven application architecture to identify these landing sites. Which of the following EC2 instance topologies should this application be deployed on?",
+        "choice1": "The EC2 instances should be deployed in a spread placement group so that there are no correlated failures",
+        "choice2": "The EC2 instances should be deployed in an Auto Scaling group so that application meets high availability requirements",
+        "choice3": "The EC2 instances should be deployed in a partition placement group so that distributed workloads can be handled effectively",
+        "choice4": "The EC2 instances should be deployed in a cluster placement group so that the underlying workload can benefit from low network latency and high network throughput ",
+        "answer": 4,
+        "multi": 0
+    },
+    {
+        "question": "An audit department generates and accesses the audit reports only twice in a financial year. The department uses AWS Step Functions to orchestrate the report creating process that has failover and retry scenarios built into the solution. The underlying data to create these audit reports is stored on S3, runs into hundreds of Terabytes and should be available with millisecond latency. As a solutions architect, which is the MOST cost-effective storage class that you would recommend to be used for this use-case?",
+        "choice1": "Amazon S3 Standard",
+        "choice2": "Amazon S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "choice3": "Amazon S3 Intelligent-Tiering (S3 Intelligent-Tiering)",
+        "choice4": "Amazon S3 Glacier (S3 Glacier)",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "The DevOps team at an e-commerce company wants to perform some maintenance work on a specific EC2 instance that is part of an Auto Scaling group using a step scaling policy. The team is facing a maintenance challenge - every time the team deploys a maintenance patch, the instance health check status shows as out of service for a few minutes. This causes the Auto Scaling group to provision another replacement instance immediately. As a solutions architect, which are the MOST time/resource efficient steps that you would recommend so that the maintenance work can be completed at the earliest? (Select two)",
+        "choice1": "Suspend the ScheduledActions process type for the Auto Scaling group and apply the maintenance patch to the instance. Once the instance is ready, you can activate the ScheduledActions process type again",
+        "choice2": "Delete the Auto Scaling group and apply the maintenance fix to the given instance. Create a new Auto Scaling group and add all the instances again using the manual scaling policy",
+        "choice3": "Put the instance into the Standby state and then update the instance by applying the maintenance patch. Once the instance is ready, you can exit the Standby state and then return the instance to service",
+        "choice4": "Suspend the ReplaceUnhealthy process type for the Auto Scaling group and apply the maintenance patch to the instance. Once the instance is ready, you can activate the ReplaceUnhealthy process type again",
+        "choice5": "Take a snapshot of the instance, create a new AMI and then launch a new instance using this AMI. Apply the maintenance patch to this new instance and then add it back to the Auto Scaling Group by using the manual scaling policy. Terminate the earlier instance that had the maintenance issue",
+        "answer": "3,4",
+        "multi": 2
+    },
+    {
+        "question": "A financial services company uses Amazon GuardDuty for analyzing its AWS account metadata to meet the compliance guidelines. However, the company has now decided to stop using GuardDuty service. All the existing findings have to be deleted and cannot persist anywhere on AWS Cloud. Which of the following techniques will help the company meet this requirement?",
+        "choice1": "De-register the service under services tab",
+        "choice2": "Disable the service in the general settings",
+        "choice3": "Raise a service request with Amazon to completely delete the data from all their backups",
+        "choice4": "Suspend the service in the general settings",
+        "answer": 2,
+        "multi": 0
+    },
+    {
+        "question": "The engineering team at an e-commerce company wants to establish a dedicated, encrypted, low latency, and high throughput connection between its data center and AWS Cloud. The engineering team has set aside sufficient time to account for the operational overhead of establishing this connection. As a solutions architect, which of the following solutions would you recommend to the company?",
+        "choice1": "Use AWS Direct Connect to establish a connection between the data center and AWS Cloud",
+        "choice2": "Use site-to-site VPN to establish a connection between the data center and AWS Cloud",
+        "choice3": "Use AWS Direct Connect plus VPN to establish a connection between the data center and AWS Cloud",
+        "choice4": "Use VPC transit gateway to establish a connection between the data center and AWS Cloud",
+        "answer": 3,
+        "multi": 0
+    },
+    {
+        "question": "A retail company has developed a REST API which is deployed in an Auto Scaling group behind an Application Load Balancer. The API stores the user data in DynamoDB and any static content, such as images, are served via S3. On analyzing the usage trends, it is found that 90% of the read requests are for commonly accessed data across all users. As a Solutions Architect, which of the following would you suggest as the MOST efficient solution to improve the application performance?",
+        "choice1": "Enable DAX for DynamoDB and ElastiCache Memcached for S3",
+        "choice2": "Enable ElastiCache Redis for DynamoDB and ElastiCache Memcached for S3",
+        "choice3": "Enable ElastiCache Redis for DynamoDB and CloudFront for S3",
+        "choice4": "Enable DynamoDB Accelerator (DAX) for DynamoDB and CloudFront for S3",
+        "answer": 4,
+        "multi": 0
+    }
+    
+]
