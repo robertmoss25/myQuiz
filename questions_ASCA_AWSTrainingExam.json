@@ -1,6 +1,6 @@
 [
     {
-        "question": "A company has used Amazon EC2 Spot Instances for a demonstration. The demonstartion is complete and a solutions architect must not remove the Spot Instances\nWHich action should the solutions architect take to remove the Spot instances?",
+        "question": "A company has used Amazon EC2 Spot Instances for a demonstration. The demonstration is complete and a solutions architect must not remove the Spot Instances. Which action should the solutions architect take to remove the Spot instances?",
         "choice1": "Cancel the spot request",
         "choice2": "Terminate the Spot Instances",
         "choice3": "Cancel the Spot request and then terminate the instances",
@@ -18,7 +18,7 @@
         "multi": 0
     },
     {
-        "question": "A company's application allows users to upload images files to an Amazon S3 bucket. These files are accessed frequently for the first 30 days. After 30 days, these files all rarely accessed, but need to be durable stored and available immediately upon request. A solutions architect is tasked with configuring a lifecycle policy that minimizes the overall cost within meeting the application requirements. Which action will accomplish this?",
+        "question": "A company's application allows users to upload images files to an Amazon S3 bucket. These files are accessed frequently for the first 30 days. After 30 days, these files all rarely accessed, but need to be durable stored and available immediately upon request. A solutions architect is tasked with configuring a lifecycle policy that minimizes the overall cost while meeting the application requirements. Which action will accomplish this?",
         "choice1": "Configure a lifecycle policy to move files to Amazon S3 Glacier after 30 days.",
         "choice2": "Configure a lifecycle policy to move files to Amazon S3 Glacier Deep Archive after 30 days.",
         "choice3": "Configure a lifecycle policy to move files to Amazon S3 Standard Infrequent Access (S3 Standard-IA) after 30 days",
@@ -72,7 +72,7 @@
         "multi": 0
     },
     {
-        "question": "A solutions architect is designing a solution to run a containerized web application using Amazon Elastic Container Service (ECS). The solutions architect wants to minimize costs by running multiple copies of a task on each conatiner instance.\nWhich solution for routing the requests will meet these requirements?",
+        "question": "A solutions architect is designing a solution to run a containerized web application using Amazon Elastic Container Service (ECS). The solutions architect wants to minimize costs by running multiple copies of a task on each container instance.\nWhich solution for routing the requests will meet these requirements?",
         "choice1": "Configure an ALB to distribute the requests using path-based routing",
         "choice2": "Configure an ALB to distribute the requests using dynamic host mapping",
         "choice3": "Configure an Route53 alias record set to distribute the requests with a failover routing policy",
@@ -81,7 +81,7 @@
         "multi": 0
     },
     {
-        "question": "A data processing facility wants to move a group of Microsoft Windows servers to AWS cloud. These servers require access to a shared file system that can integrate with the facilities existing Active Directory (AD) infrastructure for file and folder permissions. The solution needs to provide seamless support for shared files with a WS and on premises servers and allow the environment to be highly available. The chosen solution should provide added security by supporting encryption at rest and in transit. The solution should also be cost effective to implement and manage. which storage solution would meet these requirements?",
+        "question": "A data processing facility wants to move a group of Microsoft Windows servers to AWS cloud. These servers require access to a shared file system that can integrate with the facilities existing Active Directory (AD) infrastructure for file and folder permissions. The solution needs to provide seamless support for shared files with AWS and on premises servers and allow the environment to be highly available. The chosen solution should provide added security by supporting encryption at rest and in transit. The solution should also be cost effective to implement and manage. which storage solution would meet these requirements?",
         "choice1": "An AWS storage gateway file gateway joined to the existing AD domain",
         "choice2": "On Amazon FSx For Windows file server file system joined to the existing AD domain",
         "choice3": "On Amazon Elastic File System (Amazon EFS) file system joined to an AWS managed AD domain",
@@ -108,7 +108,7 @@
         "multi": 0
     },
     {
-        "question": "A company has a strict data protection requirement. A solutions architect must configure security for a VPC to make sure backend Amazon RDS DB instances cannot be accessible from the Internet, and are accessible from the application tier over a specified port only. Which actions should the solutions architect take to ensure these requirements are met? (Select TWO).",
+        "question": "A company has a strict data protection requirement. A solutions architect must configure security for a VPC to make sure backend Amazon RDS DB instances cannot be accessible from the Internet, and are accessible from the application tier over a specified port only. Which actions should the solutions architect take to ensure these requirements are met?",
         "choice1": "Specify a DB subnet group containing only private subnets for the DB instances.",
         "choice2": "Attach an elastic network interface (ENI) with a private IPv4 address to each DB instance.",
         "choice3": "Attach an Internet gateway to the VPC and update the route tables for the subnets used by the DB instances.",
@@ -164,7 +164,7 @@
         "multi": 0
     },
     {
-        "question": "Users of an image processing application experienced long delays waiting for their images to process when the application experiences unpredictable periods of heavy usage. The architecture consists of a web tier, an Amazon Simple Queue Service (AmMazon SQS) standard queue, and message consumers running on Amazon EC2 instances. When there is a high volume of requests, the message backlog in Amazon SQS spikes. A solutions architect is tasked with improving the performance of the application or keeping costs low. Which solution meets these requirements?",
+        "question": "Users of an image processing application experienced long delays waiting for their images to process when the application experiences unpredictable periods of heavy usage. The architecture consists of a web tier, an Amazon Simple Queue Service (Amazon SQS) standard queue, and message consumers running on Amazon EC2 instances. When there is a high volume of requests, the message backlog in Amazon SQS spikes. A solutions architect is tasked with improving the performance of the application and keeping costs low. Which solution meets these requirements?",
         "choice1": "Purchase enough dedicated instances to meet the peak demand and employ them for the consumers.",
         "choice2": "Convert the existing Amazon SQS queue to an Amazon SQS FIFO queue and increase the visibility timeout.",
         "choice3": "Configure an AWS Lambda function to scale out the number of consumer instances when the message backlog grows.",
