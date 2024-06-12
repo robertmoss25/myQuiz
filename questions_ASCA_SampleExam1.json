@@ -100,11 +100,10 @@
     {
         "question": "A leading video streaming service delivers billions of hours of content from Amazon S3 to customers around the world. Amazon S3 also serves as the data lake for its big data analytics solution. The data lake has a staging zone where intermediary query results are kept only for 24 hours. These results are also heavily referenced by other parts of the analytics pipeline. Which of the following is the MOST cost-effective strategy for storing this intermediary query data?",
         "choice1": "Store the intermediary query results in S3 Intelligent-Tiering storage class",
-        "choice2": "Store the intermediary query results in S3",
-        "choice3": "Standard-Infrequent Access storage class ",
-        "choice4": "Store the intermediary query results in S3 One Zone-Infrequent Access storage class",
-        "choice5": "Store the intermediary query results in S3 Standard storage class",
-        "answer": 5,
+        "choice2": "Store the intermediary query results in S3 Standard-Infrequent Access storage class ",
+        "choice3": "Store the intermediary query results in S3 One Zone-Infrequent Access storage class",
+        "choice4": "Store the intermediary query results in S3 Standard storage class",
+        "answer": 4,
         "multi": 0
     },
     {
